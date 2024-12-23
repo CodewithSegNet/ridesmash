@@ -1,4 +1,4 @@
-import { useState, useRef  } from 'react';
+import { useState, useRef, useEffect  } from 'react';
 import logo from '../../src/assets/logo.png'
 import { BiSupport, BiTaxi, BiChevronDown } from "react-icons/bi";
 import {FaXmark, FaBars} from 'react-icons/fa6'
@@ -9,154 +9,178 @@ const Navbar = () => {
   
 
   const navItems = [
-    {link : "Home", path : "/"},
-    {link : "About Us", path : "about"},
+    // {link : "Home", path : "/"},
+    // {link : "About Us", path : "about"},
     {link : "Services ", path : "services", icon: <BiChevronDown />,
       submenu: [
-        { link: "Hire Purchase", path: "" },
+        { link: "Ride", path: "" },
+        { link: "Delivery", path: "" },
         { link: "Car Rental", path: "" },
-        { link: "Fleet Management", path: "" },
-        { link: "Ride Hailing", path: "" },
+        { link: "Airport Pickup", path: "" },
+        // { link: "Ride Hailing", path: "" },
       ]
     },
-    {link : "Drive & Earn", path : "driveAndEarn"},
-    {link : "Franchise", path : "franchise", icon: <BiChevronDown />,
+    {link : "Company", path : "Company", icon: <BiChevronDown />,
       submenu: [
-        { link: "Read More", path: "" },
-        { link: "Sign Up", path: "" }
-
+        { link: "About Us", path: "" },
+        { link: "Blog", path: "" },
+        { link: "Safety", path: "" },
+        { link: "FAQ", path: "" },
       ]
     },
-    {link : "Book a Ride", path: "booking", icon: <BiTaxi/>},
-    {link : "Contact Us", path : "contact"},
+    {link : "Driver", path : "driveAndEarn",icon: <BiChevronDown />, 
+      submenu: [
+        { link: "Earn With Us", path: "" },
+        { link: "Help Center", path: "" },
+      ]
+    },
+    {link : "Partnership", path : "driveAndEarn", icon: <BiChevronDown />,
+      submenu: [
+      { link: "Drive & Earn", path: "" },
+      { link: "Fleets Management", path: "" },
+      { link: "Franchise Partner", path: "" },
+
+
+    ]},
+    // {link : "Book a Ride", path: "booking", icon: <BiTaxi/>},
+    // {link : "Contact Us", path : "contact"},
   ]
 
-  const [isMenuOpened, setIsMenuOpened] = useState(false)
-
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
+  
   const toggle = () => {
-    setIsMenuOpened(!isMenuOpened)
-  }
+    setIsMenuOpened((prev) => !prev);
+  };
+  
+  useEffect(() => {
+    const isMobile = window.matchMedia("(max-width: 1020px)").matches;
 
-  const [dropdownVisibleIndex, setDropdownVisibleIndex] = useState(null);
-  const [isDropdownClicked, setIsDropdownClicked] = useState(false);
-  const dropdownTimeout = useRef(null); 
+    if (isMobile && isMenuOpened) {
+      document.body.classList.add("body-fixed");
+    } else {
+      document.body.classList.remove("body-fixed");
+    }
+
+    return () => {
+      document.body.classList.remove("body-fixed");
+    };
+  }, [isMenuOpened]);
+
+  
+  const [openSubmenuIndex, setOpenSubmenuIndex] = useState(null);
+
+  const handleDropdownToggle = (index) => {
+    setOpenSubmenuIndex(openSubmenuIndex === index ? null : index);
+  };
 
   const handleMouseEnter = (index) => {
-    if (dropdownTimeout.current) {
-      clearTimeout(dropdownTimeout.current);
-    }
-    if (!isDropdownClicked) {
-      setDropdownVisibleIndex(index);
+    if (window.innerWidth >= 1024) {
+      setOpenSubmenuIndex(index);
     }
   };
 
   const handleMouseLeave = () => {
-    if (!isDropdownClicked) {
-      dropdownTimeout.current = setTimeout(() => {
-        setDropdownVisibleIndex(null);
-      }, 300);
-    }
-  };
-
-  const handleDropdownToggle = () => {
-    setIsDropdownClicked((prev) => !prev);
-    if (isDropdownClicked) {
-      setDropdownVisibleIndex(null);
+    if (window.innerWidth >= 1024) {
+      setOpenSubmenuIndex(null);
     }
   };
 
 
   return (
     <>
-      <nav className="md:px-14 p-4 max-w-screen-2xl mx-auto text-white">
+      <nav className="md:px-14 pb-1 pt-3 relative max-w-screen-2xl mx-auto z-20 text-white px-4">
         <div className="flex justify-between">
-          <div className="flex items-center space-x-14 justify-between w-[100%]">
+          <div className="flex items-center space-x-14 justify-between w-[100%] md:pb-3 sm:pb-0">
             <a
               href="/"
-              className="bg-secondary w-[80px] h-[80px] items-center justify-center flex rounded-xl"
+              className="bg-secondary w-[60px] h-[60px] items-center justify-center flex rounded-xl"
             >
-              <img src={logo} alt="" className="w-[60px] h-[60px]" />
+              <img src={logo} alt="" className="w-[40px] h-[40px]" />
             </a>
+            <div className='md:flex hidden items-center space-x-7'>
+            <div className='flex items-center gap-1 text-white hover:text-secondary  transition-all duration-300'>
+                <BiTaxi className='text-xl gap-1'/>
+                <a href='/booking' className='text-md'>Book a Ride</a>
+              </div>
+              <div className='flex items-center gap-1 hover:text-secondary text-white hover:text-secondary transition-all duration-300'>
+                 <BiSupport className='text-xl gap-1'/>
+                 <a href='/support' className='text-md'>Support</a>
+              </div>
+              <a href='login' className='bg-secondary py-3 px-6 rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold'>Login</a>
 
-            {/* Desktop Navigation */}
-            <ul className="md:flex items-center space-x-10 hidden">
-              {navItems.map(({ link, path, icon, submenu }, index) => (
-                <li key={link} className="relative">
-                  <a
-                    href={path}
-                    className="flex items-center transition-all duration-300 hover:text-secondary justify-center gap-1 text-lg"
-                  >
-                    {link}
-                    {icon && (
-                      <span
-                        className="cursor-pointer"
-                        onMouseEnter={() => handleMouseEnter(index)}
-                        onMouseLeave={handleMouseLeave}
-                        onClick={handleDropdownToggle}
-                      >
-                        {icon}
-                      </span>
-                    )}
-                  </a>
-
-                  {/* Dropdown menu */}
-                  {submenu && dropdownVisibleIndex === index && (
-                    <ul
-                      className="absolute top-full left-0 mt-1 bg-primary shadow-md rounded-md text-gray-800 w-[200px]"
-                      onMouseEnter={() => handleMouseEnter(index)}
-                      onMouseLeave={handleMouseLeave}
-                    >
-                      {submenu.map(({ link, path }) => (
-                        <li key={link}>
-                          <a
-                            href={path}
-                            className="block px-4 py-2 hover:bg-secondary hover:rounded-md text-white hover:text-primary"
-                          >
-                            {link}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))}
-            </ul>
-            <div className='md:flex hidden items-center space-x-12'>
-              <a href='login' className='transition-all duration-300 bg-secondary py-3 px-8 rounded-full text-primary hover:text-white hover:bg-primary text-xl'>Login</a>
+              <div className='flex align-center'>
+                <button onClick={toggle} className='transition-all duration-700 flex align-center'>
+                    {
+                      isMenuOpened ? (<FaXmark className='text-2xl'/>) : (<FaBars className='text-2xl'/>)
+                    }
+                </button>
+             </div>
             </div>
             </div>
-
-          
-
              {/* small screen */}
 
-             <div className='md:hidden'>
-                <button onClick={toggle} className=''>
+             <div className='md:hidden transition-all duration-300 flex'>
+                <button onClick={toggle} className='transition-all duration-300'>
                     {
-                      isMenuOpened ? (<FaXmark className='text-4xl'/>) : (<FaBars className='text-4xl'/>)
+                      isMenuOpened ? (<FaXmark className='text-4xl transition-all duration-300'/>) : (<FaBars className='text-4xl transition-all duration-300'/>)
                     }
                 </button>
              </div>
 
           </div>
           
-        </nav>
-        <div className={`space-y-4 px-4 pt-0  pb-5 bg-[#020066] flex flex-col gap-1 h-[500px] ${isMenuOpened ? "block top-90 right-0 left-0 " : "hidden"}`}>
-          {
-            navItems.map(({link, path}) => <a key={link} href={path} className='block hover:text-gray-200 text-white py-1 text-2xl font-extralight'>{link}</a>)
-          }
-          <div className='flex flex-col gap-3 mb-6'>
-            
-              {/* <div className='flex items-center gap-3'>
-                <BiTaxi className='font-bold text-2md text-white gap-2'/>
-                <a href='/booking' className=' text-2xl text-white'>Book a Ride</a>
-              </div>  */}
-              <a href='login' className='bg-secondary my-6 py-2 px-4 rounded hover:text-white hover:bg-primary text-xl text-center'>Login</a>
-            </div>
-        </div>
 
+
+          <div style={{background: "linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 92, 186, 0.7))",
+          margin: "0 auto"
+  }}  className={`space-y-4 pt-0 absolute left-0 lg:left-[4rem] rounded-3xl pb-5 w-[100%] lg:w-[90%] flex flex-col text-center justify-evenly md:flex-row md:text-left lg:flex-row gap-3 z-10 h-[90vh] lg:h-[400px] overflow-hidden
+    ${isMenuOpened ? "opacity-100 translate-y-0 visible pointer-events-auto" : "opacity-0 -translate-y-5 invisible pointer-events-none"} 
+    transition-all duration-500 ease-in-out`}
+>
+         {navItems.map(({ link, path, icon, submenu }, index) => (
+    <div key={link} className="px-0 lg:px-14 mt-4 space-y-2 mx-auto text-center lg:text-left">
+      <div className="flex hover:text-gray-200 text-white items-center hover:text-secondary transition-all duration-300">
+        <a href={path} className="block py-1 text-2xl font-bold">
+          {link}
+        </a>
+        {icon && (
+          <span
+            className="cursor-pointer md:hidden text-2xl focus:outline-none"
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleDropdownToggle(index)}
+          >
+            {icon}
+          </span>
+        )}
+      </div>
+      <hr className="hidden md:block" style={{ margin: "0" }} />
+      {/* Render Submenu */}
+      <div className={`transition-all duration-300 ease-in ${openSubmenuIndex === index ? "block" : "hidden"} md:block`}>
+        {submenu && (
+          <div className="space-y-2 transition-all duration-300 ease-in">
+            {submenu.map(({ link, path }) => (
+              <a
+                key={link}
+                href={path}
+                className="block py-2 hover:rounded-md transition-all duration-300 text-white hover:text-secondary"
+              >
+                {link}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+
+    </div>
+  ))}
+  <a href='login' className='bg-secondary py-3 mx-[2rem] rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</a>
+
+</div>
+
+        </nav> 
     </>
   )
 }
 
-export default Navbar
+export default Navbar;

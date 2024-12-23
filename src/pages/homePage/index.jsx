@@ -14,7 +14,7 @@ import GetDriverApp from "../../components/GetDriverApp"
 import WhyChooseUs from "../../components/WhyChooseus"
 import BlogContent from "../../components/blogContent"
 import FaqView from "../../components/faqView";
-import backgroundImage from '../../assets/new-hero.jpg';
+import backgroundImage from '../../assets/hero.webp';
 
 
 
@@ -61,9 +61,8 @@ console.log(countryInfo.countryCurrency)
 const HeroImg = {
   backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 92, 186, 0.3)), url(${backgroundImage})`, 
   backgroundSize: 'cover',
-  backgroundPosition: 'top', 
-  backgroundRepeat: 'no-repeat', 
-  // height: '720px', 
+  backgroundPosition: 'center 30%', 
+  backgroundRepeat: 'no-repeat',
   height: '95vh', 
   width: '100%', 
 };

@@ -15,18 +15,44 @@ export default {
         '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
         '3xl': '0 10px 50px 0px rgba(0, 0, 0, 0.3)',
         // '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
-      //   inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
-      //   none: 'none',
+        //   inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+        //   none: 'none',
       },
-      colors : {
-        "primary" : "#020066",
-        "secondary" : "#01FFFF",
-        "tertiary" : "#151513",
-        "regular" : "#707070"
+      colors: {
+        "primary": "#020066",
+        "secondary": "#01FFFF",
+        "tertiary": "#151513",
+        "regular": "#707070"
       },
-  
+      screens: {
+        '1xl': '1280px',
+        '2xl': '1440px',
+      },
+      maxWidth: {
+        'screen-2xl': '1440px',
+        'screen-1xl': '1280px',
+      },
+      lineHeight: {
+        'extra-tight': '1.1px',
+        'extra-loose': '2.5px',
+      },
+      fontFamily: {
+        euclid: ['"Euclid Circular B"', 'sans-serif'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.body-fixed': {
+          top: '0',
+          left: '0',
+          right: '0',
+          bottom: '0',
+          overflow: 'hidden',
+        },
+      });
+    },
+  ],
 }
 
