@@ -17,7 +17,7 @@ const Hero = () => {
                 whileInView={"show"}
                 viewport={{once:false, amount:0.7}}
                 
-                className="sm:w-3/4 md:w-3/4 lg:w-3/5 xl:w-2/4 w-full flex flex-col mt-12">
+                className="sm:w-3/4 md:w-3/4 lg:w-3/5 xl:w-2/4 w-full flex flex-col mt-6">
                 <h1 className="lg:text-6xl text-4xl text-white font-black inter tracking leading-[1.5] " style={{ lineHeight: '1.2' }}>Ride in Style<span className='font-euclid font-black p-0 m-0'>,</span></h1>
                 <h1  className="lg:text-6xl md:text-4xl text-4xl text-white font-black inter tracking">Ride in Comfort</h1>
                 {/* <h3 className="text-xl text-gray-300 py-3 font-extralight">We keep lives transformed.</h3> */}

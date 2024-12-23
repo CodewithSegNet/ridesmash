@@ -131,14 +131,14 @@ const Navbar = () => {
           
 
 
-          <div style={{background: "linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 92, 186, 0.7))",
+          <div style={{background: "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 92, 186, 1))",
           margin: "0 auto"
   }}  className={`space-y-4 pt-0 absolute left-0 lg:left-[4rem] rounded-3xl pb-5 w-[100%] lg:w-[90%] flex flex-col text-center justify-evenly md:flex-row md:text-left lg:flex-row gap-3 z-10 h-[90vh] lg:h-[400px] overflow-hidden
     ${isMenuOpened ? "opacity-100 translate-y-0 visible pointer-events-auto" : "opacity-0 -translate-y-5 invisible pointer-events-none"} 
     transition-all duration-500 ease-in-out`}
 >
          {navItems.map(({ link, path, icon, submenu }, index) => (
-    <div key={link} className="px-0 lg:px-14 mt-4 space-y-2 mx-auto text-center lg:text-left">
+    <div key={link} className="px-0 lg:px-14 mt-4 space-y-2 mx-auto text-center md:text-left">
       <div className="flex hover:text-gray-200 text-white items-center hover:text-secondary transition-all duration-300">
         <a href={path} className="block py-1 text-2xl font-bold">
           {link}
