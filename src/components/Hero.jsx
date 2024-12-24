@@ -8,7 +8,7 @@ import { BiTaxi, BiDownload } from "react-icons/bi";
 import banner from "./../assets/Ridesmash-brand.png"
 const Hero = () => {
   return (
-    <div className="flex md:px-12 p-4 max-w-screen-2xl mx-auto mt-10 md:h-[400px]">
+    <div className="flex md:px-14 p-4 max-w-screen-2xl mx-auto mt-8 md:mt-5 xl:mt-8 md:h-[400px]">
         
         <div className="flex md:flex-row flex-col w-[100%] md:items-center">
             <motion.div 
@@ -17,11 +17,11 @@ const Hero = () => {
                 whileInView={"show"}
                 viewport={{once:false, amount:0.7}}
                 
-                className="sm:w-3/4 md:w-3/4 lg:w-3/5 xl:w-2/4 w-full flex flex-col mt-6">
-                <h1 className="lg:text-6xl text-4xl text-white font-black inter tracking leading-[1.5] " style={{ lineHeight: '1.2' }}>Ride in Style<span className='font-euclid font-black p-0 m-0'>,</span></h1>
-                <h1  className="lg:text-6xl md:text-4xl text-4xl text-white font-black inter tracking">Ride in Comfort</h1>
+                className="sm:w-3/4 md:w-3/4 lg:w-3/5 xl:w-2/4 w-full flex flex-col md:mt-0 lg:mt-0 mt-3">
+                <h1 className="xl:text-5xl lg:text-4xl text-4xl text-white font-black inter tracking leading-[1.5] " style={{ lineHeight: '1.2' }}>Ride in Style<span className='font-euclid font-black p-0 m-0'>,</span></h1>
+                <h1  className="xl:text-5xl lg:text-4xl md:text-4xl text-4xl text-white font-black inter tracking">Ride in Comfort</h1>
                 {/* <h3 className="text-xl text-gray-300 py-3 font-extralight">We keep lives transformed.</h3> */}
-                <h3 className="lg:text-xl text-gray-300 py-3 pb-6 font-extralight text-md ">Experience the ultimate ride-sharing solution bringing comfort, 
+                <h3 className="xl:text-md lg:text-md text-gray-300 py-3 font-extralight text-md">Experience the ultimate ride-sharing solution bringing comfort, 
                     style, and reliability to Africa. Whether commuting, traveling, 
                     or exploring, we make every journey smooth, affordable, and hassle-free. 
                     Transform the way you move, one ride at a time.</h3>

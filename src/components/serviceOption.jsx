@@ -6,7 +6,7 @@ import Switch from '@mui/material/Switch';
 import bike from './../assets/ridebike.png'
 import van from './../assets/busride.png'
 // import truck from './../assets/trucks.png'
-import {motion} from 'framer-motion'
+import {motion, AnimatePresence} from 'framer-motion'
 import { fadeIn } from '../variants'
 
 
@@ -38,19 +38,19 @@ const ServiceOption = () => {
          viewport={{once:true}}
 
         className="text-center">
-            <h3 className="md:text-5xl text-3xl font-black inter text-primary mb-2 md:tracking-wide">Explore Our Services</h3>
+            <h3 className="md:text-4xl lg:text-4xl text-3xl font-black inter text-primary mb-2 md:tracking">Explore Our Services</h3>
             <p className="md:w-[60%] w-[80%] lg:w-[40%] font-medium mx-auto px-0 md:px-4 text-gray-600">We offer a wide range of services to our riders, this brings with it the ambience and style on every trip.</p>
             <div className="mt-12 relative bg-gray-300 rounded-full w-[305px] mx-auto flex items-center justify-center">
           <div
             className={`absolute top-0 left-0 h-full w-1/2 bg-primary rounded-full transition-transform duration-300 ${
-              switchChecked ? "translate-x-0" : "translate-x-full"
+              switchChecked ? "translate-x-0 transition ease-in-out duration-300" : "transition ease-in-out duration-300 translate-x-full"
             }`}
           ></div>
           <div className="relative z-10 flex w-full">
             <button
               onClick={() => setSwitchChecked(true)}
               className={`w-1/2 text-center py-3 font-semibold transition-all duration-300 ${
-                switchChecked ? "text-white" : "text-gray-600"
+                switchChecked ? "text-white transition ease-in-out duration-300" : "text-gray-600 transition ease-in-out duration-300"
               }`}
             >
               RideSmash
@@ -58,7 +58,7 @@ const ServiceOption = () => {
             <button
               onClick={() => setSwitchChecked(false)}
               className={`w-1/2 text-center py-3 font-semibold transition-all duration-300 ${
-                !switchChecked ? "text-white" : "text-gray-600"
+                !switchChecked ? "text-white transition ease-in-out duration-500" : "text-gray-600 transition ease-in-out duration-500"
               }`}
             >
               Smash Logistic
@@ -67,12 +67,20 @@ const ServiceOption = () => {
         </div>
       </motion.div>
 
-  <div className="grid lg:grid-cols-3 gap-8 mt-16 md:w-15/12 mx-auto">
+<AnimatePresence mode="wait">
+
+  <motion.div
+  key={switchChecked ? "ride" : "logistic"}
+  initial={{ opacity: 0, x: 10 }}
+  animate={{ opacity: 1, x: 0 }}
+  exit={{ opacity: 0, x: -10 }}
+  transition={{ duration: 0.1 }}
+   className="grid lg:grid-cols-3 gap-8 mt-16 md:w-15/12 mx-auto">
   {switchChecked ? (
     <>
       {/* Left Section: Two-Column Card Stack */}
       <motion.div 
-      variants={fadeIn("right", 0.7)}
+      variants={fadeIn("right", 0.5)}
       initial="hidden"
       whileInView={"show"}
       viewport={{once:true}}
@@ -81,7 +89,7 @@ const ServiceOption = () => {
         {rideOptions.map((options, index) => (
           <div
             key={index}
-            className="border py-6 px-6 rounded-3xl shadow-3xl transition ease-in-out duration-300"
+            className="border py-6 px-6 rounded-3xl shadow-3xl"
           >
             <div className="flex items-center justify-between">
               <h3 className="text-2xl inter font-bold text-primary">{options.type}</h3>
@@ -92,9 +100,10 @@ const ServiceOption = () => {
         ))}
       </motion.div>
 
+
       {/* Right Section: Additional Content */}
       <motion.div 
-      variants={fadeIn("left", 0.7)}
+      variants={fadeIn("left", 0.5)}
       initial="hidden"
       whileInView={"show"}
       viewport={{once:true}}
@@ -114,7 +123,7 @@ const ServiceOption = () => {
     <>
       {/* Left Section: Two-Column Card Stack */}
       <motion.div 
-      variants={fadeIn("right", 0.7)}
+      variants={fadeIn("right", 0.5)}
       initial="hidden"
       whileInView={"show"}
       viewport={{once:true}}
@@ -123,7 +132,7 @@ const ServiceOption = () => {
         {deliveryOptions.map((options, index) => (
           <div
             key={index}
-            className="border py-6 px-6 rounded-3xl shadow-3xl transition ease-in-out duration-300"
+            className="border py-6 px-6 rounded-3xl shadow-3xl"
           >
             <div className="flex items-center justify-between">
               <h3 className="text-2xl inter font-bold text-primary">{options.type}</h3>
@@ -136,7 +145,7 @@ const ServiceOption = () => {
 
       {/* Right Section: Additional Content */}
       <motion.div 
-      variants={fadeIn("left", 0.7)}
+      variants={fadeIn("left", 0.5)}
       initial="hidden"
       whileInView={"show"}
       viewport={{once:true}}
@@ -154,8 +163,9 @@ const ServiceOption = () => {
       </motion.div>
     </>
   )}
-</div>
+</motion.div>
 
+</AnimatePresence>
 
         </div>
 

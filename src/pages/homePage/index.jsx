@@ -83,9 +83,10 @@ const HeroImg = {
         <WhyChooseUs/>
         
         <Earn currency = {countryInfo.countryCurrency} country = {countryInfo.countryName}/>
-        <GetDriverApp/>
-        {/* <GetApp/> */}
         <EarnDelivery currency = {countryInfo.countryCurrency} country = {countryInfo.countryName}/>
+         {/* <GetApp/> */}
+        <GetDriverApp/>
+       
         <BlogContent/>
         {/* <FaqView/> */}
        

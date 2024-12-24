@@ -8,15 +8,21 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const WhyChooseUs = () => {
   return (
-    <div className=' flex h-screen md:h-full items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 sm:py-24  xl:max-h-[598px] 2xl:rounded-5xl;'>
+    <div className='flex h-[950px] md:h-screen items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 md:py-0  xl:max-h-[598px] 2xl:rounded-5xl;'>
         <img src={background} alt='image' className='md:w-full md:h-full h-screenresizeMode:"cover"' />
-        <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12 md:px-12 absolute md:flex-col bg-white opacity-90 h-screen md:h-full md:justify-between md:items-center px-6">
+        <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-2 md:gap-12 md:px-12 absolute md:flex-col bg-white opacity-90 h-screen md:h-full md:justify-between md:items-center px-6">
            
-           <div className='flex flex-col md:flex-col gap-6 md:py-4 md:gap-3  md:relative'>
+           <div className='flex flex-col md:flex-col gap-6 md:py-8 md:gap-3  md:relative'>
 
-            <div className='flex md:items-center md:px-6 md:py-5 md:absolute md:top-4 md:left-4'><h1 className='md:text-5xl text-3xl text-gray-700 font-semibold md:font-bold roboto '>Why Choose Us</h1></div>
+            <motion.div
+            variants={fadeIn("down", 0.7)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once:true}}
 
-            <div className='flex flex-col-reverse md:flex-row-reverse gap-12 justify-center items-center md:justify-center md:items-center'>
+            className='flex md:items-center md:py-5 md:absolute md:top-4 md:left-4'><h1 className='md:text-4x text-3xl text-gray-700 font-black text-center w-[100%] md:text-left inter md:font-black roboto mb-[2rem] mt-[5rem] md:mt-[0rem] xl:mt-[2rem]'>Why Choose Us</h1></motion.div>
+
+            <div className='flex flex-col-reverse md:flex-row-reverse gap-6 justify-center items-center md:justify-center md:items-center'>
 
             
             <motion.div
@@ -27,35 +33,35 @@ const WhyChooseUs = () => {
             viewport={{once:false, amount:0.7}}
             
             
-            className=' md:w-1/3 w-full md:items-center md:justify-center'>
+            className=' md:w-1/3 w-full md:items-center py-[4rem] md:justify-center'>
                 
-                <div className='flex  md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-center '>
-                  <div className='md:w-5 md:h-5 pt-2 md:pt-2'>
+                <div className='flex md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-start'>
+                  <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
                   <FaCheckCircle size={20} color='blue' />
                   </div>  
                   
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-700 md:text-2xl'>24/7 Available</h1>
-                    <p className='text-gray-500 md:text-lg '>Ridesmash is always available to fulfil your needs whether you want a ride urgently.</p>
+                    <h1 className='text-gray-700 md:text-1xl'>24/7 Available</h1>
+                    <p className='text-gray-500 md:text-md'>Ridesmash is always available to fulfil your needs whether you want a ride urgently.</p>
                   </div>
                </div>
-               <div className='flex  md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-center'>
-                  <div className='md:w-5 md:h-5 md:pt-2 pt-2'>
+               <div className='flex  md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-start'>
+                  <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
                    <FaCheckCircle size={20} color='blue' />
                   </div>  
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-700 md:text-2xl'>User-friendly App</h1>
-                    <p className='text-gray-500 md:text-lg '>Our user-friendly app allows you to track your driver’s arrival and helps you manage your ride in your hands.</p>
+                    <h1 className='text-gray-700 md:text-1xl'>User-friendly App</h1>
+                    <p className='text-gray-500 md:text-md md:pt-[.1rem]'>Our user-friendly app allows you to track your driver’s arrival and helps you manage your ride in your hands.</p>
                   </div>
                </div>
               
-               <div className='flex md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-center '>
-                  <div className='md:w-5 md:h-5 md:pt-2'>
+               <div className='flex md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-start'>
+                  <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
                      <FaCheckCircle size={20} color='blue' />
                   </div>   
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-600 md:text-2xl'>Professional Drivers</h1>
-                    <p className='text-gray-500 md:text-lg '>Ridemash drivers are professionals with a pro-client attitude. </p>
+                    <h1 className='text-gray-600 md:text-1xl'>Professional Drivers</h1>
+                    <p className='text-gray-500 md:text-md '>Ridemash drivers are professionals with a pro-client attitude. </p>
                   </div>
                </div>
                 
@@ -81,34 +87,34 @@ const WhyChooseUs = () => {
             viewport={{once:false, amount:0.7}}
             
             
-            className=' md:w-1/3 w-full '>
+            className=' md:w-1/3 w-full'>
                 
-                <div className='flex  md:flex-row gap-4 md:items-start mb-4 items-center '>
-                  <div className='md:w-5 md:h-5 md:pt-2'>
+                <div className='flex  md:flex-row gap-4 md:items-start mb-4 items-start '>
+                  <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
                     <FaCheckCircle size={20} color='blue' />
                   </div> 
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-700 md:text-2xl'>Easy Booking</h1>
-                    <p className='text-gray-500 md:text-lg '>Booking a ride with Ridesmash is a breeze and simple process. </p>
+                    <h1 className='text-gray-700 md:text-1xl'>Easy Booking</h1>
+                    <p className='text-gray-500 md:text-md '>Booking a ride with Ridesmash is a breeze and simple process. </p>
                   </div>
                </div>
-               <div className='flex  md:flex-row gap-4 md:items-start mb-4 items-center '>
-                  <div className='md:w-5 md:h-5 md:pt-2'>
+               <div className='flex  md:flex-row gap-4 md:items-start mb-4 items-start'>
+                  <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
                     <FaCheckCircle size={20} color='blue' />
                   </div> 
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-700 md:text-2xl'>Reliable and Safe</h1>
-                    <p className='text-gray-500 md:text-lg '>Your safety is our top priority. Our drivers undergo rigorous background checks.</p>
+                    <h1 className='text-gray-700 md:text-1xl'>Reliable and Safe</h1>
+                    <p className='text-gray-500 md:text-md '>Your safety is our top priority. Our drivers undergo rigorous background checks.</p>
                   </div>
                </div>
               
-               <div className='flex  md:flex-row gap-4 md:items-start mb-4 items-center '>
-                  <div className='md:w-5 md:h-5 md:pt-2'>
+               <div className='flex  md:flex-row gap-4 md:items-start mb-4 items-start'>
+                  <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
                     <FaCheckCircle size={20} color='blue' />
                   </div> 
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-600 md:text-2xl'>Competitive Pricing</h1>
-                    <p className='text-gray-500 md:text-lg '>We believe that quality doesn’t have to come at a premium price. </p>
+                    <h1 className='text-gray-600 md:text-1xl'>Competitive Pricing</h1>
+                    <p className='text-gray-500 md:text-md '>We believe that quality doesn’t have to come at a premium price. </p>
                   </div>
                </div>
             </motion.div>
