@@ -75,7 +75,7 @@ const Footer = () => {
                 </div>
             </div>    
        
-            <div className='md:w-3/4 flex md:flex-row flex-col flex-wrap justify-between gap-3 items-start'>
+            <div className='md:w-3/4 flex md:flex-row flex-col flex-wrap justify-between gap-3 mt-[2rem] items-start'>
                 <div className='space-y-4 mt-5'>
                     <h1 className=' text--300 md:text-xl'>Company</h1>
                     <ul className='space-y-3'>
@@ -95,8 +95,6 @@ const Footer = () => {
                         <a href='/delivery' className='block hover:text-gray-300 text-gray-200'>Delivery</a>
                         <a href='/rental' className='block hover:text-gray-300 text-gray-200'>Car Rental</a>
                         <a href='/airport' className='block hover:text-gray-300 text-gray-200'>Airport Pickup</a>
-                        <a href='/food' className='block hover:text-gray-300 text-gray-200'>Smashfood</a>
-                        <a href='/smashwise' className='block hover:text-gray-300 text-gray-200'>Smashwise</a>
                         <a href='/business' className='block hover:text-gray-300 text-gray-200'>Ridesmash Business</a>
                     </ul>
                 </div>

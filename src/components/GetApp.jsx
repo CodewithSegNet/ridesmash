@@ -7,7 +7,7 @@ const GetApp = () => {
   return (
     <div className=' flex items-center text-center bg-slate-400 md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat py-12 text-white sm:flex-row sm:gap-10 sm:py-10  xl:max-h-[598px] 2xl:rounded-5xl;'>
         <img src={background} alt='image' className='md:w-full md:h-[460px] resizeMode:"cover"' />
-        <div className='absolute md:w-full w-full  h-full bg-black top-0 left-0 opacity-80 md:flex md:flex-row flex flex-col gap-3 px-3'>
+        <div className='absolute md:w-full w-full  h-full bg-black top-0 left-0 opacity-80 md:flex md:flex-row flex flex-col gap-2 px-3'>
            <div className="z-20 flex w-full flex-1 flex-col items-start text-center md:text-left justify-center gap-2 md:gap-4 md:px-12 px-6 pt-4 mt-[3rem] md:mt[0]">
               <h2 className="text-[40px] font-[900] text-center md:text-left leading-[100%] inter w-[100%] text-xl tracking-wide md:text-[40px] md:font-[900] md:leading-[100%] xl:w-[500px]"> Get RideSmash App free now!</h2>
               <p className="text-[16px] font-[400] w-[100%] text-gray-10 pb-3 md:pb-4 ">Available on ios and Android</p>

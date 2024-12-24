@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom'
 
 const BlogContent = () => {
   return (
-    <div className="flex md:px-28 px-4 py-3 md:py-6 md:h-screen md:bg-blue-100 md:justify-center md:items-center md:w-full ">
+    <div className="flex md:px-28 px-4 pb-[4rem] xl:pb-[5rem] xl:pt-[4rem] md:py-6 md:h-screen md:bg-blue-100 md:justify-center md:items-center md:w-full ">
 
        
 
         <div className="flex flex-col md:flex-col gap-3 md:gap-0">
 
-        <div className="flex md:w-full md:p-6 md:items-center items-start md:justify-center flex-col">
-            <h3 className="text-4xl md:text-6xl text-primary font-bold mb-3 roboto">Blogs</h3>
-            <p className="text-base text-tertiary md:text-lg">Latest news and Information on Ridesmash activities, engage. </p>
+        <div className="flex pt-[4rem] pb-[1.5rem] md:w-full md:p-6 md:items-center items-start md:justify-center flex-col">
+            <h3 className="text-4xl md:text-6xl text-primary text-center w-[100%] font-bold mb-3 roboto">Blogs</h3>
+            <p className="text-base text-tertiary w-[100%] text-center md:text-lg">Latest news and Information on Ridesmash activities, engage. </p>
         </div>
 
          

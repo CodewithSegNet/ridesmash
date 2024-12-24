@@ -56,8 +56,8 @@ console.log( 'output:', output)
                     viewport={{once:false, amount:0.7}}
             
             className=' md:w-2/5'>
-                <h1 className='md:text-4xl text-3xl font-bold text-gray-600 mb-5 leading-normal roboto'>Earning {currency}{currency === "GHS" ? "5,715" : "400,000"} Monthly Guaranteed,<span className='md:text-4xl text-3xl font-bold text-gray-500'>With Ridesmash Expert.</span></h1>
-                <p className='text-gray-400 text-lg mb-7'>We guide our drivers through expert procedures and training to earn as much as {currency}{currency === "GHS" ? "5,715" : "400,000"} monthly, Our driving process is reliable and beneficial. </p>
+                <h1 className='md:text-4xl text-3xl font-bold text-gray-600 mb-5  leading-tight lg:leading-normal roboto'>Earning {currency}{currency === "GHS" ? "5,715" : "400,000"} Monthly Guaranteed,<span className='md:text-4xl text-3xl font-bold text-gray-500'>With Ridesmash Expert.</span></h1>
+                <p className='text-gray-400 text-lg mb-7'>We guide our drivers throughexpert procedures and training to earn as much as {currency}{currency === "GHS" ? "5,715" : "400,000"} monthly, Our driving process is reliable and beneficial. </p>
                 <button className='bg-secondary text-black py-2 px-6 rounded hover:text-white hover:bg-primary text-xl'>Learn More</button>
             </motion.div>
 

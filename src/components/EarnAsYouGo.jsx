@@ -25,7 +25,7 @@ const EarnAsYouGo = () => {
                     viewport={{once:false, amount:0.7}}
             
             className=' md:w-2/5'>
-                <h1 className='md:text-4xl text-3xl font-bold text-gray-600 mb-5 leading-normal roboto'>Earn <span className='md:text-4xl text-3xl font-bold text-gray-500'>As You Go</span></h1>
+                <h1 className='md:text-4xl text-3xl font-bold text-gray-600 mb-5  leading-tight lg:leading-normal roboto'>Earn <span className='md:text-4xl text-3xl font-bold text-gray-500'>As You Go</span></h1>
                 <p className='text-gray-400 text-lg mb-7'>Our partners earn money as they go on this package.</p>
                 <button className='bg-secondary text-black py-2 px-6 rounded hover:text-white hover:bg-primary text-xl'>Learn More</button>
             </motion.div>

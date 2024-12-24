@@ -38,6 +38,7 @@ const Navbar = () => {
       submenu: [
       { link: "Drive & Earn", path: "" },
       { link: "Fleets Management", path: "" },
+      { link: "Ridesmash Business", path: "" },
       { link: "Franchise Partner", path: "" },
 
 
