@@ -19,10 +19,10 @@ const EarnAsYouGo = () => {
             </div>
             <motion.div
             
-            variants={fadeIn("down", 0.7)}
+            variants={fadeIn("down", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{once:false, amount:0.7}}
+                    viewport={{once:false, amount:0.2}}
             
             className=' md:w-2/5'>
                 <h1 className='md:text-4xl text-3xl font-bold text-gray-600 mb-5  leading-tight lg:leading-normal roboto'>Earn <span className='md:text-4xl text-3xl font-bold text-gray-500'>As You Go</span></h1>

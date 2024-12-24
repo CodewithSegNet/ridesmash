@@ -51,10 +51,10 @@ console.log( 'output:', output)
             </div>
             <motion.div
             
-            variants={fadeIn("down", 0.7)}
+            variants={fadeIn("down", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{once:false, amount:0.7}}
+                    viewport={{once:false, amount:0.2}}
             
             className=' md:w-2/5'>
                 <h1 className='md:text-3xl xl:text-4xl text-3xl font-black inter text-gray-400 mb-5 leading-tight lg:leading-normal'>Earning {currency}{currency === "GHS" ? "5,715" : "400,000.00"} Monthly Guaranteed,<span className='md:text-3xl xl:text-4xl text-3xl font-bold text-secondary'>With 2.5% rebate on weekly basis.</span></h1>

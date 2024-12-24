@@ -32,7 +32,7 @@ const ServiceOption = () => {
   return (
     <div className="md:px-14 p-4 max-w-screen-2xl mx-auto md:py-20 py-8">
         <motion.div
-         variants={fadeIn("down", 0.4)}
+         variants={fadeIn("down", 0.3)}
          initial="hidden"
          whileInView={"show"}
          viewport={{once:true}}
@@ -80,7 +80,7 @@ const ServiceOption = () => {
     <>
       {/* Left Section: Two-Column Card Stack */}
       <motion.div 
-      variants={fadeIn("right", 0.4)}
+      variants={fadeIn("right", 0.2)}
       initial="hidden"
       whileInView={"show"}
       viewport={{once:true}}
@@ -103,7 +103,7 @@ const ServiceOption = () => {
 
       {/* Right Section: Additional Content */}
       <motion.div 
-      variants={fadeIn("left", 0.4)}
+      variants={fadeIn("left", 0.2)}
       initial="hidden"
       whileInView={"show"}
       viewport={{once:true}}
@@ -123,7 +123,7 @@ const ServiceOption = () => {
     <>
       {/* Left Section: Two-Column Card Stack */}
       <motion.div 
-      variants={fadeIn("right", 0.4)}
+      variants={fadeIn("right", 0.2)}
       initial="hidden"
       whileInView={"show"}
       viewport={{once:true}}
@@ -145,7 +145,7 @@ const ServiceOption = () => {
 
       {/* Right Section: Additional Content */}
       <motion.div 
-      variants={fadeIn("left", 0.4)}
+      variants={fadeIn("left", 0.2)}
       initial="hidden"
       whileInView={"show"}
       viewport={{once:true}}

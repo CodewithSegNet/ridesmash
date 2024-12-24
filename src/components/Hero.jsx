@@ -8,7 +8,7 @@ import { BiTaxi, BiDownload } from "react-icons/bi";
 import banner from "./../assets/Ridesmash-brand.png"
 const Hero = () => {
   return (
-    <div className="flex md:px-14 p-4 max-w-screen-2xl mx-auto mt-8 md:mt-5 xl:mt-8 md:h-[400px]">
+    <div className="flex md:px-14 p-4 max-w-screen-2xl mx-auto mt-16 md:mt-5 xl:mt-8 md:h-[400px]">
         
         <div className="flex md:flex-row flex-col w-[100%] md:items-center">
             <motion.div 
