@@ -17,7 +17,7 @@ const GetApp = () => {
                     type="button"
                     title="Play store"
                     icon={android}
-                    variant="border-gray-20 bg-green-90 px-6 py-5 text-white"
+                    variant="border-gray-20 bg-green-90 py-3 px-4 text-sm md:text-md md:px-6 md:py-5 text-white"
                     full
                     color ="text-white"
                     
@@ -26,7 +26,7 @@ const GetApp = () => {
                     type="button"
                     title="Apple store"
                     icon={apple}
-                    variant="border-white bg-white px-6 py-5 text-primary"
+                    variant="border-white bg-white py-3 px-4 text-sm md:text-md md:px-6 md:py-5 text-primary"
                     full
                     color = "text-primary-600"
                   />
