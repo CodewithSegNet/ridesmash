@@ -12,10 +12,10 @@ const Hero = () => {
         
         <div className="flex md:flex-row flex-col w-[100%] md:items-center">
             <motion.div 
-                variants={fadeIn("up", 0.7)}
+                variants={fadeIn("up", 0.4)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{once:false, amount:0.7}}
+                viewport={{once:false, amount:0.4}}
                 
                 className="sm:w-3/4 md:w-3/4 lg:w-3/5 xl:w-2/4 w-full flex flex-col md:mt-0 lg:mt-0 mt-3">
                 <h1 className="xl:text-5xl lg:text-4xl text-4xl text-white font-black inter tracking leading-[1.5] " style={{ lineHeight: '1.2' }}>Ride in Style<span className='font-euclid font-black p-0 m-0'>,</span></h1>

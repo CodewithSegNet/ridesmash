@@ -15,10 +15,10 @@ const EarnDelivery = ({currency, country}) => {
             </div>
             <motion.div
             
-            variants={fadeIn("right", 0.7)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:false, amount:0.4}}
             
             
             className=' md:w-2/5'>
