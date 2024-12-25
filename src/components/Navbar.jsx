@@ -69,9 +69,17 @@ const Navbar = () => {
   const [openSubmenuIndex, setOpenSubmenuIndex] = useState(null);
 
   const handleDropdownToggle = (index) => {
-    setOpenSubmenuIndex(openSubmenuIndex === index ? null : index);
-  };
+    if (openSubmenuIndex !== null && openSubmenuIndex !== index) {
 
+      setOpenSubmenuIndex(null);
+  
+      setTimeout(() => {
+        setOpenSubmenuIndex(index);
+      }, 500);
+    } else {
+      setOpenSubmenuIndex(openSubmenuIndex === index ? null : index);
+    }
+  };
   const handleMouseEnter = (index) => {
     if (window.innerWidth >= 1024) {
       setOpenSubmenuIndex(index);
@@ -173,7 +181,7 @@ const Navbar = () => {
        index === 0 ? "justify-start" : ""
      }`}
    >
-      <div className="flex hover:text-gray-200 text-white items-center hover:text-secondary transition-all duration-300">
+      <div className="flex hover:text-gray-200 text-white items-center hover:text-secondary transition-all duration-300 justify-center md:justify-start">
         <a href={path} className="block py-1 text-2xl font-bold"> 
 
           {link}
@@ -198,6 +206,10 @@ const Navbar = () => {
       ? "opacity-100 visible max-h-96"
       : "opacity-0 invisible max-h-0"
   } md:visible md:opacity-100 md:max-h-96`}
+
+  style={{
+    transition: `max-height 0.5s ease-in-out, opacity 0.3s ease-in-out`,
+  }}
 >      
         {submenu && (
           <div className="space-y-2 transition-all duration-500 ease-in">
