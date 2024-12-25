@@ -35,6 +35,7 @@ import FaqPage from './pages/faqPage';
 import PrivacyPage from './pages/privacyPage';
 import TermsAndConditionsPage from './pages/termsAndConditionsPage';
 import BlogSingle from './pages/blogSinglePage';
+import ScrollToTopButton from './components/ScrollToTopButton'; 
 
 function App() {
 
@@ -101,7 +102,6 @@ function App() {
                 :
 
               <HomePage user={currentUser}/>
-
             
 
             }
@@ -143,6 +143,7 @@ function App() {
 
           </Route>
         </Routes>
+        {!isLoading && <ScrollToTopButton />}
         </BrowserRouter>
       
       {/* } */}

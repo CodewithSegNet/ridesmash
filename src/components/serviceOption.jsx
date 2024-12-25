@@ -53,7 +53,7 @@ const ServiceOption = () => {
                 switchChecked ? "text-white transition ease-in-out duration-300" : "text-gray-600 transition ease-in-out duration-300"
               }`}
             >
-              RideSmash
+              Ridesmash
             </button>
             <button
               onClick={() => setSwitchChecked(false)}
@@ -111,9 +111,9 @@ const ServiceOption = () => {
       className="lg:py-16 md:py-0 py-0 flex order-first lg:order-none">
         <div>
         <h3 className="text-3xl px-4 lg:px-0 lg:text-4xl md:text-4xl text-left inter font-black tracking text-primary">
-        Reliable Services For Every Occasion
+        Reliable Solutions For Every Occasion
                 </h3>
-        <p className="text-gray-600 px-4 lg:px-0 font-medium mt-4 roboto text-left">
+        <p className="text-gray-600 px-4 lg:px-0 font-normal mt-4 roboto text-left">
         Explore a variety of options, from affordable rides to executive transport, offering comfort and efficiency for all your needs.
                 </p>
         </div>
@@ -153,9 +153,9 @@ const ServiceOption = () => {
       className="lg:py-16 md:py-0 py-0 flex order-first lg:order-none">
         <div>
         <h3 className="text-3xl px-4 lg:px-0 lg:text-4xl md:text-4xl text-left inter font-black tracking text-primary">
-        Efficient Delivery Services
-        </h3>
-       <p className="text-gray-600 px-4 lg:px-0 font-medium mt-4 roboto text-left">
+        Efficient Delivery Options
+                </h3>
+       <p className="text-gray-600 px-4 lg:px-0 font-normal mt-4 roboto text-left">
         From affordable bikes to spacious vans, we ensure fast, secure, and efficient delivery to any destination.
         </p>
         </div>

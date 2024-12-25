@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
             whileInView={"show"}
             viewport={{once:true}}
 
-            className='flex md:items-center md:py-5 md:absolute md:top-4 md:left-4'><h1 className='md:text-4x text-3xl text-gray-700 font-black text-center w-[100%] md:text-left inter md:font-black roboto mb-[2rem] mt-[5rem] md:mt-[0rem] xl:mt-[2rem]'>Why Choose Us</h1></motion.div>
+            className='flex md:items-center text-primary md:py-5 md:absolute md:top-4 md:left-4'><h1 className='md:text-4x text-3xl font-black text-center w-[100%] md:text-left inter md:font-black roboto mb-[2rem] mt-[5rem] md:mt-[0rem] xl:mt-[2rem]'>Why Choose Us</h1></motion.div>
 
             <div className='flex flex-col-reverse md:flex-row-reverse gap-6 justify-center items-center md:justify-center md:items-center'>
 
@@ -30,14 +30,14 @@ const WhyChooseUs = () => {
             variants={fadeIn("left", 0.7)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:true}}
             
             
             className=' md:w-1/3 w-full md:items-center py-[4rem] md:justify-center'>
                 
                 <div className='flex md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-start'>
                   <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
-                  <FaCheckCircle size={20} color='blue' />
+                  <FaCheckCircle size={17} color='blue' />
                   </div>  
                   
                   <div className='flex flex-col gap-3'>
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
                </div>
                <div className='flex  md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-start'>
                   <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
-                   <FaCheckCircle size={20} color='blue' />
+                   <FaCheckCircle size={17} color='blue' />
                   </div>  
                   <div className='flex flex-col gap-3'>
                     <h1 className='text-gray-700 md:text-1xl'>User-friendly App</h1>
@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
               
                <div className='flex md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-start'>
                   <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
-                     <FaCheckCircle size={20} color='blue' />
+                     <FaCheckCircle size={17} color='blue' />
                   </div>   
                   <div className='flex flex-col gap-3'>
                     <h1 className='text-gray-600 md:text-1xl'>Professional Drivers</h1>
@@ -84,14 +84,14 @@ const WhyChooseUs = () => {
             variants={fadeIn("right", 0.7)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:true}}
             
             
             className=' md:w-1/3 w-full'>
                 
                 <div className='flex  md:flex-row gap-4 md:items-start mb-4 items-start '>
                   <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
-                    <FaCheckCircle size={20} color='blue' />
+                    <FaCheckCircle size={17} color='blue' />
                   </div> 
                   <div className='flex flex-col gap-3'>
                     <h1 className='text-gray-700 md:text-1xl'>Easy Booking</h1>
@@ -100,7 +100,7 @@ const WhyChooseUs = () => {
                </div>
                <div className='flex  md:flex-row gap-4 md:items-start mb-4 items-start'>
                   <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
-                    <FaCheckCircle size={20} color='blue' />
+                    <FaCheckCircle size={17} color='blue' />
                   </div> 
                   <div className='flex flex-col gap-3'>
                     <h1 className='text-gray-700 md:text-1xl'>Reliable and Safe</h1>
@@ -110,7 +110,7 @@ const WhyChooseUs = () => {
               
                <div className='flex  md:flex-row gap-4 md:items-start mb-4 items-start'>
                   <div className='md:w-5 md:h-5 md:pt-[.1rem]'>
-                    <FaCheckCircle size={20} color='blue' />
+                    <FaCheckCircle size={17} color='blue' />
                   </div> 
                   <div className='flex flex-col gap-3'>
                     <h1 className='text-gray-600 md:text-1xl'>Competitive Pricing</h1>

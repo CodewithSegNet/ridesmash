@@ -48,11 +48,10 @@ const Footer = () => {
 
             <div className='flex flex-col gap-2'>
                 <div className=" md:w-full flex flex-col gap-2">
-                    <a href="/" className='flex md:justify-start'>
-                        <img src={logo} alt='' className='w-[80px] h-[80px]'/>
+                    <a href="/" className='flex md:justify-start '>
+                        <img src={logo} alt='' className='w-[60px] h-[60px]'/>
                     </a>
-                    <p className='md:w-1/2 text-base font-extralight text-gray-300'>Ridesmash Technology operates an e-hailing, delivery services accross cities in africa.</p>
-
+                    <p className='md:w-1/2 text-base font-extralight text-gray-300'>Ridesmash Technology provides reliable e-hailing and delivery services, connecting cities across Africa with efficiency and convenience.</p>
                     
                 </div>
                 <div className='flex flex-col h-6 mb-6 md:mb-0'>
@@ -79,41 +78,40 @@ const Footer = () => {
                 <div className='space-y-4 mt-5'>
                     <h1 className=' text--300 md:text-xl'>Company</h1>
                     <ul className='space-y-3'>
-                        <a href='/about' className='block hover:text-gray-300 text-gray-200'>About Us</a>
-                        <a href='/services' className='block hover:text-gray-300 text-gray-200'>Services</a>
-                        <a href='/driveAndEarn' className='block hover:text-gray-300 text-gray-200'>Earn</a>
-                        <a href='/safety' className='block hover:text-gray-300 text-gray-200'>Safety</a>
-                        <a href='/press' className='block hover:text-gray-300 text-gray-200'>Press Release</a>
-                        <a href='/blog' className='block hover:text-gray-300 text-gray-200'>Blog</a>
-                        <a href='/faq' className='block hover:text-gray-300 text-gray-200'>FAQ</a>
+                        <a href='/about' className='block hover:text-secondary text-gray-200'>About Us</a>
+                        <a href='/services' className='block hover:text-secondary text-gray-200'>Services</a>
+                        <a href='/driveAndEarn' className='block hover:text-secondary  text-gray-200'>Earn</a>
+                        <a href='/safety' className='block hover:text-secondary text-gray-200'>Safety</a>
+                        <a href='/press' className='block hover:text-secondary text-gray-200'>Press Release</a>
+                        <a href='/blog' className='block hover:text-secondary text-gray-200'>Blog</a>
+                        <a href='/faq' className='block hover:text-secondary text-gray-200'>FAQ</a>
                     </ul>
                 </div>
                 <div className='space-y-4 mt-5'>
                     <h1 className=' text--300 md:text-xl'>Services</h1>
                     <ul className='space-y-3'>
-                        <a href='/ride' className='block hover:text-gray-300 text-gray-200'>Ride</a>
-                        <a href='/delivery' className='block hover:text-gray-300 text-gray-200'>Delivery</a>
-                        <a href='/rental' className='block hover:text-gray-300 text-gray-200'>Car Rental</a>
-                        <a href='/airport' className='block hover:text-gray-300 text-gray-200'>Airport Pickup</a>
-                        <a href='/business' className='block hover:text-gray-300 text-gray-200'>Ridesmash Business</a>
+                        <a href='/ride' className='block hover:text-secondary text-gray-200'>Ride</a>
+                        <a href='/delivery' className='block hover:text-secondary text-gray-200'>Delivery</a>
+                        <a href='/rental' className='block hover:text-secondary text-gray-200'>Car Rental</a>
+                        <a href='/airport' className='block hover:text-secondary text-gray-200'>Airport Pickup</a>
+                        <a href='/business' className='block hover:text-secondary text-gray-200'>Ridesmash Business</a>
                     </ul>
                 </div>
                 <div className='flex md:flex-col gap-2'>
                 <div className='space-y-4 mt-5'>
                     <h4 className='text--300 md:text-xl'>Partnership</h4>
                     <ul className='space-y-3'>
-                        <a href='/driveAndEarn' className='block hover:text-gray-300 text-gray-200'>Drive and Earn</a>
-                        <a href='/fleets' className='block hover:text-gray-300 text-gray-200'>Fleets Management </a>
-                        <a href='/franchise' className='block hover:text-gray-300 text-gray-200'>Franchise Partner</a>
+                        <a href='/driveAndEarn' className='block hover:text-secondary text-gray-200'>Drive and Earn</a>
+                        <a href='/fleets' className='block hover:text-secondary text-gray-200'>Fleets Management </a>
+                        <a href='/franchise' className='block hover:text-secondary text-gray-200'>Franchise Partner</a>
                         
                     </ul>
                 </div>
                 <div className='space-y-4 mt-5'>
                     <h4 className='text--300 md:text-xl'>Countries</h4>
                     <ul className='space-y-3'>
-                        <h3 className='block text-gray-200'>Nigeria</h3>
-                        <h3 href='/' className='block text-gray-200'>Ghana </h3>
-                        <h3 href='/' className='block text-gray-200'>Others...</h3>
+                        <h3 className='block hover:text-secondary text-gray-200'>Nigeria</h3>
+                        <h3 href='/' className='block hover:text-secondary text-gray-200'>Others...</h3>
                     </ul>
                 </div>
                 </div>
