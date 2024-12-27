@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
 import HomePage from './pages/homePage'
-import ServicesPage from './pages/servicesPage/index.jsx';
+import ServicesPage from './pages/servicesPage';
 import AboutUsPage from './pages/aboutUsPage';
 import ContactUsPage from './pages/contactUsPage';
 import LoginPage from './pages/loginPage';
@@ -116,7 +116,7 @@ function App() {
             <Route path="booking" element={<BookingPage/>}/>
             <Route path="support" element={<SupportPage/>}/>
             <Route path="food" element={<SmashFoodPage/>}/>
-            <Route path="/ride" element={<RidePage/>}/>
+            <Route path="ride" element={<RidePage/>}/>
             <Route path="delivery" element={<DeliveryPage/>}/>
             <Route path="rental" element={<RentalPage/>}/>
             <Route path="airport" element={<AirportPage/>}/>
