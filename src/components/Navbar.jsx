@@ -11,9 +11,9 @@ const Navbar = () => {
   const navItems = [
     // {link : "Home", path : "/"},
     // {link : "About Us", path : "about"},
-    {link : "Services ", path : "services", icon: <BiChevronDown />,
+    {link : "Services ", path : "/services", icon: <BiChevronDown />,
       submenu: [
-        { link: "Ride Hailing", path: "ride" },
+        { link: "Ride Hailing", path: "/ride" },
         { link: "Delivery", path: "delivery" },
         { link: "Car Rental", path: "rental" },
         { link: "Airport Pickup", path: "airport" },
