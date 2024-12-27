@@ -48,8 +48,8 @@ const Footer = () => {
 
             <div className='flex flex-col gap-2'>
                 <div className=" md:w-full flex flex-col gap-2">
-                    <a href="/" className='flex md:justify-start '>
-                        <img src={logo} alt='' className='w-[60px] h-[60px]'/>
+                    <a href="/" className='flex md:justify-start'>
+                        <img src={logo} alt='' className='w-[45px] h-[45px]'/>
                     </a>
                     <p className='md:w-1/2 text-base font-extralight text-gray-300'>Ridesmash Technology provides reliable e-hailing and delivery services, connecting cities across Africa with efficiency and convenience.</p>
                     

@@ -110,9 +110,9 @@ const Navbar = () => {
           <div className="flex items-center space-x-14 justify-between w-[100%] md:pb-3 sm:pb-0">
             <a
               href="/"
-              className="bg-secondary w-[60px] h-[60px] items-center justify-center flex rounded-xl"
+              className="bg-secondary w-[45px] h-[45px]  items-center justify-center flex rounded-md"
             >
-              <img src={logo} alt="" className="w-[40px] h-[40px]" />
+              <img src={logo} alt="" className="w-[30px] h-[30px]" />
             </a>
             <div className='md:flex hidden items-center space-x-7'>
             <div className='flex items-center gap-1 text-white hover:text-secondary  transition-all duration-300'>
@@ -170,14 +170,14 @@ const Navbar = () => {
 
           <div style={{background: "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 92, 186, 1))",
           margin: "0 auto"
-  }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl pb-[6rem] md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center md:flex-row md:text-left lg:flex-row z-10 h-[90vh] lg:h-[400px] overflow-hidden
-    ${isMenuOpened ? "opacity-100 translate-y-0 visible pointer-events-auto" : "opacity-0 -translate-y-5 invisible pointer-events-none"} 
+  }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl z-40  md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center md:flex-row md:text-left lg:flex-row h-[90vh] lg:h-[400px] overflow-hidden
+    ${isMenuOpened ? "opacity-100 translate-y-0 visible pointer-events-auto z-40" : "opacity-0 -translate-y-5 invisible pointer-events-none z-40"} 
     transition-all duration-500 ease-in-out`}
 >
          {navItems.map(({ link, path, icon, submenu }, index) => (
      <div
      key={link}
-     className={`px-0 lg:px-14 space-y-2 mx-auto text-center md:text-left w-[100%] px-4  ${
+     className={`px-0 lg:px-14 space-y-2 mx-auto text-center md:text-left w-[100%] px-4 z-40 ${
        index === 0 ? "justify-start mt-[1rem]" : ""
      }`}
    >
