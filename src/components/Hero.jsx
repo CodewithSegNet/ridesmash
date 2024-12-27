@@ -21,7 +21,7 @@ const Hero = () => {
                 <h1 className="xl:text-5xl lg:text-4xl text-4xl text-white font-black inter tracking leading-[1.5] " style={{ lineHeight: '1.2' }}>Ride in Style<span className='font-euclid font-black p-0 m-0'>,</span></h1>
                 <h1  className="xl:text-5xl lg:text-4xl md:text-4xl text-4xl text-white font-black inter tracking">Ride in Comfort</h1>
                 {/* <h3 className="text-xl text-gray-300 py-3 font-extralight">We keep lives transformed.</h3> */}
-                <h3 className="xl:text-md lg:text-md text-gray-300 py-3 font-extralight text-md">Experience the ultimate ride-sharing solution bringing comfort, 
+                <h3 className="xl:text-md lg:text-md text-gray-300 py-3 font-extralight text-lg">Experience the ultimate ride-sharing solution bringing comfort, 
                     style, and reliability to Africa. Whether commuting, traveling, 
                     or exploring, we make every journey smooth, affordable, and hassle-free. 
                     Transform the way you move, one ride at a time.</h3>

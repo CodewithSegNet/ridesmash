@@ -39,7 +39,7 @@ const ServiceOption = () => {
 
         className="text-center">
             <h3 className="md:text-4xl lg:text-4xl text-3xl font-black inter text-primary mb-2 md:tracking">Explore Our Services</h3>
-            <p className="md:w-[60%] w-[80%] lg:w-[40%] font-medium mx-auto px-0 md:px-4 text-gray-600">We offer a wide range of services to our riders, this brings with it the ambience and style on every trip.</p>
+            <p className="md:w-[60%] w-[80%] lg:w-[40%] font-medium text-md mx-auto px-0 md:px-4 text-gray-600">We offer a wide range of services to our riders, this brings with it the ambience and style on every trip.</p>
             <div className="mt-12 relative bg-gray-300 rounded-full w-[305px] mx-auto flex items-center justify-center">
           <div
             className={`absolute top-0 left-0 h-full w-1/2 bg-primary rounded-full transition-transform duration-300 ${
@@ -113,7 +113,7 @@ const ServiceOption = () => {
         <h3 className="text-3xl px-4 lg:px-0 lg:text-4xl md:text-4xl text-left inter font-black tracking text-primary">
         Reliable Solutions For Every Occasion
                 </h3>
-        <p className="text-gray-600 px-4 lg:px-0 font-normal mt-4 roboto text-left">
+        <p className="text-gray-600 px-4 lg:px-0 text-md font-normal mt-4 roboto text-left">
         Explore a variety of options, from affordable rides to executive transport, offering comfort and efficiency for all your needs.
                 </p>
         </div>

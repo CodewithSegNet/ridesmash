@@ -159,7 +159,7 @@ const Navbar = () => {
              <div className='md:hidden transition-all duration-300 flex'>
                 <button onClick={toggle} className='transition-all duration-300'>
                     {
-                      isMenuOpened ? (<FaXmark className='text-4xl transition-all duration-300'/>) : (<FaBars className='text-4xl transition-all duration-300'/>)
+                      isMenuOpened ? (<FaXmark className='text-2xl transition-all duration-300'/>) : (<FaBars className='text-2xl transition-all duration-300'/>)
                     }
                 </button>
              </div>
@@ -170,26 +170,26 @@ const Navbar = () => {
 
           <div style={{background: "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 92, 186, 1))",
           margin: "0 auto"
-  }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl pb-[6rem] md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center justify-evenly md:flex-row md:text-left lg:flex-row gap-3 z-10 h-[90vh] lg:h-[400px] overflow-hidden
+  }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl pb-[6rem] md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center md:flex-row md:text-left lg:flex-row z-10 h-[90vh] lg:h-[400px] overflow-hidden
     ${isMenuOpened ? "opacity-100 translate-y-0 visible pointer-events-auto" : "opacity-0 -translate-y-5 invisible pointer-events-none"} 
     transition-all duration-500 ease-in-out`}
 >
          {navItems.map(({ link, path, icon, submenu }, index) => (
      <div
      key={link}
-     className={`px-0 lg:px-14 mt-4 space-y-2 mx-auto text-center md:text-left ${
-       index === 0 ? "justify-start" : ""
+     className={`px-0 lg:px-14 space-y-2 mx-auto text-center md:text-left w-[100%] px-4  ${
+       index === 0 ? "justify-start mt-[1rem]" : ""
      }`}
    >
-      <div className="flex hover:text-gray-200 text-white items-center hover:text-secondary transition-all duration-300 justify-center md:justify-start">
-        <a href={path} className="block py-1 text-2xl font-bold"> 
+      <div className="flex hover:text-gray-200 text-white items-center w-[100%]  mt-5 justify-between hover:text-secondary transition-all duration-300 justify-center md:justify-start">
+        <a href={path} className="block py-1 text-md font-bold"> 
 
           {link}
         </a>
         {icon && (
           
           <span
-            className="cursor-pointer md:hidden text-4xl focus:outline-none"
+            className="cursor-pointer md:hidden text-3xl focus:outline-none"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
             onClick={() => handleDropdownToggle(index)}
@@ -217,7 +217,7 @@ const Navbar = () => {
               <a
                 key={link}
                 href={path}
-                className="block py-2 hover:rounded-md transition-all duration-500 text-white hover:text-secondary"
+                className="block text-left text-sm py-2 hover:rounded-md transition-all duration-500 text-white hover:text-secondary"
               >
                 {link}
               </a>
