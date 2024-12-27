@@ -8,8 +8,8 @@ const ServiceBusiness = () => {
 
 
   return (
-    <div className="flex md:px-14 p-4 md:h-screen mx-auto my-24 md:my-0 md:items-center md:justify-center bg-black">
-        <div className="flex md:flex-row flex-col justify-between md:items-center gap-8">
+    <div className="flex  md:px-14 p-4 md:h-screen mx-auto my-24 md:my-0 md:items-center md:justify-center bg-black">
+        <div className="flex max-w-screen-2xl mx-auto md:flex-row flex-col justify-between md:items-center gap-8">
            
             <div className=" md:w-1/2">
                 {/* <div className='w-[100%] h-[100%] bg-primary'>

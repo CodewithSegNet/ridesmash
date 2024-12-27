@@ -6,7 +6,7 @@ import { FaSquare } from "react-icons/fa6";
 
 const ServiceCarRental = () => {
   return (
-    <div className=' flex h-screen w-full items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white flex-row md:gap-12 gap-2 md:py-24 py-2  xl:max-h-[598px] 2xl:rounded-5xl;'>
+    <div className=' flex h-screen w-full items-center max-w-screen-2xl mx-auto md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white flex-row md:gap-12 gap-2 md:py-24 py-2  xl:max-h-[598px] 2xl:rounded-5xl;'>
         <img src={background} alt='image' className='md:w-full md:h-full h-screen resizeMode:"cover"' />
         <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12 md:px-12 absolute md:flex-row-reverse bg-white opacity-90 h-screen md:h-full md:justify-between md:items-center px-3">
            

@@ -7,7 +7,7 @@ const ServiceBusiness2 = ({currency, country}) => {
 
   return (
     <div className="flex md:px-1 p-4 md:h-screen my-6 md:my-0 bg-white">
-        <div className="flex md:flex-row flex-col gap-6 md:gap-8 md:px-12">
+        <div className="flex md:flex-row max-w-screen-2xl mx-auto flex-col gap-6 md:gap-8 md:px-12">
            
            
             <motion.div

@@ -40,6 +40,7 @@ const ScrollToTopButton = () => {
           borderRadius: '20%',
           border: 'none',
           fontSize: '18px',
+          fontWeight: 'bolder',
           cursor: 'pointer',
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
         }}
