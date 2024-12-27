@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
 import HomePage from './pages/homePage'
-import ServicesPage from './pages/servicesPage';
+import ServicesPage from './pages/servicesPage/index.jsx';
 import AboutUsPage from './pages/aboutUsPage';
 import ContactUsPage from './pages/contactUsPage';
 import LoginPage from './pages/loginPage';
