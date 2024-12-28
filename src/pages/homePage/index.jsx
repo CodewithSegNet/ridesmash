@@ -4,6 +4,7 @@ import Features from "../../components/Features"
 import Footer from "../../components/Footer"
 import Hero from "../../components/Hero"
 import Navbar from "../../components/Navbar"
+import OurServices from "../../components/OurServices"
 import Socials from "../../components/Socials"
 import {useEffect, useState} from 'react'
 import axios from 'axios'
@@ -77,7 +78,7 @@ const HeroImg = {
         {/*<AboutBackGround/>*/}
         <Hero/> 
       </div>
-        <ServiceOption/>
+        <OurServices/>
         <GetApp/>
         {/* <Features/> */}
         <WhyChooseUs/>
@@ -86,8 +87,8 @@ const HeroImg = {
         <EarnDelivery currency = {countryInfo.countryCurrency} country = {countryInfo.countryName}/>
          {/* <GetApp/> */}
         <GetDriverApp/>
-       
-        <BlogContent/>
+{/*        
+        <BlogContent/> */}
         {/* <FaqView/> */}
        
         <Footer/>
