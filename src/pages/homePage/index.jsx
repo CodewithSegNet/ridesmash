@@ -81,6 +81,7 @@ const HeroImg = {
         <OurServices/>
         <GetApp/>
         {/* <Features/> */}
+        <ServiceOption />
         <WhyChooseUs/>
         
         <Earn currency = {countryInfo.countryCurrency} country = {countryInfo.countryName}/>

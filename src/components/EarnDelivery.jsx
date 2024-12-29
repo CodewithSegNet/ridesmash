@@ -4,7 +4,7 @@ import { fadeIn } from '../variants'
 
 const EarnDelivery = ({currency, country}) => {
   return (
-    <div className="flex md:px-14 py-[2rem] md:py[0] px-6 md:h-screen h-full mx-auto  md:my-0 md:items-center md:justify-center bg-black">
+    <div className="flex md:px-14 py-[2rem] md:py[0] px-6 mx-auto md:py-[4rem] md:my-0 md:items-center md:justify-center bg-black">
         <div className="flex md:flex-row-reverse flex-col justify-between md:items-center gap-8">
            
             <motion.div
