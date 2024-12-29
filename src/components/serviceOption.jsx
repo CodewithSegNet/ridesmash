@@ -38,7 +38,7 @@ const ServiceOption = () => {
          viewport={{once:true}}
 
         className="text-center">
-            <h3 className="md:text-4xl lg:text-4xl text-3xl font-black inter text-primary mb-2 md:tracking">Rides or Deliveries, We've Got You Covered</h3>
+            <h3 className="md:text-4xl lg:text-4xl text-3xl font-black inter text-primary mb-2 md:tracking">Rides or Deliveries<span className='font-euclid font-black p-0 m-0'>,</span> We've Got You Covered</h3>
             <div className="mt-8 relative bg-gray-200 rounded-full w-[305px] mx-auto flex items-center justify-center">
           <div
             className={`absolute top-0 left-0 h-full w-1/2 bg-primary rounded-full transition-transform duration-300 ${
@@ -92,7 +92,7 @@ const ServiceOption = () => {
         className="md:py-0 flex items-center order-first lg:order-none"
       >
         <div className="md:py-4 md:px-4"> 
-          <h3 className="text-3xl px-4 lg:px-0 lg:text-4xl md:text-4xl text-left inter font-black tracking text-primary">
+          <h3 className="text-2xl px-4 lg:px-0 lg:text-3xl md:text-3xl text-left inter font-black tracking text-primary">
             Reliable Solutions For Every Occasion
           </h3>
           <p className="text-gray-600 px-4 lg:px-0 text-md font-normal mt-4 roboto text-left">
@@ -106,7 +106,7 @@ const ServiceOption = () => {
           className="py-4 px-4 rounded-md shadow-xl bg-gray-100 bg-white min-h-[150px] flex flex-col justify-between"
         >
           <div className="flex items-center justify-between mb-2">
-            <h3 className="text-2xl inter font-bold text-primary">{options.type}</h3>
+            <h3 className="inter text-xl font-bold text-primary">{options.type}</h3>
             <img src={options.image} alt="" style={{ transform: "scaleX(-1)"}} className="w-[90px] h-[90px] object-contain" />
           </div>
           <p className="text-gray-600 font-normal roboto">{options.descrtiption}</p>
@@ -131,7 +131,7 @@ const ServiceOption = () => {
         className="md:py-0 flex items-center order-first lg:order-none"
       >
         <div className="md:py-4 md:px-4">
-          <h3 className="text-3xl px-4 lg:px-0 lg:text-4xl md:text-4xl text-left inter font-black tracking text-primary">
+          <h3 className="text-2xl px-4 lg:px-0 lg:text-3xl md:text-3xl text-left inter font-black tracking text-primary">
             Efficient Delivery Options
           </h3>
           <p className="text-gray-600 px-4 lg:px-0 text-md font-normal mt-4 roboto text-left">
@@ -145,7 +145,7 @@ const ServiceOption = () => {
           className="py-4 px-4 rounded-md shadow-xl bg-gray-100 bg-white min-h-[150px] flex flex-col justify-between"
         >
           <div className="flex items-center justify-between mb-2">
-            <h3 className="text-2xl inter font-bold text-primary">{options.type}</h3>
+            <h3 className="inter text-xl font-bold text-primary">{options.type}</h3>
             <img src={options.image} alt="" style={{ transform: "scaleX(-1)"}} className="w-[90px] h-[90px] object-contain" />
           </div>
           <p className="text-gray-600 font-normal roboto">{options.descrtiption}</p>

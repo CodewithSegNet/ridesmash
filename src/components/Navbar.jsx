@@ -107,7 +107,7 @@ const Navbar = () => {
       <div
           className="flex justify-between z-20" 
 >
-          <div className="flex items-center space-x-14 justify-between w-[100%] md:pb-3 sm:pb-0">
+          <div className="flex items-center space-x-14 justify-between w-[100%] md:pb-3 pb-2">
             <a
               href="/"
               className="bg-secondary w-[45px] h-[45px]  items-center justify-center flex rounded-md"
