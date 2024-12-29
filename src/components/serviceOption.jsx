@@ -4,7 +4,7 @@ import classic from './../assets/SportCoupe.svg'
 import executive from './../assets/SUV.svg'
 import Switch from '@mui/material/Switch';
 import bike from './../assets/Motorcycle.svg'
-import van from './../assets/BoxTruck.svg'
+import van from './../assets/Van.svg'
 // import truck from './../assets/trucks.png'
 import {motion, AnimatePresence} from 'framer-motion'
 import { fadeIn } from '../variants'
