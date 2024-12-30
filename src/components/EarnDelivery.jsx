@@ -1,4 +1,4 @@
-import delivery from './../assets/delivery-person.jpg'
+import delivery from './../assets/delivery-man.webp'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 

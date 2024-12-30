@@ -1,4 +1,4 @@
-import driver from './../assets/driver-male.jpg'
+import driver from './../assets/hero_2.webp'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import {useState, useEffect} from 'react'
