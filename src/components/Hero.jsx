@@ -1,14 +1,12 @@
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import { Link } from 'react-router-dom'
-import { BiTaxi, BiDownload } from "react-icons/bi";
 
 
 
-import banner from "./../assets/Ridesmash-brand.png"
 const Hero = () => {
   return (
-    <div className="flex md:px-14 p-4 max-w-screen-2xl mx-auto mt-[5.5rem] md:mt-5 xl:mt-8 md:h-[400px]">
+    <div className="flex md:px-14 p-4 max-w-screen-2xl mt-[5rem] mx-auto md:mt-5 xl:mt-8 min-h-[60vh]">
         
         <div className="flex md:flex-row flex-col w-[100%] md:items-center">
             <motion.div 

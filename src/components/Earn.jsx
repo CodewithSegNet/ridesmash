@@ -36,39 +36,62 @@ function convert() {
     setOutput(input * rate);
 }
 
-console.log( 'output:', output)
-
-
   return (
-    <div className="flex md:px-14 py-[2rem] md:py[0] px-6 md:py-[4rem] mx-auto md:my-0 md:items-center md:justify-center bg-black">
-        <div className="flex md:flex-row flex-col justify-between md:items-center gap-8">
-           
-            <motion.div 
-            variants={fadeIn("up", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{once:true}}
-            className=" md:w-1/2">
-                {/* <div className='w-[100%] h-[100%] bg-primary'>
-
-                </div> */}
-                <img src={driver} alt='' className=' rounded-3xl'/>
-            </motion.div>
-            <motion.div
-            
-            variants={fadeIn("down", 0.2)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{once:true}}
-            
-            className=' md:w-2/5'>
-                <h1 className='md:text-3xl xl:text-4xl text-3xl font-black inter text-gray-400 mb-5 leading-tight lg:leading-normal'>Earning {currency}{currency === "GHS" ? "5,715" : "400,000.00"} Monthly Guaranteed,<span className='md:text-3xl xl:text-4xl text-3xl font-bold text-secondary'>With 2.5% rebate on weekly basis.</span></h1>
-                <p className='text-gray-200 font-normal text-md mb-7'>We guide our drivers through expert procedures and training to earn {currency}{currency === "GHS" ? "5,715" : "400,000"} and more on monthly basis in addition to our 2.5% weekly payback, Our driving process is reliable and beneficial. </p>
-                <Link to='/driveAndEarn' className='bg-secondary text-md text-black py-3 px-6 rounded hover:text-white hover:bg-primary'>Learn More</Link>
-            </motion.div>
-
-        </div>
+    <div className="flex md:px-14 py-[2rem] md:py-0 px-6 md:py-[4rem] mx-auto md:my-0 md:items-center md:justify-center bg-black">
+    <div className="flex md:flex-row flex-col justify-between md:items-center gap-8">
+      {/* Image Section */}
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true }}
+        className="md:w-1/2"
+      >
+        <img src={driver} alt="Driver" className="rounded-lg" />
+      </motion.div>
+  
+      {/* Content Section */}
+      <motion.div
+        variants={fadeIn("down", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true }}
+        className="md:w-2/5"
+      >
+        {/* Headline */}
+        <h1 className="md:text-3xl xl:text-4xl text-3xl font-black inter text-gray-400 mb-5 leading-tight lg:leading-normal">
+          Earn {currency}
+          {currency === "GHS" ? "5,715" : "400,000.00"} Monthly
+          Guaranteed<span className="font-euclid font-black p-0 m-0">,</span>
+          <span className="md:text-3xl xl:text-4xl text-3xl font-bold text-secondary">
+            With 2.5% Weekly Rebates
+          </span>
+        </h1>
+  
+        {/* Subheadline */}
+        <h2 className="text-gray-300 text-lg font-semibold mb-4">
+          Empowering drivers with reliable earnings and weekly rewards.
+        </h2>
+  
+        {/* Benefits List */}
+        <ul className="text-gray-200 font-normal text-md mb-9 space-y-3">
+          <li>✔️ Earn {currency}{currency === "GHS" ? "5,715" : "400,000"} or more monthly with our trusted system.</li>
+          <li>✔️ Receive 2.5% payback weekly for consistent earnings.</li>
+          <li>✔️ Access professional training to boost your skills and earnings.</li>
+          <li>✔️ Enjoy a transparent and beneficial driving process.</li>
+        </ul>
+  
+        {/* Call to Action */}
+        <Link
+          to="/driveAndEarn"
+          className="bg-secondary text-sm md:text-md text-black py-3 px-6 rounded hover:text-white hover:bg-primary"
+        >
+          Learn More
+        </Link>
+      </motion.div>
     </div>
+  </div>
+  
   )
 }
 

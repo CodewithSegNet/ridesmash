@@ -8,7 +8,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const WhyChooseUs = () => {
   return (
-    <div className='flex h-[950px] md:h-screen items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 md:py-0  xl:max-h-[598px] 2xl:rounded-5xl;'>
+    <div className='flex h-[900px] md:h-[600px] xl:h-screen items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 md:py-0 xl:max-h-[598px] 2xl:rounded-5xl;'>
         <img src={background} alt='image' className='md:w-full md:h-full h-screenresizeMode:"cover"' />
         <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-2 md:gap-12 md:px-12 absolute md:flex-col bg-white opacity-90 h-screen md:h-full md:justify-between md:items-center px-6">
            
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
                   </div>  
                   
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-700 md:text-1xl'>24/7 Available</h1>
+                    <h1 className='text-gray-700 font-medium md:text-1xl'>24/7 Available</h1>
                     <p className='text-gray-500 md:text-md'>Ridesmash is always available to fulfil your needs whether you want a ride urgently.</p>
                   </div>
                </div>
@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
                    <FaCheckCircle size={17} color='blue' />
                   </div>  
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-700 md:text-1xl'>User-friendly App</h1>
+                    <h1 className='text-gray-700 font-medium md:text-1xl'>User-friendly App</h1>
                     <p className='text-gray-500 md:text-md md:pt-[.1rem]'>Our user-friendly app allows you to track your driver’s arrival and helps you manage your ride in your hands.</p>
                   </div>
                </div>
@@ -60,7 +60,7 @@ const WhyChooseUs = () => {
                      <FaCheckCircle size={17} color='blue' />
                   </div>   
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-600 md:text-1xl'>Professional Drivers</h1>
+                    <h1 className='text-gray-700 font-medium md:text-1xl'>Professional Drivers</h1>
                     <p className='text-gray-500 md:text-md '>Ridemash drivers are professionals with a pro-client attitude. </p>
                   </div>
                </div>
@@ -94,7 +94,7 @@ const WhyChooseUs = () => {
                     <FaCheckCircle size={17} color='blue' />
                   </div> 
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-700 md:text-1xl'>Easy Booking</h1>
+                    <h1 className='text-gray-700 font-medium md:text-1xl'>Easy Booking</h1>
                     <p className='text-gray-500 md:text-md '>Booking a ride with Ridesmash is a breeze and simple process. </p>
                   </div>
                </div>
@@ -103,7 +103,7 @@ const WhyChooseUs = () => {
                     <FaCheckCircle size={17} color='blue' />
                   </div> 
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-700 md:text-1xl'>Reliable and Safe</h1>
+                    <h1 className='text-gray-700 font-medium md:text-1xl'>Reliable and Safe</h1>
                     <p className='text-gray-500 md:text-md '>Your safety is our top priority. Our drivers undergo rigorous background checks.</p>
                   </div>
                </div>
@@ -113,7 +113,7 @@ const WhyChooseUs = () => {
                     <FaCheckCircle size={17} color='blue' />
                   </div> 
                   <div className='flex flex-col gap-3'>
-                    <h1 className='text-gray-600 md:text-1xl'>Competitive Pricing</h1>
+                    <h1 className='text-gray-700 font-medium md:text-1xl'>Competitive Pricing</h1>
                     <p className='text-gray-500 md:text-md '>We believe that quality doesn’t have to come at a premium price. </p>
                   </div>
                </div>

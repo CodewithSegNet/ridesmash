@@ -12,12 +12,12 @@ import Image15 from './../assets/illus15.svg';
 
 const OurServices = () => {
   const boxes = [
-    { id: 1, title: "Ride", parag: "Fast and reliable rides to get you where you need to be.", image: Image14 },
-    { id: 2, title: "Delivery", parag: "Quick and secure delivery for all your packages.", image: Image2 },
-    { id: 3, title: "Car Rental", parag: "Affordable car rentals for any occasion.", image: Image1 },
-    { id: 4, title: "Airport Pickup", parag: "Hassle-free pickups to and from the airport.", image: ImageTrav },
-    { id: 5, title: "Ridesmash Business", parag: "Smart transport solutions for your business.", image: Image0 },
-    { id: 6, title: "Fleets Management", parag: "Effortless control of your fleet in real-time.", image: Image15 },
+    { id: 1, title: "Ride", parag: "Fast and reliable rides to get you where you need to be.", image: Image14, path: "ride" },
+    { id: 2, title: "Delivery", parag: "Quick and secure delivery for all your packages.", image: Image2, path: "delivery"  },
+    { id: 3, title: "Car Rental", parag: "Affordable car rentals for any occasion.", image: Image1, path: "rental"  },
+    { id: 4, title: "Airport Pickup", parag: "Hassle-free pickups to and from the airport.", image: ImageTrav, path: "airport"  },
+    { id: 5, title: "Ridesmash Business", parag: "Smart transport solutions for your business.", image: Image0, path: "business"  },
+    { id: 6, title: "Fleets Management", parag: "Effortless control of your fleet in real-time.", image: Image15, path: "fleets"  },
   ];
 
   return (
@@ -54,7 +54,7 @@ const OurServices = () => {
                       style={{ transform: "rotate(180deg)" }}
                       className="mr-4"
                     />
-                    <a className=''>Read More</a>
+                    <a href={box.path} className=''>Read More</a>
                   </div>
                 {box.image && (
                   <div className="w-[45%] mt-4 ">
