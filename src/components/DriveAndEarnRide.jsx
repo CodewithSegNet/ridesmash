@@ -3,6 +3,8 @@ import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import {useState, useEffect} from 'react'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
+
 
 const DriveAndEarn = ({currency, country}) => {
 
@@ -46,21 +48,46 @@ console.log( 'output:', output)
                 {/* <div className='w-[100%] h-[100%] bg-primary'>
 
                 </div> */}
-                <img src={driver} alt='' className=' rounded-3xl'/>
+                <img src={driver} alt='' className=' rounded-md'/>
             </div>
             <motion.div
-            
-            variants={fadeIn("down", 0.4)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{once:false, amount:0.4}}
-            
-            className=' md:w-2/5'>
-                <h1 className='md:text-4xl text-3xl font-bold text-gray-600 mb-5  leading-tight lg:leading-normal roboto'>Earning {currency}{currency === "GHS" ? "5,715" : "400,000"} Monthly Guaranteed,<span className='md:text-4xl text-3xl font-bold text-gray-500'>With Ridesmash Expert.</span></h1>
-                <p className='text-gray-400 text-lg mb-7'>We guide our drivers throughexpert procedures and training to earn as much as {currency}{currency === "GHS" ? "5,715" : "400,000"} monthly, Our driving process is reliable and beneficial. </p>
-                <button className='bg-secondary text-black py-2 px-6 rounded hover:text-white hover:bg-primary text-xl'>Learn More</button>
-            </motion.div>
-
+                   variants={fadeIn("down", 0.2)}
+                   initial="hidden"
+                   whileInView={"show"}
+                   viewport={{ once: true }}
+                   className="md:w-2/5"
+                 >
+                   {/* Headline */}
+                   <h1 className="md:text-3xl xl:text-4xl text-3xl font-black inter text-gray-700 mb-5 leading-tight lg:leading-normal">
+                     Earn {currency}
+                     {currency === "GHS" ? "5,715" : "400,000.00"} Monthly
+                     Guaranteed<span className="font-euclid font-black p-0 m-0">,</span>
+                     <span className="md:text-3xl xl:text-4xl text-3xl font-bold text-primary">
+                       With 2.5% Weekly Rebates
+                     </span>
+                   </h1>
+             
+                   {/* Subheadline */}
+                   <h2 className="text-gray-600 text-lg font-semibold mb-4">
+                     Empowering drivers with reliable earnings and weekly rewards.
+                   </h2>
+             
+                   {/* Benefits List */}
+                   <ul className="text-gray-600 font-normal text-md mb-9 space-y-3">
+                     <li>✔️ Earn {currency}{currency === "GHS" ? "5,715" : "400,000"} or more monthly with our trusted system.</li>
+                     <li>✔️ Receive 2.5% payback weekly for consistent earnings.</li>
+                     <li>✔️ Access professional training to boost your skills and earnings.</li>
+                     <li>✔️ Enjoy a transparent and beneficial driving process.</li>
+                   </ul>
+             
+                   {/* Call to Action */}
+                   <Link
+                     to="/driveAndEarn"
+                     className="bg-primary text-white text-sm md:text-md text-black py-3 px-6 rounded hover:text-primary hover:bg-secondary"
+                   >
+                     Get Started
+                   </Link>
+                 </motion.div>
         </div>
     </div>
   )

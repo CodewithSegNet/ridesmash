@@ -5,7 +5,7 @@ import { FaSquare } from "react-icons/fa6";
 export default function AcceptedVehicle() {
   return (
     <div className='flex md:w-full flex-col md:flex-row gap-6 md:p-12 md:h-screen p-6'>
-        <div className='flex md:w-1/2 bg-gray-200 md:h-full flex-col md:flex-col md:gap-6 md:p-16 rounded-xl p-6 gap-3'>
+        <div className='flex md:w-1/2 max-w-screen-2xl mx-auto bg-gray-200 md:h-full flex-col md:flex-col md:gap-6 md:p-16 rounded-xl p-6 gap-3'>
             <h1 className='text-xl md:text-3xl text-gray-700 md:font-bold'>
             Accepted Vehicles
             </h1>

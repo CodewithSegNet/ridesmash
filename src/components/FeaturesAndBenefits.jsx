@@ -24,7 +24,7 @@ const FeaturesAndBenefits = () => {
   const benefitsList = [
     {id : '1', 'img' : quality, 'title' : 'Micro pension for drivers  ', 'description' : 'Our Micro Pension for driver partners is unique and security a  better life after retirement. We are in partnership with  verifiable pension firm to secure a better life for our partner  drivers  Life Insurance .'},
 
-    {id : '2', 'img' : satisfaction, 'title' : ' Wallet  ', 'description' : 'The wallet feature is a payment option for riders who do not want to make  payment by cash or bank card. The wallet is funded by direct debit transfer  from bank cards added to the app.  When booking a ride, simply choose "wallet" and when the trip is ended,  payment is removed automatically from the wallet.'},
+    {id : '2', 'img' : satisfaction, 'title' : ' Wallet  ', 'description' : 'This feature is a payment option for riders who do not want to make payment by cash or bank card.  Wallet is funded by direct debit transfer from bank cards added to the app. When booking a ride, choose "wallet" and when trip is ended, payment is removed automatically.'},
     
     {id : '3', 'img' : expert, 'title' : 'Emergency Button ', 'description' : 'SOS Button for an emergency which comes up immediately when a driver accepts a ride request'},
 
@@ -34,29 +34,29 @@ const FeaturesAndBenefits = () => {
 
   return (
     
-    <div className=' grid lg:grid-cols-2 grid-cols-1 md:gap-10 mb-4 w-[100%] h-[100%] bg-red-100 items-center md:py-20 py-3 px-8 pb-10 '>
-      <div className='flex flex-col md:gap-3 md:ml-3 md:h-screen md:pb-[150px] md:px-8'>
+    <div className=' grid lg:grid-cols-2 grid-cols-1 md:gap-10 w-[100%] h-[100%] bg-red-100 items-center md:py-20 py-3 px-4 pb-10 '>
+      <div className='flex max-w-screen-2xl mx-auto flex-col md:gap-3 md:ml-3 md:h-screen md:pb-[150px] md:px-8 w-[100%]'>
           {/* <div className="flex flex-row gap-3 items-center mt-10 ">
             <FaPaperPlane className="w-4 h-4 text-red-700 "/>
             <h3 className="lg:text-base text-sm text-[#020066] font-semibold">WHY CHOOSE US</h3>
           </div> */}
-          <div className=" my-5 md:my-0">
-            <h1 className="roboto md:text-3xl text-xl">Ridesmash Features</h1>
+          <div className=" my-5 md:my-0 max-w-screen-2xl">
+            <h1 className="inter font-bold md:text-3xl text-xl">Ridesmash Features</h1>
           </div>
           <div className="flex flex-col md:w-[100%] gap-3">
             {featuresList.map((item) => (
 
-                <div key={item.id}  className=" flex flex-row relative items-center justify-end pr-2">
+                <div key={item.id}  className="max-w-screen-2xl flex flex-row relative items-center justify-end pr-2">
                 <div className=" flex absolute w-28 h-28 bg-blue-200 rounded-full top-4 left-0 items-center justify-center ">
                   <div className="flex w-24 h-24 bg-blue-700 items-center justify-center rounded-full">
                     <img src={item.img} alt="image" className="w-12 h-12"/>
                   </div>
                 </div>
-                <div className="w-[90%] bg-white rounded-xl flex-col flex md:gap-1 pr-3 md:pl-20 pl-24 pt-4 pb-4 h-40 md:h-48">
+                <div className="w-[90%] bg-white rounded-xl max-w-screen-2xl flex-col flex md:gap-1 pr-3 md:pl-20 pl-24 pt-4 pb-4 h-40 md:h-48">
                     <h1 className="md:text-xl text-base">{item.title}</h1>
-                    <h3 className="md:text-base text-[10px] text-gray-500">{item.description1}</h3>
-                    <h3 className="md:text-base text-[10px] text-gray-500">{item.description2}</h3>
-                    <h3 className="md:text-base text-[10px] text-gray-500">{item.description3}</h3>
+                    <h3 className="md:text-base text-[10px] md:text-sm text-gray-500">{item.description1}</h3>
+                    <h3 className="md:text-base text-[10px] md:text-sm text-gray-500">{item.description2}</h3>
+                    <h3 className="md:text-base text-[10px] md:text-sm text-gray-500">{item.description3}</h3>
                 </div>
 
 
@@ -73,8 +73,8 @@ const FeaturesAndBenefits = () => {
             <FaPaperPlane className="w-4 h-4 text-red-700 "/>
             <h3 className="lg:text-base text-sm text-[#020066] font-semibold">WHY CHOOSE US</h3>
           </div> */}
-          <div className=" my-5 md:my-0">
-            <h1 className="roboto md:text-3xl text-xl">Ridesmash Benefits </h1>
+          <div className=" my-5 pt-[2rem] md:pt-0 md:my-0">
+            <h1 className="inter font-bold md:text-3xl text-xl">Ridesmash Benefits </h1>
           </div>
           <div className="flex flex-col md:w-[100%] gap-3">
             {benefitsList.map((item) => (
@@ -87,7 +87,7 @@ const FeaturesAndBenefits = () => {
                 </div>
                 <div className="w-[90%] bg-white rounded-xl flex-col flex md:gap-1 pr-3 md:pl-20 pl-24 pt-4 pb-4 h-40 md:h-48">
                     <h1 className="md:text-xl text-base">{item.title}</h1>
-                    <h3 className="md:text-base text-[10px] text-gray-500">{item.description}</h3>
+                    <h3 className="md:text-base text-[10px] md:text-sm text-gray-500">{item.description}</h3>
                 </div>
 
 

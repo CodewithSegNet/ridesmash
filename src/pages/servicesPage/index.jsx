@@ -26,10 +26,9 @@ const ServicesPage = () => {
         <ServiceRide/>
         <ServiceDelivery/>
         <ServiceCarRental/>
-        <ServiceFood/>
-        <ServiceAirport/>
         <ServiceBusiness/>
-        <ServiceWise/>
+        <ServiceAirport/>
+
         
         
         <Footer/>

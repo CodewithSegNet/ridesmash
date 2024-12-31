@@ -108,7 +108,7 @@ const Navbar = () => {
   return (
     
     <>
-      <nav className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto z-30 text-white px-4 transition-all duration-500 ${
+      <nav className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto z-40 text-white px-4 transition-all duration-500 ${
             isMenuOpened ? "bg-gradient-active" : "bg-transparent"
           }`}
           style={
