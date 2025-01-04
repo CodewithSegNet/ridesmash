@@ -26,7 +26,7 @@ const Hero = () => {
                 <div className="flex flex-row gap-3 mt-3">
                     <button 
                      className='flex items-center border justify-center hover:bg-primary border-secondary bg-secondary transition-all duration-300 hover:border-primary py-3 px-6 text-primary rounded-full hover:text-white text-sm md:text-md font-semibold'> Download App</button>
-                    <a href="/driveAndEarn" className='flex items-center border-[2px] border-secondary justify-center bg-transparent transition-all duration-300 text-secondary py-3 px-4 md:px-6 rounded-full hover:border-primary hover:text-white hover:bg-primary font-semibold text-sm md:text-md'> Drive and Earn</a>
+                    <Link to="/driveAndEarn" className='flex items-center border-[2px] border-secondary justify-center bg-transparent transition-all duration-300 text-secondary py-3 px-4 md:px-6 rounded-full hover:border-primary hover:text-white hover:bg-primary font-semibold text-sm md:text-md'> Drive and Earn</Link>
                 </div>
             </motion.div>
             {/* <motion.div
