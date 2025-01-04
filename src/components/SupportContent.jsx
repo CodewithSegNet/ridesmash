@@ -11,13 +11,13 @@ export default function ContactContent() {
     
   return (
     <div className='flex'>
-        <div className='flex flex-col md:flex-row justify-between px-6 md:px-12 gap-2 md:gap-6 w-full  py-6'>
+        <div className='flex max-w-screen-2xl mx-auto flex-col md:flex-row justify-between px-6 md:px-12 gap-2 md:gap-6 w-full  py-6'>
             <div className=' flex flex-col w-full h-full gap-4 py-12'>
                 {/* <div className=' w-[80%]'>
                     <h1 className=' font-extrabold text-orange-500 text-[32px] md:text-[56px] roboto-regular leading-[40px] md:leading-[66px] '>Help and Support</h1>
                 </div> */}
                 <div className='  md:pr-6'>
-                    <p className=' text-lg md:text-2xl text-gray-500 my-4'>
+                    <p className=' text-md md:text-lg text-gray-700 my-4'>
                     We operates 24/7 and we fully ready to help and support you at anytime.
                     </p>
                 </div>
@@ -37,7 +37,6 @@ export default function ContactContent() {
                         <FaAddressCard color='red' size='40px'/>
                         <h2 className='text-[12px] md:text-[18px] text-black'>Visit Our Office</h2>
                         <p className='text-[10px] md:text-[14px] text-[#00000088]'>Nigeria</p>
-                        <p className='text-[10px] md:text-[14px] text-[#00000088]'>Ghana</p>
                     </div>
                 </div>
               

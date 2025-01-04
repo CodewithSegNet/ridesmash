@@ -3,7 +3,10 @@ import { FaCheckCircle } from 'react-icons/fa'
 
 export default function PressContentMiddle() {
   return (
-    <div className='flex md:w-full flex-col md:flex-row gap-6 md:p-12 md:h-screen p-6'>
+
+        <div className='max-w-screen-2xl mx-auto'>
+                <div className='flex md:w-full flex-col md:flex-row gap-6 md:p-12 md:h-screen p-6'>
+
         <div className='flex md:w-1/2 bg-gray-200 md:h-full flex-col md:flex-col md:gap-6 md:p-16 rounded-xl p-6 gap-3'>
             <h1 className='text-xl md:text-3xl text-gray-700'>
                 Some Benefits for Drivers
@@ -62,6 +65,9 @@ export default function PressContentMiddle() {
             </div>
             
         </div>
+
+
+
         <div className='flex md:w-1/2 bg-gray-200 md:h-full flex-col md:flex-col md:gap-6 md:p-16 rounded-xl p-6 gap-3'>
             <h1 className='text-xl md:text-3xl text-gray-700'>
                 Some Benefits for Riders
@@ -120,6 +126,12 @@ export default function PressContentMiddle() {
             </div>
             
         </div>
+
+
+        </div>
+       
+
+
         
         
     </div>

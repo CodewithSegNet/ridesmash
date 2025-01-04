@@ -1,6 +1,8 @@
 import delivery from './../assets/delivery-man.webp'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
+import {Link} from 'react-router-dom'
+
 
 const EarnDelivery = ({currency, country}) => {
   return (
@@ -46,9 +48,9 @@ const EarnDelivery = ({currency, country}) => {
         </ul>
   
         {/* Call to Action */}
-        <button className="bg-secondary text-primary py-3 px-6 rounded hover:text-white hover:bg-primary text-sm md:text-md">
+        <Link to="/driveAndEarn" className="bg-secondary text-primary py-3 px-6 rounded hover:text-white hover:bg-primary text-sm md:text-md">
           Learn More
-        </button>
+        </Link>
       </motion.div>
     </div>
   </div>

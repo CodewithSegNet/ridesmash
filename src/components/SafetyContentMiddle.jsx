@@ -4,7 +4,7 @@ import { FaCheckCircle } from 'react-icons/fa'
 export default function SafetyContentMiddle() {
   return (
     <div className='flex md:w-full flex-col md:flex-row gap-6 md:p-12 md:h-screen p-6'>
-        <div className='flex md:w-1/2 bg-gray-200 md:h-full flex-col md:flex-col md:gap-6 md:p-16 rounded-xl p-6 gap-3'>
+        <div className='flex max-w-screen-2xl mx-auto md:w-1/2 bg-gray-200 md:h-full flex-col md:flex-col md:gap-6 md:p-16 rounded-xl p-6 gap-3'>
            
             <p>
             <span className='text-lg text-primary font-bold'>Ridesmash app</span> will always display your  driver’s personal info (name and photo), and car info (license plate, make,  model, and color).  Before entering the cab make sure the license plate and car make and model  match the info displayed in your app. Verify your driver’s name with the name of  the driver in the app Or you can also ask them to verify your name or destination.  If you’re having trouble finding your driver, feel free to text or call them through  the RIDESMASH app. 

@@ -2,7 +2,7 @@ import { useState, useRef, useEffect  } from 'react';
 import logo from '../../src/assets/logo.png'
 import { BiSupport, BiTaxi, BiChevronDown } from "react-icons/bi";
 import {FaXmark, FaBars} from 'react-icons/fa6'
-import { NavLink} from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -28,30 +28,30 @@ const Navbar = () => {
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Learn about our company, blog, safety measures, and more",
       submenu: [
-        { link: "About Us", path: "about", ariaLabel: "Learn more about us" },
-        { link: "Blog", path: "blog", ariaLabel: "Read our latest blog posts" },
-        { link: "Safety", path: "safety", ariaLabel: "Learn about our safety measures" },
-        { link: "FAQ", path: "faq", ariaLabel: "Get answers to frequently asked questions" },
+        { link: "About Us", path: "/about", ariaLabel: "Learn more about us" },
+        { link: "Blog", path: "/blog", ariaLabel: "Read our latest blog posts" },
+        { link: "Safety", path: "/safety", ariaLabel: "Learn about our safety measures" },
+        { link: "FAQ", path: "/faq", ariaLabel: "Get answers to frequently asked questions" },
       ],
     },
     {
       link: "Driver",
-      path: "driveAndEarn",
+      path: "/driveAndEarn",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Explore driver opportunities and help resources",
       submenu: [
-        { link: "Earn With Us", path: "driveAndEarn", ariaLabel: "Learn how to earn by driving with us" },
-        { link: "Help Center", path: "contact", ariaLabel: "Get support from our help center" },
+        { link: "Earn With Us", path: "/driveAndEarn", ariaLabel: "Learn how to earn by driving with us" },
+        { link: "Help Center", path: "/contact", ariaLabel: "Get support from our help center" },
       ],
     },
     {
       link: "Partnership",
-      path: "driveAndEarn",
+      path: "/driveAndEarn",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Discover partnership opportunities including fleet management and franchises",
       submenu: [
-        { link: "Fleets Management", path: "fleets", ariaLabel: "Learn about fleet management" },
-        { link: "Franchise Partner", path: "franchise", ariaLabel: "Become a franchise partner" },
+        { link: "Fleets Management", path: "/fleets", ariaLabel: "Learn about fleet management" },
+        { link: "Franchise Partner", path: "/franchise", ariaLabel: "Become a franchise partner" },
       ],
     },
   ];
@@ -120,23 +120,23 @@ const Navbar = () => {
           className="flex justify-between z-20" 
 >
           <div className="flex items-center space-x-14 justify-between w-[100%] md:pb-3 pb-2">
-            <a
-              href="/"
+            <NavLink
+              to="/"
               className="bg-secondary w-[45px] h-[45px]  items-center justify-center flex rounded-md"
               aria-label="Ridesmash home page"
             >
               <img src={logo} alt="Ridesmash - Your trusted e-hailing service" className="w-[30px] h-[30px]" />
-            </a>
+            </NavLink>
             <div className='md:flex hidden items-center space-x-7'>
             <div className='flex items-center gap-1 text-white hover:text-secondary  transition-all duration-300'>
                 <BiTaxi className='text-xl gap-1'/>
-                <a href='/booking' aria-label="Book a ride with Ridesmash" className='text-md'>Book a Ride</a>
+                <NavLink to='/booking' aria-label="Book a ride with Ridesmash" className='text-md'>Book a Ride</NavLink>
               </div>
               <div className='flex items-center gap-1 hover:text-secondary text-white hover:text-secondary transition-all duration-300'>
                  <BiSupport className='text-xl gap-1'/>
-                 <a href='/support' aria-label="Customer support for Ridesmash" className='text-md'>Support</a>
+                 <NavLink to='/support' aria-label="Customer support for Ridesmash" className='text-md'>Support</NavLink>
               </div>
-              <a href='login' className='bg-secondary py-3 px-6 rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold'>Login</a>
+              <NavLink to='/login' className='bg-secondary py-3 px-6 rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold'>Login</NavLink>
 
               <div className='flex align-center'>
               <button 
@@ -197,10 +197,10 @@ const Navbar = () => {
      }`}
    >
       <div className="flex hover:text-gray-200 text-white items-center w-[100%]  mt-5 justify-between hover:text-secondary transition-all duration-300 justify-center md:justify-start">
-        <a href={path} className="block py-1 text-md font-bold" aria-label={ariaLabel}> 
+        <NavLink to={path} className="block py-1 text-md font-bold" aria-label={ariaLabel}> 
 
           {link}
-        </a>
+        </NavLink>
         {icon && (
           
           <span
@@ -231,14 +231,14 @@ const Navbar = () => {
         {submenu && (
           <div className="space-y-2 ml-5 md:ml-0 transition-all duration-500 ease-in">
             {submenu.map(({ link, path }) => (
-              <a
+              <NavLink
                 key={link}
-                href={path}
+                to={path}
                 aria-label={ariaLabel}
                 className="block text-left text-sm py-2 hover:rounded-md transition-all duration-500 text-white hover:text-secondary"
               >
                 {link}
-              </a>
+              </NavLink>
             ))}
           </div>
         )}
@@ -246,7 +246,7 @@ const Navbar = () => {
 
     </div>
   ))}
-  <a href='login' className='bg-secondary py-3 mx-[5rem] rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</a>
+  <NavLink to='/login' className='bg-secondary py-3 mx-[5rem] rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</NavLink>
 </div>
 
         </nav> 

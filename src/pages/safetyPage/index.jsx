@@ -10,8 +10,10 @@ const SafetyPage = () => {
   return (
     <>
       <div>
-        <div>
-          <Navbar/>
+      <div style={{
+    background: "linear-gradient(to top, rgba(0, 92, 186, 0.8), rgba(2, 0, 102, 1))",
+  }}>   
+            <Navbar/>
           <SafetyTitle/>
         </div>
         <SafetyContentTop/>

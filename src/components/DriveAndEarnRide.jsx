@@ -1,4 +1,4 @@
-import driver from './../assets/driver-ride.jpg'
+import driver from './../assets/drive.webp'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import {useState, useEffect} from 'react'
@@ -41,8 +41,8 @@ console.log( 'output:', output)
 
 
   return (
-    <div className="flex md:px-14 p-4 md:h-screen mx-auto my-24 md:my-0 md:items-center md:justify-center bg-white">
-        <div className="flex md:flex-row flex-col justify-between md:items-center gap-8">
+    <div className="flex md:px-14 p-4 md:h-full py-[5rem] mx-auto md:my-0 md:items-center md:justify-center bg-white">
+        <div className="flex max-w-screen-2xl mx-auto md:flex-row flex-col justify-between md:items-center gap-8">
            
             <div className=" md:w-1/2">
                 {/* <div className='w-[100%] h-[100%] bg-primary'>

@@ -7,6 +7,8 @@ import Image0 from './../assets/illus0.svg';
 import Image14 from './../assets/illus14.svg';
 import ImageTrav from './../assets/illus-trav.svg';
 import Image15 from './../assets/illus15.svg';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -54,7 +56,7 @@ const OurServices = () => {
                       style={{ transform: "rotate(180deg)" }}
                       className="mr-4"
                     />
-                    <a href={box.path} className=''>Read More</a>
+                    <Link to={box.path} className=''>Read More</Link>
                   </div>
                 {box.image && (
                   <div className="w-[45%] mt-4 ">

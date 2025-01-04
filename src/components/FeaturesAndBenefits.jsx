@@ -33,15 +33,15 @@ const FeaturesAndBenefits = () => {
   ]
 
   return (
-    
-    <div className=' grid lg:grid-cols-2 grid-cols-1 md:gap-10 w-[100%] h-[100%] bg-red-100 items-center md:py-20 py-3 px-4 pb-10 '>
-      <div className='flex max-w-screen-2xl mx-auto flex-col md:gap-3 md:ml-3 md:h-screen md:pb-[150px] md:px-8 w-[100%]'>
+    <div className="bg-red-100 ">
+ <div className='max-w-screen-2xl mx-auto grid lg:grid-cols-2 grid-cols-1 md:gap-10 w-[100%] h-[100%] bg-red-100 items-center md:py-20 py-3 px-4 pb-10'>
+      <div className='flex max-w-screen-2xl mx-auto flex-col md:gap-3 pb-[20px] md:pb-0 w-[100%]'>
           {/* <div className="flex flex-row gap-3 items-center mt-10 ">
             <FaPaperPlane className="w-4 h-4 text-red-700 "/>
             <h3 className="lg:text-base text-sm text-[#020066] font-semibold">WHY CHOOSE US</h3>
           </div> */}
-          <div className=" my-5 md:my-0 max-w-screen-2xl">
-            <h1 className="inter font-bold md:text-3xl text-xl">Ridesmash Features</h1>
+          <div className=" my-5 md:my-0">
+            <h1 className="inter text-primary font-bold md:text-3xl text-xl">Ridesmash Features</h1>
           </div>
           <div className="flex flex-col md:w-[100%] gap-3">
             {featuresList.map((item) => (
@@ -53,7 +53,7 @@ const FeaturesAndBenefits = () => {
                   </div>
                 </div>
                 <div className="w-[90%] bg-white rounded-xl max-w-screen-2xl flex-col flex md:gap-1 pr-3 md:pl-20 pl-24 pt-4 pb-4 h-40 md:h-48">
-                    <h1 className="md:text-xl text-base">{item.title}</h1>
+                    <h1 className="md:text-xl text-primary text-base">{item.title}</h1>
                     <h3 className="md:text-base text-[10px] md:text-sm text-gray-500">{item.description1}</h3>
                     <h3 className="md:text-base text-[10px] md:text-sm text-gray-500">{item.description2}</h3>
                     <h3 className="md:text-base text-[10px] md:text-sm text-gray-500">{item.description3}</h3>
@@ -68,13 +68,13 @@ const FeaturesAndBenefits = () => {
           
       </div>
 
-      <div className='flex flex-col md:gap-3 md:ml-3 md:h-screen md:pb-[150px] md:px-8'>
+      <div className='flex max-w-screen-2xl mx-auto flex-col md:gap-3 ] w-[100%]'>
           {/* <div className="flex flex-row gap-3 items-center mt-10 ">
             <FaPaperPlane className="w-4 h-4 text-red-700 "/>
             <h3 className="lg:text-base text-sm text-[#020066] font-semibold">WHY CHOOSE US</h3>
           </div> */}
           <div className=" my-5 pt-[2rem] md:pt-0 md:my-0">
-            <h1 className="inter font-bold md:text-3xl text-xl">Ridesmash Benefits </h1>
+            <h1 className="inter text-primary font-bold md:text-3xl text-xl">Ridesmash Benefits </h1>
           </div>
           <div className="flex flex-col md:w-[100%] gap-3">
             {benefitsList.map((item) => (
@@ -86,7 +86,7 @@ const FeaturesAndBenefits = () => {
                   </div>
                 </div>
                 <div className="w-[90%] bg-white rounded-xl flex-col flex md:gap-1 pr-3 md:pl-20 pl-24 pt-4 pb-4 h-40 md:h-48">
-                    <h1 className="md:text-xl text-base">{item.title}</h1>
+                    <h1 className="md:text-xl text-primary text-base">{item.title}</h1>
                     <h3 className="md:text-base text-[10px] md:text-sm text-gray-500">{item.description}</h3>
                 </div>
 
@@ -100,6 +100,8 @@ const FeaturesAndBenefits = () => {
       </div>
     
     </div>
+    </div>
+   
   )
 }
 

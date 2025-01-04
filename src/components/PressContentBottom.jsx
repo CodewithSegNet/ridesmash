@@ -1,11 +1,13 @@
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 import driver from './../assets/driver-male.jpg'
+import { div } from 'framer-motion/client'
 
 export default function PressContentBottom() {
   return (
-    <div className='flex md:w-full flex-col md:flex-row-reverse gap-6 md:p-12 md:h-screen p-6'>
-        <div className='flex md:w-1/2 bg-white md:h-full flex-col md:flex-col md:gap-6 md:p-16 rounded-xl p-6 gap-3'>
+    <div className='max-w-screen-2xl mx-auto'>
+<div className='flex md:w-full flex-col md:flex-row-reverse gap-6 md:p-12 md:h-screen p-6'>
+        <div className='flex max-w-screen-2xl mx-auto md:w-1/2 bg-white md:h-full flex-col md:flex-col md:gap-6 md:p-16 rounded-xl p-6 gap-3'>
             
             <div className='flex flex-col gap-3 '>
 
@@ -44,5 +46,7 @@ export default function PressContentBottom() {
         
         
     </div>
+    </div>
+    
   )
 }

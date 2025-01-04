@@ -10,7 +10,7 @@ const AboutTitle = () => {
     <div className="w-full md:w-96 md:items-center md:justify-center items-center justify-center h-full md:h-1/3 mx-5 lg:mx-10">
         <h1 className="text-2xl md:text-gray-300 text-gray-300 md:text-4xl font-black inter">About Us</h1>
         <div className="flex flex-row py-2 items-center">
-            <Link to="/"><p className="mr-1 text-base text-gray-300 md:text-white md:text-1xl">Home</p></Link>
+            <Link to="/"><p className="mr-1 text-base text-gray-300 md:text-white md:text-1xl hover:text-secondary">Home</p></Link>
             <IoChevronForwardOutline className="text-base text-gray-300 md:text-white lg:text-md"/>
             <p className="ml-1 text-base text-gray-300 md:text-white lg:text-1xl">About Us</p>
         </div>

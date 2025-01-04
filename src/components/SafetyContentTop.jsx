@@ -4,7 +4,7 @@ import back from "./../assets/safety.jpg"
 export default function SafetyContentTop() {
   return (
     <div className='flex w-full md:w-full p-12 md:h-1/3 bg-black md:flex-row flex-col'>
-        <div className='flex md:w-1/2 w-full md:relative flex-col gap-3'>
+        <div className='flex max-w-screen-2xl mx-auto  md:w-1/2 w-full md:relative flex-col gap-3'>
             <img src={back} alt='' className='w-[400px] '/>
             <div className='flex md:absolute md:w-[500px] md:h-1/2 bg-white  md:justify-center md:top-10 md:right-10 md:px-12 opacity-70 flex-col px-3'>
                 <h1 className='text-black text-lg md:text-2xl roboto md:font-semibold'>WE ARE CONCERNED. </h1>
