@@ -1,16 +1,19 @@
-import rider from '../assets/woman-rider.jpg'
+import rider from '../assets/woman-rider.webp'
 import background from '../assets/background2.jpg'
 // import background1 from '../assets/background1.jpg'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import { FaSquare} from "react-icons/fa6";
 import { FaCheckCircle } from "react-icons/fa";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const WhyChooseUs = () => {
   return (
-    <div className='flex h-[900px] md:h-[600px] xl:h-screen items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 md:py-0 xl:max-h-[598px] 2xl:rounded-5xl;'>
-        <img src={background} alt='image' className='md:w-full md:h-full h-screenresizeMode:"cover"' />
-        <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-2 md:gap-12 md:px-12 absolute md:flex-col bg-white opacity-90 h-screen md:h-full md:justify-between md:items-center px-6">
+    
+    <div className='flex max-w-screen-2xl mx-auto h-[900px] md:h-[600px] xl:h-screen items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 md:py-0 xl:max-h-[598px] 2xl:rounded-5xl;'>
+        <img src={background} alt='image' className='md:w-full md:h-full h-screen resizeMode:"cover"' />
+        <div className="z-10 flex w-full flex-1 flex-col items-start justify-center gap-2 md:gap-12 md:px-12 absolute md:flex-col bg-white opacity-90 h-screen md:h-full md:justify-between md:items-center px-6">
            
            <div className='flex flex-col md:flex-col gap-6 md:py-8 md:gap-3  md:relative'>
 
@@ -75,9 +78,11 @@ const WhyChooseUs = () => {
               className=' md:w-1/3 hidden md:block'
             >
               
-
-                <img src={rider} alt='' className=' rounded-3xl rounded-br-full'/>
-
+              <LazyLoadImage 
+              className=' rounded-3xl rounded-br-full'
+              src={rider} 
+              alt='rider app'
+              />
             </motion.div>
             <motion.div
             

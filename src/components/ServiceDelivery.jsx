@@ -7,7 +7,7 @@ import { FaSquare } from "react-icons/fa6";
 const ServiceDelivery = ({currency, country}) => {
 
   return (
-    <div className="flex md:px-14 p-4 h-full py-12 md:py-0 md:h-full mx-auto md:py-[4rem] md:items-center md:justify-center bg-black">
+    <div className="flex md:px-14 p-4 h-full py-12 md:py-0 md:h-full mx-auto md:py-[5rem] md:items-center md:justify-center bg-black">
         <div className="flex md:flex-row flex-col justify-between md:items-center max-w-screen-2xl gap-8">
            
             <div className=" md:w-1/2">

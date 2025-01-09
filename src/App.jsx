@@ -35,7 +35,9 @@ import FaqPage from './pages/faqPage';
 import PrivacyPage from './pages/privacyPage';
 import TermsAndConditionsPage from './pages/termsAndConditionsPage';
 import BlogSingle from './pages/blogSinglePage';
-import ScrollToTopButton from './components/ScrollToTopButton'; 
+import ScrollToTopButton from './components/ScrollToTopButton';
+import HirePurchasePage from './pages/HirePurchase';
+
 
 function App() {
 
@@ -66,21 +68,6 @@ function App() {
 
   return (
     <div>
-      
-      {/* {
-        
-        isLoading 
-
-        ?
-
-       <div className='flex items-center justify-center h-screen w-full'>
-            <video className="h-[300px] w-[300px] rounded-lg" autoPlay >
-              <source src={smash} type="video/mp4" />
-            </video>
-       </div>
-
-        : */}
-
         <BrowserRouter>
         <Routes>
           <Route path="/">
@@ -107,7 +94,7 @@ function App() {
             }
             
             />
-            <Route path="/services" element={<ServicesPage/>}/>
+            <Route path="services" element={<ServicesPage/>}/>
             <Route path="about" element={<AboutUsPage/>}/>
             <Route path="driveAndEarn" element={<DriveAndEarn/>}/>
             <Route path="contact" element={<ContactUsPage/>}/>
@@ -130,6 +117,8 @@ function App() {
             <Route path="franchise" element={<FranchisePage/>}/>
             <Route path="privacy" element={<PrivacyPage/>}/>
             <Route path="termsAndConditionsPage" element={<TermsAndConditionsPage/>}/>
+            <Route path="hirepurchase" element={<HirePurchasePage/>}/>
+
 
             <Route  path="blog" element={<BlogPage/>}/>
              

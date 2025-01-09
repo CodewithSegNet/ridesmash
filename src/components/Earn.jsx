@@ -1,9 +1,11 @@
-import driver from './../assets/hero_2.webp'
+import driver from './../assets/smashdriver.webp'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const Earn = ({currency, country}) => {
 
@@ -38,7 +40,7 @@ function convert() {
 
   return (
     <div className="flex md:px-14 py-[2rem] md:py-0 px-6 md:py-[4rem] mx-auto md:my-0 md:items-center md:justify-center bg-black">
-    <div className="flex md:flex-row flex-col justify-between md:items-center gap-8">
+    <div className="flex max-w-screen-2xl mx-auto md:flex-row flex-col justify-between md:items-center gap-8">
       {/* Image Section */}
       <motion.div
         variants={fadeIn("up", 0.2)}
@@ -47,7 +49,7 @@ function convert() {
         viewport={{ once: true }}
         className="md:w-1/2"
       >
-        <img src={driver} alt="Driver" className="rounded-lg" />
+        <LazyLoadImage src={driver} alt="Driver" className="rounded-lg" />
       </motion.div>
   
       {/* Content Section */}

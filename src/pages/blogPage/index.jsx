@@ -27,7 +27,7 @@ const BlogPage = () => {
         
         <Tabs>
 
-        <div className='flex md:px-40 px-2 md:py-12 py-6'>
+        <div className='flex max-w-screen-2xl mx-auto md:px-40 px-2 md:py-12 pt-[5rem]'>
         <TabList>
           <Tab><div className='flex flex-row gap-6 text-center'>< FaCheckCircle size={20} color='blue' /><h1 className='text-lg md:6xl md:font-bold text-gray-600'>Blog 1</h1></div></Tab>
           <Tab><div className='flex flex-row gap-6 text-center'>< FaCheckCircle size={20} color='blue' /><h1 className='text-lg md:6xl md:font-bold text-gray-600'>Blog 2</h1></div></Tab>
@@ -36,7 +36,7 @@ const BlogPage = () => {
 
         </div>
 
-        <div className='flex md:px-24 px-2 md:py-3 py-6'>
+        <div className='flex max-w-screen-2xl mx-auto md:px-24 px-2 md:py-3'>
 
         <TabPanel>
           <Blog1/>

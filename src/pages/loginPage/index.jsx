@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import logo from './../../assets/logos.png'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import delivery from './../../assets/login.webp'
+
+
 
 
 const LoginPage = () => {
@@ -21,13 +25,18 @@ const LoginPage = () => {
   
 
   return (
-    <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
+    <div className="h-full flex items-center max-w-full">
+      <div className="h-screen md:block hidden flex-2">
+        <LazyLoadImage src={delivery} className="h-screen md:block hidden"/>
+      </div>
+
+      <div className="w-full flex flex-col items-center justify-center flex-1 h-screen" >
+      <div className="max-w-md flex flex-col items-center justify-center">
         <div className=" flex md:p-6 p-3 justify-center ">
-          <a href="/"><img src={logo} alt="" className= " w-[100px] h-[100px]"/></a>
+          <a href="/"><LazyLoadImage src={logo} alt="" className= " w-[60px] h-[60px]"/></a>
         </div>
-        <fieldset className="border border-solid border-gray-300 md:p-12 p-3">
-        <legend>Please Login</legend>
+        <fieldset className="border border-solid border-gray-300 md:p-12 p-3 ">
+        <legend className="font-bold text-primary inter">Login</legend>
         <form className="mt-8 space-y-6 md:w-full md:justify-center md:items-center md:pl-4" onSubmit={handleFormSubmit}>
           <div className="rounded-md shadow-sm -space-y-px md:w-full flex md:items-center md:justify-center">
             
@@ -35,7 +44,7 @@ const LoginPage = () => {
               country={'ng'}
               // value={phone}
               // onChange={phone => setPhone({ phone })}
-              onlyCountries={['ng','gh']}
+              onlyCountries={['ng']}
             />
             
           </div>
@@ -53,13 +62,15 @@ const LoginPage = () => {
                 to="/"
                 className="text-blue-600 hover:underline dark:text-blue-500"
               >
-                Don't have an account? Register
+                Don&apos;t have an account? Register
               </Link>
             </div>
           </div>
         </form>
         </fieldset>
       </div>
+      </div>
+   
     </div>
   )
 }

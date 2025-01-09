@@ -6,6 +6,9 @@ import { FaTwitter } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import android from "./../assets/Google-play-store.png";
 import apple from "./../assets/Apple-Download.png";
+
+
+
 import { serverTimestamp, addDoc, collection, } from "@firebase/firestore";
 import {db} from '../../firebase'
 import Button from '@mui/material/Button';
@@ -52,7 +55,7 @@ const Footer = () => {
                         <img src={logo} alt='' className='w-[45px] h-[45px]'/>
                     </a>
                     <p className='md:w-1/2 text-base font-extralight text-gray-300'>Ridesmash Technology provides reliable e-hailing and delivery services, connecting cities across Africa with efficiency and convenience.</p>
-                    
+                  
                 </div>
                 <div className='flex flex-col h-6 mb-6 md:mb-0'>
                             <h3 className='text-gray-400 text-base md:text-lg'>Newsletter and Events</h3>
@@ -71,7 +74,9 @@ const Footer = () => {
                                 <Button type='submit' variant="contained" sx={{py:1,}}  onClick={onSubmit}  >subscribe</Button>
                             </div>
                         <span className=' text-red-500'>{emailError !== "" && emailError}</span>
+
                 </div>
+
             </div>    
        
             <div className='md:w-3/4 flex md:flex-row flex-col flex-wrap justify-between gap-3 mt-[2rem] items-start'>
@@ -93,6 +98,7 @@ const Footer = () => {
                         <a href='/ride' className='block hover:text-secondary text-gray-200'>Ride</a>
                         <a href='/delivery' className='block hover:text-secondary text-gray-200'>Delivery</a>
                         <a href='/rental' className='block hover:text-secondary text-gray-200'>Car Rental</a>
+                        <a href='/rental' className='block hover:text-secondary text-gray-200'>Hire Purchase</a>
                         <a href='/airport' className='block hover:text-secondary text-gray-200'>Airport Pickup</a>
                         <a href='/business' className='block hover:text-secondary text-gray-200'>Ridesmash Business</a>
                     </ul>
@@ -104,7 +110,7 @@ const Footer = () => {
                         <a href='/driveAndEarn' className='block hover:text-secondary text-gray-200'>Drive and Earn</a>
                         <a href='/fleets' className='block hover:text-secondary text-gray-200'>Fleets Management </a>
                         <a href='/franchise' className='block hover:text-secondary text-gray-200'>Franchise Partner</a>
-                        
+                       
                     </ul>
                 </div>
                 <div className='space-y-4 mt-5'>
@@ -113,6 +119,7 @@ const Footer = () => {
                         <h3 className='block hover:text-secondary text-gray-200'>Nigeria</h3>
                         <h3 href='/' className='block hover:text-secondary text-gray-200'>Others...</h3>
                     </ul>
+                   
                 </div>
                 </div>
                
@@ -136,11 +143,12 @@ const Footer = () => {
          <div className='flex flex-col gap-2 md:items-center md:justify-center'>
             <h3 className=' text-gray-300'>Connect with us </h3>
             <div className='flex flex-row items-center gap-3 '>
-                <a href='/'><FaFacebookF className=' text-2xl' /></a>
-                <a href='/'><FaInstagram className=' text-2xl' /></a>
-                <a href='/'><FaTwitter className=' text-2xl' /></a>
-                <a href='/'><FaTiktok className=' text-2xl' /></a>
+                <a href='https://web.facebook.com/ridesmashNigeria'><FaFacebookF className='hover:text-secondary text-2xl transition-all duration-300 cursor-pointer' /></a>
+                <a href='https://www.instagram.com/ridesmashnigeria/'><FaInstagram className='hover:text-secondary text-2xl' /></a>
+                <a href='https://x.com/ridesmashng?s=21/'><FaTwitter className='hover:text-secondary text-2xl' /></a>
+                <a href='https://www.tiktok.com/@ridesmash?_t=ZM-8spvH4JpCrd&_r=1'><FaTiktok className='hover:text-secondary text-2xl' /></a>
             </div>
+
          </div>
         
        </div>
@@ -167,7 +175,6 @@ const Footer = () => {
          </div>
          <div className='items-center md:py-2 py-8 md:justify-center'>
          <p className='regular-14 w-full text-center text-gray-300'>&copy; {currentYear} Ridesmash Technology | All rights reserved</p>
-     
          </div>
     </div>
   )

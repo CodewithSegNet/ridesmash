@@ -3,10 +3,7 @@ import Accordion from "./Accordion";
 
 const FaqContent = () => {
   return (
-    <div className="p-4 rounded-lg md:py-12">
-        {/* <div className="flex md:items-center md:justify-center py-6">
-            <h1 className="text-xl md:text-4xl md:font-bold text-gray-600">FAQ</h1>
-        </div> */}
+    <div className="max-w-screen-2xl mx-auto p-4 rounded-lg md:py-12">
       <Accordion
         title="How do I order for a ride?"
         answer="Kindly download the Ridesmash app from the iOS or google stores, sign up and start ordering for rides."

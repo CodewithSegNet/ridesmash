@@ -4,6 +4,9 @@ import { MdOutlineMail, MdOutlinePhoneEnabled } from "react-icons/md";
 import { FaAddressCard } from "react-icons/fa";
 import {TextField} from '@mui/material';
 import Button from '@mui/material/Button';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+
 
 export default function ContactContent() {
 
@@ -45,7 +48,7 @@ export default function ContactContent() {
             </div>
             <div className=' flex flex-col md:flex-col gap-6 md:gap-8  w-[100%] justify-center md:px-12 bg-blue'>
                 
-            <img 
+            <LazyLoadImage 
                 src={support} 
                 alt=""
                 width={550}

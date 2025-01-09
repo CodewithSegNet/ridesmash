@@ -1,4 +1,4 @@
-import delivery from './../assets/delivery.webp'
+import delivery from './../assets/deliveryman.webp'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import {Link} from 'react-router-dom'

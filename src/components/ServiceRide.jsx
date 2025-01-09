@@ -4,18 +4,20 @@ import background from '../assets/background2.jpg'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import { FaSquare } from "react-icons/fa6";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const ServiceRide = ({currency, country}) => {
   return (
     <div className='flex h-[710px] md:h-full md:py-[4rem] max-w-screen-2xl mx-auto items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 xl:max-h-[598px] 2xl:rounded-5xl;'>
-        <img src={background} alt='image' className='md:w-full md:h-full h-screenresizeMode:"cover"' />
+        <LazyLoadImage src={background} alt='image' className='md:w-full md:h-full h-screenresizeMode:"cover"' />
         <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12 md:px-12 absolute md:flex-row-reverse bg-white opacity-90 h-screen md:h-full md:justify-between md:items-center px-3">
            
             <div className=" md:w-1/2">
                 {/* <div className='w-[100%] h-[100%] bg-primary'>
 
                 </div> */}
-                <img src={Image14} alt='' className='z-20'/>
+                <LazyLoadImage src={Image14} alt='' className='z-20'/>
             </div>
             <motion.div
             

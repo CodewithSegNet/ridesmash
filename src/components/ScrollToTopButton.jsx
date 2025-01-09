@@ -31,8 +31,8 @@ const ScrollToTopButton = () => {
         onClick={scrollToTop}
         style={{
           position: 'fixed',
-          bottom: '20px',
-          right: '7px',
+          bottom: '82px',
+          right: '14px',
           zIndex: 1000,
           backgroundColor: 'rgb(1, 255, 255)',
           color: '#fff',

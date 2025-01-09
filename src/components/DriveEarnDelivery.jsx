@@ -1,7 +1,9 @@
-import delivery from './../assets/payback.jpg'
+import delivery from './../assets/earnmore.webp'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import {Link} from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const DriveEarnDelivery = ({currency, country}) => {
   return (
@@ -12,7 +14,7 @@ const DriveEarnDelivery = ({currency, country}) => {
                 {/* <div className='w-[100%] h-[100%] bg-primary'>
 
                 </div> */}
-                <img src={delivery} alt='' className=' rounded-md md:w-[80%] md-[60%]'/>
+                <LazyLoadImage src={delivery} alt='' className=' rounded-md'/>
             </div>
             <motion.div
             

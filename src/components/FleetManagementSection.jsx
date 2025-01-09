@@ -17,116 +17,116 @@ const FleetManagementSection = ({currency, country}) => {
             <div
             
             className=' md:w-full'>
-                <h1 className='md:text-4xl text-2xl font-bold text-gray-500 mb-5 leading-normal'>How Fleet works:</h1>
+                <h1 className='md:text-4xl text-2xl font-bold text-primary mb-5 leading-normal'>How Fleet works:</h1>
 
-                <p className='text-gray-500 text-lg mb-4'>We are professionals in managing fleets of vehicles for partners . Fleet Management is categorized into two, Pay as you Go(Rentals) and Pay to Own (Hire Purchase) </p>
+                <p className='text-gray-500 text-md mb-4'>We are professionals in managing fleets of vehicles for partners . Fleet Management is categorized into two, Pay as you Go(Rentals) and Pay to Own (Hire Purchase) </p>
 
-                <p className='text-gray-500 text-lg mb-4 md:font-bold'>Pay as you Go (Rental):</p>
+                <p className='text-primary text-md mb-4 md:font-bold'>Pay as you Go (Rental):</p>
 
-                <p className='text-gray-500 text-lg '> This is designed for car owners who want Ridesmash to manage their vehicle with a weekly return. </p>
+                <p className='text-gray-500 text-md '> This is designed for car owners who want Ridesmash to manage their vehicle with a weekly return. </p>
 
-                <p className='text-gray-500 text-lg mb-4 md:font-bold md:my-3'>Features:</p>
+                <p className='text-primary text-md mb-4 md:font-bold md:my-3'>Features:</p>
 
 
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>No more hassle with drivers</p>
+                  <p className='text-gray-500 text-md '>No more hassle with drivers</p>
                </div>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Direct Payment on weekly basis</p>
+                  <p className='text-gray-500 text-md '>Direct Payment on weekly basis</p>
                </div>
 
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Professional Management of vehicles</p>
+                  <p className='text-gray-500 text-md '>Professional Management of vehicles</p>
                </div>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Timely response on Partners returns on Investment</p>
+                  <p className='text-gray-500 text-md '>Timely response on Partners returns on Investment</p>
                </div>
 
-               <p className='text-gray-500 text-lg mb-4 md:font-bold'>REQUIREMENT FOR PAY AS YOU GO (RENTALS) FOR PARTNERS </p>
+               <p className='text-primary text-md mb-4 md:font-bold'>REQUIREMENT FOR PAY AS YOU GO (RENTALS) FOR PARTNERS </p>
 
                 
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Partners identification card </p>
+                  <p className='text-gray-500 text-md '>Partners identification card </p>
                </div>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Vehicle Inspection</p>
+                  <p className='text-gray-500 text-md '>Vehicle Inspection</p>
                </div>
 
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Documents of Vehicles</p>
+                  <p className='text-gray-500 text-md '>Documents of Vehicles</p>
                </div>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Comprehensive Insurance (Compulsory)</p>
+                  <p className='text-gray-500 text-md '>Comprehensive Insurance (Compulsory)</p>
                </div>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Other Vehicle Particulars</p>
+                  <p className='text-gray-500 text-md '>Other Vehicle Particulars</p>
                </div>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Account Details for Payment</p>
+                  <p className='text-gray-500 text-md '>Account Details for Payment</p>
                </div>
 
 
-               <p className='text-gray-500 text-lg mb-4 md:font-bold'><span className='text-red-500'>Note:</span> We can handle all comprehensive Insurance if Partners have no Insurance Cover.</p>
+               <p className='text-primary text-md mb-4 md:font-bold'><span className='text-red-500'>Note:</span> We can handle all comprehensive Insurance if Partners have no Insurance Cover.</p>
 
 
                 
-               <p className='text-gray-500 text-lg mb-4 md:font-bold'>Pay to Own::</p>
+               <p className='text-primary text-md mb-4 md:font-bold'>Pay to Own::</p>
 
-                <p className='text-gray-500 text-lg '> This is a purchase system where our partners provide vehicles to be leased to our qualified drivers on High Purchase of 18 -24 months after which the driver claims ownership of the vehicle.  </p>
+                <p className='text-gray-500 text-md '> This is a purchase system where our partners provide vehicles to be leased to our qualified drivers on High Purchase of 18 -24 months after which the driver claims ownership of the vehicle.  </p>
 
-                <p className='text-gray-500 text-lg mb-4 md:font-bold md:my-3'>Features:</p>
+                <p className='text-primary text-md mb-4 md:font-bold md:my-3'>Features:</p>
 
 
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                 <FaSquare size={8} color='gray' />
-                <p className='text-gray-500 text-lg '>Professional Managers</p>
+                <p className='text-gray-500 text-md '>Professional Managers</p>
                 </div>
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                 <FaSquare size={8} color='gray' />
-                <p className='text-gray-500 text-lg '>Monthly repayment</p>
+                <p className='text-gray-500 text-md '>Monthly repayment</p>
                 </div>
 
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                 <FaSquare size={8} color='gray' />
-                <p className='text-gray-500 text-lg '>Agreed and structured returns of investment between 45 -60% over a period of time. </p>
+                <p className='text-gray-500 text-md '>Agreed and structured returns of investment between 45 -60% over a period of time. </p>
                 </div>
                
 
-                <p className='text-gray-500 text-lg mb-4 md:font-bold'>Requirement for Hire Purchase of Partners </p>
+                <p className='text-primary text-md mb-4 md:font-bold'>Requirement for Hire Purchase of Partners </p>
 
 
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                 <FaSquare size={8} color='gray' />
-                <p className='text-gray-500 text-lg '>Partners identification card </p>
+                <p className='text-gray-500 text-md '>Partners identification card </p>
                 </div>
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                 <FaSquare size={8} color='gray' />
-                <p className='text-gray-500 text-lg '>Vehicle Inspection</p>
+                <p className='text-gray-500 text-md '>Vehicle Inspection</p>
                 </div>
 
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                 <FaSquare size={8} color='gray' />
-                <p className='text-gray-500 text-lg '>Documents of Vehicles</p>
+                <p className='text-gray-500 text-md '>Documents of Vehicles</p>
                 </div>
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                 <FaSquare size={8} color='gray' />
-                <p className='text-gray-500 text-lg '>Comprehensive Insurance (Compulsory)</p>
+                <p className='text-gray-500 text-md '>Comprehensive Insurance (Compulsory)</p>
                 </div>
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                 <FaSquare size={8} color='gray' />
-                <p className='text-gray-500 text-lg '>Other Vehicle Particulars</p>
+                <p className='text-gray-500 text-md '>Other Vehicle Particulars</p>
                 </div>
-                <p className='text-gray-500 text-lg mb-4 md:font-bold'><span className='text-red-500'>Note:</span> We can handle all comprehensive Insurance if Partners have no Insurance Cover.</p>
+                <p className='text-primary text-md mb-4 md:font-bold'><span className='text-red-500'>Note:</span> We can handle all comprehensive Insurance if Partners have no Insurance Cover.</p>
 
               
             </div>

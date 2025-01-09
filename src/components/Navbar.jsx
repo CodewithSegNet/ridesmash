@@ -15,16 +15,17 @@ const Navbar = () => {
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "View our services including ride hailing, delivery, car rental, and more",
       submenu: [
-        { link: "Ride Hailing", path: "ride", ariaLabel: "Learn about our ride-hailing services" },
-        { link: "Delivery", path: "delivery", ariaLabel: "Explore our delivery services" },
-        { link: "Car Rental", path: "rental", ariaLabel: "Rent cars with ease" },
-        { link: "Airport Pickup", path: "airport", ariaLabel: "Book an airport pickup service" },
-        { link: "Ridesmash Business", path: "business", ariaLabel: "Discover our business solutions" },
+        { link: "Ride Hailing", path: "/ride", ariaLabel: "Learn about our ride-hailing services" },
+        { link: "Delivery", path: "/delivery", ariaLabel: "Explore our delivery services" },
+        { link: "Car Rental", path: "/rental", ariaLabel: "Rent cars with ease" },
+        { link: "Hire Purchase", path: "/hirepurchase", ariaLabel: "seamless hire purchase process" },
+        { link: "Airport Pickup", path: "/airport", ariaLabel: "Book an airport pickup service" },
+        { link: "Ridesmash Business", path: "/business", ariaLabel: "Discover our business solutions" },
       ],
     },
     {
       link: "Company",
-      path: "/company",
+      path: "/about",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Learn about our company, blog, safety measures, and more",
       submenu: [
@@ -52,6 +53,16 @@ const Navbar = () => {
       submenu: [
         { link: "Fleets Management", path: "/fleets", ariaLabel: "Learn about fleet management" },
         { link: "Franchise Partner", path: "/franchise", ariaLabel: "Become a franchise partner" },
+      ],
+    },
+    {
+      link: "Ridesmash Space",
+      path: "/driveAndEarn",
+      icon: <BiChevronDown aria-hidden="true" />,
+      ariaLabel: "Discover partnership opportunities including fleet management and franchises",
+      submenu: [
+        { link: "Ridesmash Nigeria", path: "/fleets", ariaLabel: "Learn about fleet management" },
+        { link: "Ridesmash Africa", path: "/franchise", ariaLabel: "Become a franchise partner" },
       ],
     },
   ];
@@ -108,7 +119,7 @@ const Navbar = () => {
   return (
     
     <>
-      <nav className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto z-40 text-white px-4 transition-all duration-500 ${
+      <nav className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto z-70 text-white px-4 transition-all duration-500 ${
             isMenuOpened ? "bg-gradient-active" : "bg-transparent"
           }`}
           style={
@@ -134,7 +145,7 @@ const Navbar = () => {
               </div>
               <div className='flex items-center gap-1 hover:text-secondary text-white hover:text-secondary transition-all duration-300'>
                  <BiSupport className='text-xl gap-1'/>
-                 <NavLink to='/support' aria-label="Customer support for Ridesmash" className='text-md'>Support</NavLink>
+                 <NavLink to='/contact' aria-label="Customer support for Ridesmash" className='text-md'>Support</NavLink>
               </div>
               <NavLink to='/login' className='bg-secondary py-3 px-6 rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold'>Login</NavLink>
 

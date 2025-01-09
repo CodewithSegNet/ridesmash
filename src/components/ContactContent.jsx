@@ -54,13 +54,13 @@ export default function ContactContent() {
     
   return (
     <div className='flex'>
-        <div className='flex flex-col md:flex-row justify-between px-6 md:px-12 gap-2 md:gap-6 w-full  py-6'>
+        <div className='flex max-w-screen-2xl mx-auto flex-col md:flex-row justify-between px-6 md:px-12 gap-2 md:gap-6 w-full py-6 mb-[3rem] md:mb-[0]'>
             <div className=' flex flex-col w-full h-full gap-4 py-12'>
                 <div className=' w-[80%]'>
-                    <h1 className=' font-extrabold text-gray-600 text-[42px] md:text-[56px] roboto-regular leading-[40px] md:leading-[66px]'>Reasons why we are Preffered</h1>
+                    <h1 className=' font-extrabold text-primary text-[32px] md:text-[36px] lg:text-[46px] roboto-regular leading-[40px] md:leading-[56px]'>Reasons why we are Preferred</h1>
                 </div>
-                <div className='  md:pr-6'>
-                    <p className=' text-lg text-gray-500 my-4'>
+                <div className='md:pr-6'>
+                    <p className=' text-md text-gray-500'>
                     We bring to you the comfort and style as you ride with us from your pickup location to your destination and we ensure safety of lives and property.
                     </p>
                 </div>
@@ -76,12 +76,12 @@ export default function ContactContent() {
                         
                         </div>
                         <div className=' w-[70%]'>
-                            <h2 className='font-bold md:font-extrabold roboto text-base md:text-xl text-gray-600'>
+                            <h2 className='font-bold md:font-extrabold roboto text-base md:text-xl text-primary'>
                                 Experience Drivers
                             </h2>
                         </div>
                     </div>
-                    <div className='flex flex-row my-4 '>
+                    <div className='flex flex-row'>
                     <div className='flex flex-row gap-2items-center'>
                             <img
                                 src={safety}
@@ -91,7 +91,7 @@ export default function ContactContent() {
                             />
                         </div>
                         <div className=' w-[70%]'>
-                            <h2 className='font-bold md:font-extrabold roboto text-base md:text-xl text-gray-600'>
+                            <h2 className='font-bold md:font-extrabold roboto text-base md:text-xl text-primary'>
                                 riders safety first
                             </h2>
                         </div>
@@ -100,26 +100,25 @@ export default function ContactContent() {
 
                 </div>
                 <div>
-                    <p className=' text-lg text-[#00000099] my-4'>
+                    <p className=' text-md text-[#00000099]'>
                     Regular enlightenment and knowledge sharing for our drivers and riders on rewards and bonuses for all customers.
                     </p>
                 </div>
-                <div className='flex flex-col md:flex-row md:justify-between justify-center my-6 gap-6'>
+                <div className='flex flex-col md:flex-row md:justify-between justify-center gap-6'>
                     <div className='flex flex-col items-center gap-1 md:gap-3 md:w-1/3'>
                         <MdOutlineMail color='red'  size='40px'/>
-                        <h2 className='text-[12px] md:text-[18px] text-black '>Send Us Email</h2>
+                        <h2 className='text-[12px] lg:text-[18px] md:text-[14px] text-black '>Send Us Email</h2>
                         <p className='text-[10px] md:text-[14px] text-[#00000088]'>info@ridesmash.com</p>
                     </div>
                     <div className='flex flex-col items-center   gap-1 md:gap-3 md:w-1/3 '>
                         <MdOutlinePhoneEnabled color='red'  size='40px'/>
-                        <h2 className='text-[12px] md:text-[18px] text-black '>Call Us Anytime</h2>
+                        <h2 className='text-[12px] md:text-[14px] lg:text-[18px] text-black '>Call Us Anytime</h2>
                         <p className='text-[10px] md:text-[14px] text-[#00000088]'>070-RIDESMASH.COM</p>
                     </div>
                     <div className='flex flex-col items-center  gap-1 md:gap-3 md:w-1/3  '>
                         <FaAddressCard color='red' size='40px'/>
-                        <h2 className='text-[12px] md:text-[18px] text-black'>Visit Our Office</h2>
+                        <h2 className='text-[12px] lg:text-[18px] md:text-[14px] text-black'>Visit Our Office</h2>
                         <p className='text-[10px] md:text-[14px] text-[#00000088]'>Nigeria</p>
-                        <p className='text-[10px] md:text-[14px] text-[#00000088]'>Ghana</p>
                     </div>
                 </div>
                 <div className='flex w-[100%] md:w-[100%] my-2 md:my-6 justify-center md:justify-start'>
@@ -134,7 +133,7 @@ export default function ContactContent() {
             <div className=' flex flex-col md:flex-col gap-6 md:gap-8  w-[100%] justify-center md:px-12'>
                 <div>
 
-                    <h1 className='font-extrabold text-gray-600 text-[24px] md:text-[36px] roboto'>Drop Us A Line</h1>
+                    <h1 className='font-extrabold text-primary text-[24px] md:text-[36px] roboto'>Drop us a Line</h1>
                     <p>We will respond immediately</p>
 
                 </div>

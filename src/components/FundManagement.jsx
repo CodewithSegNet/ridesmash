@@ -13,31 +13,31 @@ const FundManagement = () => {
             <div
             
             className=' md:w-full'>
-                <h1 className='md:text-4xl text-2xl font-bold text-gray-500 mb-5 leading-normal'>Fund Management: </h1>
+                <h1 className='md:text-3xl text-2xl font-bold text-primary mb-5 leading-normal'>Fund Management: </h1>
 
-                <p className='text-gray-500 text-lg mb-4'>This is designed for Partners who are interested in investing their money. </p>
-
-                
-
-               <p className='text-gray-500 text-lg mb-4 md:font-bold'>REQUIREMENT FOR FUND MANAGEMENT </p>
+                <p className='text-gray-500 text-md mb-4'>This is designed for Partners who are interested in investing their money. </p>
 
                 
+
+               <p className='text-primary text-md mb-4 md:font-bold'>REQUIREMENT FOR FUND MANAGEMENT </p>
+
+                
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>A minimum Fund of  </p>
+                  <p className='text-gray-500 text-md '>A minimum Fund of  </p>
                </div>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Vehicle Inspection</p>
+                  <p className='text-gray-500 text-md '>Vehicle Inspection</p>
                </div>
 
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>Documents of Vehicles</p>
+                  <p className='text-gray-500 text-md '>Documents of Vehicles</p>
                </div>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
-                  <p className='text-gray-500 text-lg '>5% Monthly interest from 6months and above, VAT inclusive and less than 6months is 7.5% VAT inclusive.</p>
+                  <p className='text-gray-500 text-md '>5% Monthly interest from 6months and above, VAT inclusive and less than 6months is 7.5% VAT inclusive.</p>
                </div>
                
               

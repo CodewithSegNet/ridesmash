@@ -1,7 +1,9 @@
 import React from 'react'
 import { IoChevronForwardOutline } from "react-icons/io5";
 import {Link} from 'react-router-dom'
-import about from './../assets/cars.png'
+import about from './../assets/car.webp'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const RideTitle = () => {
   return (
@@ -18,11 +20,12 @@ const RideTitle = () => {
            
         </div>
         <div className='hidden md:block'>
-          <img
+          <LazyLoadImage
             src={about}
             alt="menu"
             width={600}
             height={600}
+            className='z-30 relative'
             // className="lg: w-[600px] lg: h-[600px] w-[300px] h-[300px]"
           />
         </div>

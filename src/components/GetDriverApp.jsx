@@ -1,14 +1,18 @@
-import background from '../assets/background1.jpg'
-import background2 from '../assets/background2.jpg'
-import rider from '../assets/second.png'
+import background from '../assets/background1.webp'
+import background2 from '../assets/background2.webp'
+import rider from '../assets/second.webp'
 import android from '../assets/android.svg'
 import apple from '../assets/apple.svg'
 import Button from './Button'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+
+
 const GetDriverApp = () => {
   return (
     <div className='  flex items-center text-center bg-slate-400 md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat py-12 text-white sm:flex-row sm:gap-10 sm:py-10  xl:max-h-[598px] 2xl:rounded-5xl;'>
-        <img src={background} alt='image' className='md:w-full md:h-[460px] resizeMode:"cover" md:hidden' />
-        <img src={background2} alt='image' className='md:w-full md:h-full resizeMode:"cover" hidden md:block' />
+        <LazyLoadImage src={background} alt='image' className='md:w-full md:h-[460px] resizeMode:"cover" md:hidden' />
+        <LazyLoadImage src={background2} alt='image' className='md:w-full md:h-full resizeMode:"cover" hidden md:block' />
         <div className='absolute md:w-full w-full h-full bg-white top-0 left-0 opacity-80 md:flex md:flex-row flex flex-col gap-3 px-3'>
            <div className="z-20 flex w-full flex-1 flex-col items-start text-center md:text-left justify-center gap-2 md:gap-4 md:px-12 px-6 pt-4 mt-[3rem] md:mt[0]">
               <h2 className="text-[40px] font-[900] text-black text-center md:text-left leading-[100%] inter w-[100%] text-xl tracking-wide md:text-[40px] md:font-[900] md:leading-[100%] xl:w-[500px]"> Get Driver App free now!</h2>
@@ -37,7 +41,7 @@ const GetDriverApp = () => {
             </div>
             <div className="flex flex-1 items-center justify-end">
 
-              <img 
+              <LazyLoadImage 
                 src={rider} 
                 alt=""
                 width={900}

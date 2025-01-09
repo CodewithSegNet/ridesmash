@@ -16,7 +16,7 @@ export default function AcceptedVehicle() {
                 <div className='flex md:flex-col flex-col'>
 
                 <div className='flex  md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-center'>
-                    <div className='flex items-center md:w-5 md:h-5 md:pt-1 pt-2'>
+                    <div className='flex items-center md:w-5 md:h-5 md:pt-1 pb-1 md:pb-1'>
                     <FaCheckCircle size={17} color='blue' />
                     </div>  
                     <div className='flex flex-col gap-3'>
@@ -57,7 +57,7 @@ export default function AcceptedVehicle() {
                 <div className='flex md:flex-col flex-col'>
 
                         <div className='flex  md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-center'>
-                            <div className='flex items-center md:w-5 md:h-5 md:pt-1 pt-2'>
+                            <div className='flex items-center md:w-5 md:h-5 md:pt-1 pb-1 md:pb-1'>
                             <FaCheckCircle size={17} color='blue' />
                             </div>  
                             <div className='flex flex-col gap-6'>
@@ -92,7 +92,7 @@ export default function AcceptedVehicle() {
                 <div className='flex md:flex-col flex-col'>
 
                         <div className='flex  md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-center'>
-                            <div className='flex items-center md:w-5 md:h-5 md:pt-1 pt-2'>
+                            <div className='flex items-center md:w-5 md:h-5 md:pt-1 pb-1 md:pb-1'>
                             <FaCheckCircle size={17} color='blue' />
                             </div>  
                             <div className='flex flex-col gap-3'>

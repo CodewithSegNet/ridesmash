@@ -1,13 +1,15 @@
-import delivery from './../assets/delivery-man.webp'
+import delivery from './../assets/delivery.webp'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import {Link} from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 
 const EarnDelivery = ({currency, country}) => {
   return (
     <div className="flex md:px-14 py-[2rem] md:py-0 px-6 mx-auto md:py-[4rem] md:my-0 md:items-center md:justify-center bg-black">
-    <div className="flex md:flex-row-reverse flex-col justify-between md:items-center gap-8">
+    <div className="flex max-w-screen-2xl mx-autos md:flex-row-reverse flex-col justify-between md:items-center gap-8">
       {/* Image Section */}
       <motion.div
         variants={fadeIn("down", 0.2)}
@@ -16,7 +18,7 @@ const EarnDelivery = ({currency, country}) => {
         viewport={{ once: true }}
         className="md:w-1/2"
       >
-        <img src={delivery} alt="Delivery Person" className="rounded-lg" />
+        <LazyLoadImage src={delivery} alt="Delivery Person" className="rounded-lg" />
       </motion.div>
   
       {/* Content Section */}

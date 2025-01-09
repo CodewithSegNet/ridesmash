@@ -12,10 +12,12 @@ import ServiceOption from "../../components/serviceOption"
 import AboutBackGround from "../../components/AboutBackground"
 import GetApp from "../../components/GetApp"
 import GetDriverApp from "../../components/GetDriverApp"
+import Card from "../../components/Card"
 import WhyChooseUs from "../../components/WhyChooseus"
 import BlogContent from "../../components/blogContent"
 import FaqView from "../../components/faqView";
 import backgroundImage from '../../assets/hero.webp';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 
@@ -76,18 +78,31 @@ const HeroImg = {
       <div style={HeroImg} className="">
         <Navbar/>
         {/*<AboutBackGround/>*/}
+        <LazyLoadImage
+        src={backgroundImage}
+        alt="Lazy Loaded Background"
+        style={{
+          ...HeroImg, 
+          position: 'absolute',
+          top: '0',
+          left: '0',
+          zIndex: '-1',
+        }}
+      />
         <Hero/> 
       </div>
         <OurServices/>
         <GetApp/>
         {/* <Features/> */}
         <ServiceOption />
+        <Card />
         <WhyChooseUs/>
         
         <Earn currency = {countryInfo.countryCurrency} country = {countryInfo.countryName}/>
         <EarnDelivery currency = {countryInfo.countryCurrency} country = {countryInfo.countryName}/>
          {/* <GetApp/> */}
         <GetDriverApp/>
+
 {/*        
         <BlogContent/> */}
         {/* <FaqView/> */}

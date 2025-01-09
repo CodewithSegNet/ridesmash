@@ -1,4 +1,4 @@
-import delivery from './../assets/Business-opportunity.jpg'
+import delivery from './../assets/people.webp'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import {Link} from 'react-router-dom'
