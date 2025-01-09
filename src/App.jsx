@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
 import HomePage from './pages/homePage'
+import ScrollToTop from './components/ScrollToTop'
 import ServicesPage from './pages/servicesPage';
 import AboutUsPage from './pages/aboutUsPage';
 import ContactUsPage from './pages/contactUsPage';
@@ -69,6 +70,8 @@ function App() {
   return (
     <div>
         <BrowserRouter>
+        <ScrollToTop />
+
         <Routes>
           <Route path="/">
             <Route path='/' index 

@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { fadeIn } from '../variants';
 import { motion, useInView, useAnimation } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -17,15 +18,11 @@ const Carousel = ({ slides, settings }) => {
   }, [isInView, controls]);
 
   return (
-    <motion.div
-    
-    
-    initial={{ opacity: 0, y: 75 }}
-    animate={controls}
-    variants={{
-      visible: { opacity: 1, y: 0 },
-    }}
-    transition={{ duration: 0.5, delay: 0.6 }}
+    <motion.div    
+      variants={fadeIn("down", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true }}
 
 ref={ref}
     className="">

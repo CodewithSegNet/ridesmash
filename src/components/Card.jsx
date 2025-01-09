@@ -101,7 +101,7 @@ const Card = () => {
           We Work With The <span> Best Partners </span>
         </motion.h1>
       </div>
-      <div className="mt-[6rem] w-full">
+      <div className="mt-[6rem] md:mt-[4rem] w-full">
         <Carousel slides={carouselData1} settings={sliderSettings1} />
       </div>
     </div>
