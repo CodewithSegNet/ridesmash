@@ -85,13 +85,13 @@ const Footer = () => {
                 <div className='space-y-4 mt-5'>
                     <h1 className=' text--300 md:text-xl'>Company</h1>
                     <ul className='space-y-3'>
-                        <Link href='/about' className='block hover:text-secondary text-gray-200'>About Us</Link>
-                        <Link href='/services' className='block hover:text-secondary text-gray-200'>Services</Link>
-                        <Link href='/driveAndEarn' className='block hover:text-secondary  text-gray-200'>Earn</Link>
-                        <Link href='/safety' className='block hover:text-secondary text-gray-200'>Safety</Link>
-                        <Link href='/press' className='block hover:text-secondary text-gray-200'>Press Release</Link>
-                        <Link href='/blog' className='block hover:text-secondary text-gray-200'>Blog</Link>
-                        <Link href='/faq' className='block hover:text-secondary text-gray-200'>FAQ</Link>
+                        <Link to='/about' className='block hover:text-secondary text-gray-200'>About Us</Link>
+                        <Link to='/services' className='block hover:text-secondary text-gray-200'>Services</Link>
+                        <Link to='/driveAndEarn' className='block hover:text-secondary  text-gray-200'>Earn</Link>
+                        <Link to='/safety' className='block hover:text-secondary text-gray-200'>Safety</Link>
+                        <Link to='/press' className='block hover:text-secondary text-gray-200'>Press Release</Link>
+                        <Link to='/blog' className='block hover:text-secondary text-gray-200'>Blog</Link>
+                        <Link to='/faq' className='block hover:text-secondary text-gray-200'>FAQ</Link>
                     </ul>
                 </div>
                 <div className='space-y-4 mt-5'>
@@ -109,7 +109,7 @@ const Footer = () => {
                 <div className='space-y-4 mt-5'>
                     <h4 className='text--300 md:text-xl'>Partnership</h4>
                     <ul className='space-y-3'>
-                        <Link href='/driveAndEarn' className='block hover:text-secondary text-gray-200'>Drive and Earn</Link>
+                        <Link to='/driveAndEarn' className='block hover:text-secondary text-gray-200'>Drive and Earn</Link>
                         <Link to='/fleets' className='block hover:text-secondary text-gray-200'>Fleets Management </Link>
                         <Link to='/franchise' className='block hover:text-secondary text-gray-200'>Franchise Partner</Link>
                        
@@ -165,7 +165,7 @@ const Footer = () => {
          </div>
          <div className='flex flex-row items-center gap-3'>
             <Link to='/'><img src={android} alt='google' className='w-[200px] '/></Link>
-            <a to='/'><img src={apple} alt='apple' className='w-[200px] '/></a>
+            <Link to='/'><img src={apple} alt='apple' className='w-[200px] '/></Link>
            
          </div>
          {/* <div>
