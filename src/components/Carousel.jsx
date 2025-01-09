@@ -29,7 +29,7 @@ ref={ref}
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="">
-            <img src={slide.src} alt={slide.alt} className="mx-auto w-[202px]" />
+            <img src={slide.src} alt={slide.alt} className="mx-auto w-[150px] md:w-[202px]" />
           </div>
         ))}
       </Slider>
