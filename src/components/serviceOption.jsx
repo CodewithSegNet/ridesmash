@@ -30,7 +30,7 @@ const ServiceOption = () => {
   ]
 
   return (
-    <div className="md:px-14 p-4 max-w-screen-2xl mx-auto md:py-16 py-8">
+    <div className="md:px-14 p-4 max-w-screen-2xl mx-auto mb-20 md:mb-30 mt-20 md:mt-30">
         <motion.div
          variants={fadeIn("down", 0.3)}
          initial="hidden"

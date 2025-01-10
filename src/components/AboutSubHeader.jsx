@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutSubHeader = () => {
   return (
-    <div className=' items-center max-w-screen-2xl mx-auto justify-between py-10 px-4 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 '>
+    <div className=' items-center max-w-screen-2xl mx-auto justify-between mb-20 md:mb-30 mt-20 md:mt-30 px-4 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 '>
         <div className='flex flex-col md:pr-6'>
             <div>
                 

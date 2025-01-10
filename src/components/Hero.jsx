@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <div className="flex md:px-14 p-4 max-w-screen-2xl mt-[5rem] mx-auto md:mt-5 xl:mt-8 min-h-[60vh]">
+    <div className="flex md:px-14 p-4 max-w-screen-2xl mt-[5rem] mx-auto md:mt-5 xl:mt-8 min-h-[60vh] ">
         
         <div className="flex md:flex-row flex-col w-[100%] md:items-center">
             <motion.div 

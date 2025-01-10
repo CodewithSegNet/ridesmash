@@ -5,8 +5,18 @@ import {FaXmark, FaBars} from 'react-icons/fa6'
 import { NavLink, Link } from 'react-router-dom';
 
 
+
 const Navbar = () => {
   
+  useEffect(() => {
+    // This ensures the script finds the new location for the widget.
+    const widget = document.querySelector(".gtranslate_wrapper");
+    const navbarContainer = document.getElementById("navbar-gtranslate");
+
+    if (widget && navbarContainer) {
+      navbarContainer.appendChild(widget);
+    }
+  }, []);
 
   const navItems = [
     {

@@ -73,7 +73,7 @@ const Card = () => {
  
 
   return (
-    <div className="md:px-14 p-4 max-w-screen-2xl mx-auto md:py-16 py-8" ref={ref}>
+    <div className="md:px-14 p-4 max-w-screen-2xl mx-auto mb-20 md:mb-30" ref={ref}>
       <div className="max-w-screen max-auto w-full text-center">
         <motion.p
         
