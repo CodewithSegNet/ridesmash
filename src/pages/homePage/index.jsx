@@ -66,7 +66,7 @@ const HeroImg = {
   backgroundSize: 'cover',
   backgroundPosition: 'center 30%', 
   backgroundRepeat: 'no-repeat',
-  height: '95vh', 
+  height: '500px', 
   width: '100%', 
 };
 
@@ -75,12 +75,12 @@ const HeroImg = {
   return (
     <>
       
-      <div style={HeroImg} className="">
+      <div style={HeroImg} className="flex w-full min-h-[680px] relative flex-col">
         <Navbar/>
         {/*<AboutBackGround/>*/}
         <LazyLoadImage
         src={backgroundImage}
-        alt="Lazy Loaded Background"
+        alt="move wherever, whenever"
         style={{
           ...HeroImg, 
           position: 'absolute',

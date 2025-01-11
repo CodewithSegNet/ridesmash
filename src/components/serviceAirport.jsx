@@ -6,11 +6,11 @@ import { FaSquare } from "react-icons/fa6";
 
 const ServiceAirport = () => {
   return (
-    <div className=' flex h-full md:py-[8em] max-w-screen-2xl mx-auto items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 xl:max-h-[598px] 2xl:rounded-5xl;'>
+    <div className=' flex h-full md:py-[8em] items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 xl:max-h-[598px] 2xl:rounded-5xl;'>
         <img src={background} alt='image' className='md:w-full md:h-full h-[710px] my-[4rem] md:my-0 resizeMode:"cover"' />
-        <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12 md:px-12 absolute md:flex-row-reverse bg-white opacity-90 md:h-full md:justify-between md:items-center h-screen px-3">
-           
-            <div className=" md:w-1/2">
+        <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12 md:px-12 absolute md:flex-row-reverse bg-white opacity-90">
+           <div className='max-w-screen-2xl px-6 mx-auto z-20 flex w-full flex-1 flex-col items-start justify-center gap-12 md:px-12 md:flex-row-reverse bg-white opacity-90 h-screen md:h-screen md:justify-between md:items-center px-3s'>
+           <div className=" md:w-1/2">
                 {/* <div className='w-[100%] h-[100%] bg-primary'>
 
                 </div> */}
@@ -44,6 +44,8 @@ const ServiceAirport = () => {
                   <p className='text-gray-600 text-md md:text-md '>Pre-booking ensures a car is waiting upon arrival (avoiding wait times).</p>
                </div>
             </motion.div>
+           </div>
+           
 
         </div>
     </div>

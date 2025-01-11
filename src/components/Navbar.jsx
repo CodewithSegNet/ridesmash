@@ -129,7 +129,7 @@ const Navbar = () => {
   return (
     
     <>
-      <nav className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto z-70 text-white px-4 transition-all duration-500 ${
+      <nav className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto w-full z-70 text-white px-4 transition-all duration-500 ${
             isMenuOpened ? "bg-gradient-active" : "bg-transparent"
           }`}
           style={
@@ -206,7 +206,7 @@ const Navbar = () => {
 
           <div style={{background: "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 92, 186, 1))",
           margin: "0 auto"
-  }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl z-40  md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center md:flex-row md:text-left lg:flex-row h-[90vh] lg:h-[400px] overflow-hidden
+  }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl z-40 md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center md:flex-row md:text-left lg:flex-row h-[100vh] lg:h-[400px] overflow-hidden
     ${isMenuOpened ? "opacity-100 translate-y-0 visible pointer-events-auto z-40" : "opacity-0 -translate-y-5 invisible pointer-events-none z-40"} 
     transition-all duration-500 ease-in-out`}
 >
@@ -217,7 +217,7 @@ const Navbar = () => {
        index === 0 ? "justify-start mt-[1rem]" : ""
      }`}
    >
-      <div className="flex hover:text-gray-200 text-white items-center w-[100%]  mt-5 justify-between hover:text-secondary transition-all duration-300 justify-center md:justify-start">
+      <div className="flex hover:text-gray-200 text-white items-center w-[100%] mt-5 justify-between hover:text-secondary transition-all duration-300 justify-center md:justify-start">
         <NavLink to={path} className="block py-1 text-md font-bold" aria-label={ariaLabel}> 
 
           {link}
@@ -267,7 +267,7 @@ const Navbar = () => {
 
     </div>
   ))}
-  <NavLink to='/login' className='bg-secondary py-3 mx-[5rem] rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</NavLink>
+  <NavLink to='/login' style={{marginTop: "3rem"}} className='bg-secondary py-3 mx-[5rem] rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</NavLink>
 </div>
 
         </nav> 

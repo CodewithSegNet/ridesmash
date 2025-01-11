@@ -7,7 +7,7 @@ import { FaSquare } from "react-icons/fa6";
 const ServiceDelivery = ({currency, country}) => {
 
   return (
-    <div className="flex md:px-14 p-4 h-full py-12 md:py-0 md:h-full mx-auto md:py-[5rem] md:items-center md:justify-center bg-black">
+    <div className="flex md:px-14 px-6 p-4 h-full py-12 md:py-0 md:h-full mx-auto md:py-[5rem] md:items-center md:justify-center bg-black">
         <div className="flex md:flex-row flex-col justify-between md:items-center max-w-screen-2xl gap-8">
            
             <div className=" md:w-1/2">
@@ -31,15 +31,15 @@ const ServiceDelivery = ({currency, country}) => {
 
                 <p className='text-gray-100 text-lg mb-4 md:font-bold'>Benefits:</p>
 
-                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
+                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center'>
                   <FaSquare size={8} color='gray' />
                   <p className='text-gray-400 text-md '>Saves time and effort compared to self-pickup.</p>
                </div>
-               <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
+               <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center'>
                   <FaSquare size={8} color='gray' />
                   <p className='text-gray-400 text-md '>Wide variety of delivery options to choose from.</p>
                </div>
-               <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
+               <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center'>
                   <FaSquare size={8} color='gray' />
                   <p className='text-gray-400 text-md '>Convenient in-app tracking of your delivery.</p>
                </div>

@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <div className="flex md:px-14 p-4 max-w-screen-2xl mt-[5rem] mx-auto md:mt-5 xl:mt-8 min-h-[60vh] ">
+    <div className="flex md:px-14 p-4 max-w-screen-2xl mx-auto mt-[5rem] md:mt-[5rem] xl:mt-[5.5rem] min-h-[60vh] ">
         
-        <div className="flex md:flex-row flex-col w-[100%] md:items-center">
+        <div className="flex md:flex-row flex-col w-[100%]">
             <motion.div 
                 variants={fadeIn("up", 0.4)}
                 initial="hidden"
@@ -29,14 +29,6 @@ const Hero = () => {
                     <Link to="/driveAndEarn" className='flex items-center border-[2px] border-secondary justify-center bg-transparent transition-all duration-300 text-secondary py-3 px-4 md:px-6 rounded-full hover:border-primary hover:text-white hover:bg-primary font-semibold text-sm md:text-md'> Drive and Earn</Link>
                 </div>
             </motion.div>
-            {/* <motion.div
-                variants={fadeIn("left", 0.7)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{once:false, amount:0.7}}
-            >
-                <img src={banner} alt="" className=""/>
-            </motion.div> */}
         </div>
     </div>
   )
