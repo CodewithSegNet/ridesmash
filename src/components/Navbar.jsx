@@ -25,7 +25,7 @@ const Navbar = () => {
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "View our services including ride hailing, delivery, car rental, and more",
       submenu: [
-        { link: "Ride Hailing", path: "/ride", ariaLabel: "Learn about our ride-hailing services" },
+        { link: "Ride Hailing", path: "/ride-hailing", ariaLabel: "Learn about our ride-hailing services" },
         { link: "Delivery", path: "/delivery", ariaLabel: "Explore our delivery services" },
         { link: "Car Rental", path: "/rental", ariaLabel: "Rent cars with ease" },
         { link: "Hire Purchase", path: "/hirepurchase", ariaLabel: "seamless hire purchase process" },
@@ -67,12 +67,12 @@ const Navbar = () => {
     },
     {
       link: "Ridesmash Space",
-      path: "/driveAndEarn",
+      path: "/location",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Discover partnership opportunities including fleet management and franchises",
       submenu: [
-        { link: "Ridesmash Nigeria", path: "/fleets", ariaLabel: "Learn about fleet management" },
-        { link: "Ridesmash Africa", path: "/franchise", ariaLabel: "Become a franchise partner" },
+        { link: "Ridesmash Nigeria", path: "/location", ariaLabel: "Learn about fleet management" },
+        { link: "Ridesmash Africa", path: "/location", ariaLabel: "Become a franchise partner" },
       ],
     },
   ];
@@ -85,18 +85,21 @@ const Navbar = () => {
   };
   
   useEffect(() => {
-    const isMobile = window.matchMedia("(max-width: 1020px)").matches;
-
-    if (isMobile && isMenuOpened) {
-      document.body.classList.add("body-fixed");
-    } else {
-      document.body.classList.remove("body-fixed");
-    }
-
+    const handleBodyClass = () => {
+      if (isMenuOpened) {
+        document.body.classList.add("body-fixed");
+      } else {
+        document.body.classList.remove("body-fixed");
+      }
+    };
+  
+    handleBodyClass();
+  
     return () => {
       document.body.classList.remove("body-fixed");
     };
   }, [isMenuOpened]);
+  
 
   
   const [openSubmenuIndex, setOpenSubmenuIndex] = useState(null);
@@ -211,7 +214,7 @@ const Navbar = () => {
     transition-all duration-500 ease-in-out`}
 >
          {navItems.map(({ link, path, icon, submenu, ariaLabel }, index) => (
-     <div
+     <ul
      key={link}
      className={`px-0 lg:px-14 space-y-2 mx-auto text-center md:text-left w-[100%] px-4 z-40 ${
        index === 0 ? "justify-start mt-[1rem]" : ""
@@ -250,7 +253,7 @@ const Navbar = () => {
   }}
 >      
         {submenu && (
-          <div className="space-y-2 ml-5 md:ml-0 transition-all duration-500 ease-in">
+          <ul className="space-y-2 ml-5 md:ml-0 transition-all duration-500 ease-in">
             {submenu.map(({ link, path }) => (
               <NavLink
                 key={link}
@@ -261,11 +264,11 @@ const Navbar = () => {
                 {link}
               </NavLink>
             ))}
-          </div>
+          </ul>
         )}
       </div>
 
-    </div>
+    </ul>
   ))}
   <NavLink to='/login' style={{marginTop: "3rem"}} className='bg-secondary py-3 mx-[5rem] rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</NavLink>
 </div>

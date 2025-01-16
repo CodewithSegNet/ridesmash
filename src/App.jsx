@@ -27,6 +27,7 @@ import FranchisePage from './pages/franchisePage';
 import RidePage from './pages/RidePage';
 import DeliveryPage from './pages/deliveryPage';
 import RentalPage from './pages/rentalPage';
+import LocationPage from './pages/locationPage';
 import AirportPage from './pages/airportPage';
 import SmashBusinessPage from './pages/smashBusinessPage';
 import SafetyPage from './pages/safetyPage';
@@ -106,8 +107,10 @@ function App() {
             <Route path="booking" element={<BookingPage/>}/>
             <Route path="support" element={<SupportPage/>}/>
             <Route path="food" element={<SmashFoodPage/>}/>
-            <Route path="ride" element={<RidePage/>}/>
+            <Route path="ride-hailing" element={<RidePage/>}/>
             <Route path="delivery" element={<DeliveryPage/>}/>
+            <Route path="location" element={<LocationPage/>}/>
+
             <Route path="rental" element={<RentalPage/>}/>
             <Route path="airport" element={<AirportPage/>}/>
             <Route path="business" element={<SmashBusinessPage/>}/>

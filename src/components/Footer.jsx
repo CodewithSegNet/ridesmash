@@ -97,7 +97,7 @@ const Footer = () => {
                 <div className='space-y-4 mt-5'>
                     <h1 className=' text--300 md:text-xl'>Services</h1>
                     <ul className='space-y-3'>
-                        <Link to='/ride' className='block hover:text-secondary text-gray-200'>Ride</Link>
+                        <Link to='/ride-hailing' className='block hover:text-secondary text-gray-200'>Ride</Link>
                         <Link to='/delivery' className='block hover:text-secondary text-gray-200'>Delivery</Link>
                         <Link to='/rental' className='block hover:text-secondary text-gray-200'>Car Rental</Link>
                         <Link to='/rental' className='block hover:text-secondary text-gray-200'>Hire Purchase</Link>

@@ -17,7 +17,7 @@ const Hero = () => {
                 
                 className="sm:w-3/4 md:w-3/4 lg:w-3/5 xl:w-2/4 w-full flex flex-col md:mt-0 lg:mt-0 mt-3">
                 <h1 className="xl:text-5xl lg:text-4xl text-4xl text-white font-black inter tracking leading-[1.5] " style={{ lineHeight: '1.2' }}>Ride in Style<span className='font-euclid font-black p-0 m-0'>,</span></h1>
-                <h1  className="xl:text-5xl lg:text-4xl md:text-4xl text-4xl text-white font-black inter tracking">Ride in Comfort</h1>
+                <h2  className="xl:text-5xl lg:text-4xl md:text-4xl text-4xl text-white font-black inter tracking">Ride in Comfort</h2>
                 {/* <h3 className="text-xl text-gray-300 py-3 font-extralight">We keep lives transformed.</h3> */}
                 <h3 className="xl:text-md lg:text-md text-gray-300 py-3 font-extralight text-lg">Experience the ultimate ride-sharing solution bringing comfort, 
                     style, and reliability to Africa. Whether commuting, traveling, 

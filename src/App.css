@@ -11,10 +11,23 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  position: relative; 
+
 }
 
-html, body{
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+html, body {
   min-width: 230px;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 

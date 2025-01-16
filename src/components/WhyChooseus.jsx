@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
               variants={fadeIn("down", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{once:false, amount:0.7}}
+              viewport={{once:true}}
               className=' md:w-1/3 hidden md:block'
             >
               
