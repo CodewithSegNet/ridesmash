@@ -22,7 +22,7 @@ const FranchisePartner = ({currency, country}) => {
                 <p className='text-gray-500 text-md mb-4'>Ridesmash is Africa's rising star in the e-hailing app market, and we're looking for passionate entrepreneurs to join our journey!  We offer a dynamic franchise opportunity for those who share our vision of making transportation seamless, affordable, and empowering across the continent.</p>
 
                 
-                <p className='text-primary text-md mb-4 md:font-bold'>Why Partner with Ridesmash?</p>
+                <p className='text-primary text-md mb-4 mt-[3rem] md:font-bold'>Why Partner with Ridesmash?</p>
 
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
@@ -49,7 +49,7 @@ const FranchisePartner = ({currency, country}) => {
                   <p className='text-gray-500 text-md '><span className='font-[500]'>Make a Positive Impact: </span> Empower local drivers, entrepreneurs, and communities by fostering a thriving transportation network within your region.</p>
                </div> 
                
-               <p className='text-primary text-md mb-4 md:font-bold'>What We Offer Our Franchise Partners:</p>
+               <p className='text-primary text-md mb-4 mt-[3rem] md:font-bold'>What We Offer Our Franchise Partners:</p>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
                   <p className='text-gray-500 text-md '><span className='font-[500]'>Comprehensive Training: </span>Our dedicated team provides in-depth training on the Ridesmash platform, operations, marketing strategies, and driver recruitment.</p>
@@ -71,7 +71,7 @@ const FranchisePartner = ({currency, country}) => {
                   <FaSquare size={8} color='gray' />
                   <p className='text-gray-500 text-md '><span className='font-[500]'>Discounted Fees and Revenue Sharing: </span>Enjoy competitive franchise fees and a revenue-sharing model that incentivizes your success.</p>
                </div> 
-               <p className='text-primary text-md mb-4 md:font-bold'>Who We're Looking For:</p>
+               <p className='text-primary text-md mb-4 mt-[3rem] md:font-bold'>Who We're Looking For:</p>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
                   <p className='text-gray-500 text-md '><span className='font-[500]'>Entrepreneurs with Vision: </span>We seek passionate individuals with a strong business acumen and a commitment to excellence.</p>
@@ -86,7 +86,7 @@ const FranchisePartner = ({currency, country}) => {
                </div> 
                 
                <div className='flex  md:flex-row gap-2 mb-4 items-center '>
-                  <p className=' text-md md:text-xl text-primary md:font-bold'>Ready to Join the Ridesmash Family?</p>
+                  <p className=' text-md md:text-xl text-primary mt-[3rem] md:font-bold'>Ready to Join the Ridesmash Family?</p>
                </div> 
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <p className='text-gray-600 text-xl'>If you're a forward-thinking entrepreneur who thrives in a dynamic environment, we encourage you to take the next step. Send us an email (franchisepartners@ridesmash.com) to learn more about the application process and the exciting opportunities that await you as a Ridesmash franchise partner.</p>

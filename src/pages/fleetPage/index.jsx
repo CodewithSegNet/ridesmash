@@ -9,11 +9,41 @@ import { FaCheckCircle } from 'react-icons/fa'
 import FleetManagementSection from '../../components/FleetManagementSection'
 import FundManagement from '../../components/FundManagement'
 import PayToGo from '../../components/PayToGo'
+import { Helmet } from 'react-helmet';
 // import Hero from '../../components/Hero'
 
 const FleetPage = () => {
   return (
     <>
+     <Helmet>
+        <title>Fleet Management | Ridesmash</title>
+        <meta
+          name="description"
+          content="Manage your fleet effectively with Ridesmash's Fleet Management system. Learn about its benefits, how it works, and more."
+        />
+        <meta name="keywords" content="Fleet Management, Benefits, Fund Management, Pay as you go, Ridesmash" />
+        <meta property="og:title" content="Fleet Management | Ridesmash" />
+        <meta
+          property="og:description"
+          content="Explore Ridesmash's Fleet Management page to understand how to optimize fleet operations, manage funds, and use the pay-as-you-go model."
+        />
+        <meta
+          property="og:image"
+          content="https://ridesmash.com/assets/fleet-management-cover.jpg"
+        />
+        <meta property="og:url" content="https://ridesmash.com/fleet-management" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fleet Management | Ridesmash" />
+        <meta
+          name="twitter:description"
+          content="Learn about Fleet Management, Fund Management, and more on Ridesmash. Optimize your fleet and manage funds effectively."
+        />
+        <meta
+          name="twitter:image"
+          content="https://ridesmash.com/assets/fleet-management-cover.jpg"
+        />
+      </Helmet>
       <div>
       <div style={{
     background: "linear-gradient(to top, rgba(0, 92, 186, 0.8), rgba(2, 0, 102, 1))",

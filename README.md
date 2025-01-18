@@ -1,6 +1,6 @@
 # 🚗 RideSmash
 
-Ridesmash Technology operates an e-hailing, delivery services accross cities in africa.
+Ridesmash Technology operates an e-hailing, delivery services across cities in africa.
 
 ## Get Started
 

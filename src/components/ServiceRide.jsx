@@ -21,10 +21,10 @@ const ServiceRide = ({currency, country}) => {
             </div>
             <motion.div
             
-            variants={fadeIn("right", 0.7)}
+            variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:true}}
             
             
             className=' md:w-2/5 w-full '>

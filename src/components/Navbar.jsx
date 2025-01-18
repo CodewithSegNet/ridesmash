@@ -27,19 +27,19 @@ const Navbar = () => {
       submenu: [
         { link: "Ride Hailing", path: "/ride-hailing", ariaLabel: "Learn about our ride-hailing services" },
         { link: "Delivery", path: "/delivery", ariaLabel: "Explore our delivery services" },
-        { link: "Car Rental", path: "/rental", ariaLabel: "Rent cars with ease" },
-        { link: "Hire Purchase", path: "/hirepurchase", ariaLabel: "seamless hire purchase process" },
-        { link: "Airport Pickup", path: "/airport", ariaLabel: "Book an airport pickup service" },
-        { link: "Ridesmash Business", path: "/business", ariaLabel: "Discover our business solutions" },
+        { link: "Car Rental", path: "/car-rentals", ariaLabel: "Rent cars with ease" },
+        { link: "Hire Purchase", path: "/hire-purchase", ariaLabel: "seamless hire purchase process" },
+        { link: "Airport Pickup", path: "/airport-pickup", ariaLabel: "Book an airport pickup service" },
+        { link: "Ridesmash Business", path: "/ridesmash-business", ariaLabel: "Discover our business solutions" },
       ],
     },
     {
       link: "Company",
-      path: "/about",
+      path: "/about-us",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Learn about our company, blog, safety measures, and more",
       submenu: [
-        { link: "About Us", path: "/about", ariaLabel: "Learn more about us" },
+        { link: "About Us", path: "/about-us", ariaLabel: "Learn more about us" },
         { link: "Blog", path: "/blog", ariaLabel: "Read our latest blog posts" },
         { link: "Safety", path: "/safety", ariaLabel: "Learn about our safety measures" },
         { link: "FAQ", path: "/faq", ariaLabel: "Get answers to frequently asked questions" },
@@ -47,22 +47,22 @@ const Navbar = () => {
     },
     {
       link: "Driver",
-      path: "/driveAndEarn",
+      path: "/drive-and-earn",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Explore driver opportunities and help resources",
       submenu: [
-        { link: "Earn With Us", path: "/driveAndEarn", ariaLabel: "Learn how to earn by driving with us" },
-        { link: "Help Center", path: "/contact", ariaLabel: "Get support from our help center" },
+        { link: "Earn With Us", path: "/drive-and-earn", ariaLabel: "Learn how to earn by driving with us" },
+        { link: "Help Center", path: "/contact-us", ariaLabel: "Get support from our help center" },
       ],
     },
     {
       link: "Partnership",
-      path: "/driveAndEarn",
+      path: "/franchise-partner",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Discover partnership opportunities including fleet management and franchises",
       submenu: [
-        { link: "Fleets Management", path: "/fleets", ariaLabel: "Learn about fleet management" },
-        { link: "Franchise Partner", path: "/franchise", ariaLabel: "Become a franchise partner" },
+        { link: "Fleets Management", path: "/fleet-management", ariaLabel: "Learn about fleet management" },
+        { link: "Franchise Partner", path: "/franchise-partner", ariaLabel: "Become a franchise partner" },
       ],
     },
     {
@@ -72,7 +72,7 @@ const Navbar = () => {
       ariaLabel: "Discover partnership opportunities including fleet management and franchises",
       submenu: [
         { link: "Ridesmash Nigeria", path: "/location", ariaLabel: "Learn about fleet management" },
-        { link: "Ridesmash Africa", path: "/location", ariaLabel: "Become a franchise partner" },
+        { link: "Ridesmash Africa", path: "/ridesmash-africa", ariaLabel: "Become a franchise partner" },
       ],
     },
   ];

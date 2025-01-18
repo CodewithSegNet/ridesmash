@@ -21,10 +21,10 @@ const ServiceFood = () => {
             </div>
             <motion.div
             
-            variants={fadeIn("right", 0.7)}
+            variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:true}}
             
             
             className=' md:w-[650px]'>

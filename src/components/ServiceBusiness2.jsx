@@ -14,10 +14,10 @@ const ServiceBusiness2 = ({currency, country}) => {
            
             <motion.div
             
-            variants={fadeIn("up", 0.7)}
+            variants={fadeIn("up", 0.3)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{once:false, amount:0.7}}
+                    viewport={{once:true}}
             
             className=' md:w-1/2'>
               

@@ -113,30 +113,7 @@ export default function BecomeDriver() {
                         <h1 className='text-gray-700 text-base md:text-md'>After successful verification, you go Live </h1>
                     </div>
                 </div>
-               {/* <div className='flex  md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-center'>
-                    <div className='md:w-5 md:h-5 md:pt-1 pt-2'>
-                    <FaCheckCircle size={20} color='blue' />
-                    </div>  
-                    <div className='flex flex-col gap-3'>
-                        <h1 className='text-gray-700 text-base md:text-xl'>The ability to track their rides in real time</h1>
-                    </div>
-                </div>
-                <div className='flex  md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-center'>
-                    <div className='md:w-5 md:h-5 md:pt-1 pt-2'>
-                    <FaCheckCircle size={20} color='blue' />
-                    </div>  
-                    <div className='flex flex-col gap-3'>
-                        <h1 className='text-gray-700 text-base md:text-xl'>Access to a large customer base</h1>
-                    </div>
-                </div>
-                <div className='flex  md:flex-row gap-2 md:gap-4 md:items-start mb-4 items-center'>
-                    <div className='md:w-5 md:h-5 md:pt-1 pt-2'>
-                    <FaCheckCircle size={20} color='blue' />
-                    </div>  
-                    <div className='flex flex-col gap-3'>
-                        <h1 className='text-gray-700 text-base md:text-xl'>The opportunity to earn extra income</h1>
-                    </div>
-                </div> */}
+
 
             </div>
             

@@ -16,7 +16,6 @@ const DriveAndEarn = ({currency, country}) => {
   const [options, setOptions] = useState([]);
   const [output, setOutput] = useState(0);
   
-  console.log('from:', from)
 
   useEffect(() => {
     axios.get(
@@ -37,7 +36,6 @@ function convert() {
     setOutput(input * rate);
 }
 
-console.log( 'output:', output)
 
 
   return (
@@ -45,9 +43,7 @@ console.log( 'output:', output)
         <div className="flex max-w-screen-2xl mx-auto md:flex-row flex-col justify-between md:items-center gap-8">
            
             <div className=" md:w-1/2">
-                {/* <div className='w-[100%] h-[100%] bg-primary'>
-
-                </div> */}
+    
                 <img src={driver} alt='' className=' rounded-md'/>
             </div>
             <motion.div
@@ -82,7 +78,7 @@ console.log( 'output:', output)
              
                    {/* Call to Action */}
                    <Link
-                     to="/driveAndEarn"
+                     to="/drive-and-earn"
                      className="bg-primary text-white text-sm md:text-md text-black py-3 px-6 rounded hover:text-primary hover:bg-secondary"
                    >
                      Get Started

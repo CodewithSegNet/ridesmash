@@ -18,6 +18,7 @@ import RiderPage from './pages/riderPage';
 import BookingPage from './pages/BookingPage';
 import SupportPage from './pages/supportPage';
 import DriveAndEarn from './pages/driveAndEarn';
+import RidesmashAfricaPage from './pages/africaPage';
 
 import smash from "./assets/videos/ridesmash.mp4"
 import SmashFoodPage from './pages/smashFoodPage';
@@ -99,31 +100,33 @@ function App() {
             
             />
             <Route path="services" element={<ServicesPage/>}/>
-            <Route path="about" element={<AboutUsPage/>}/>
-            <Route path="driveAndEarn" element={<DriveAndEarn/>}/>
-            <Route path="contact" element={<ContactUsPage/>}/>
+            <Route path="about-us" element={<AboutUsPage/>}/>
+            <Route path="drive-and-earn" element={<DriveAndEarn/>}/>
+            <Route path="contact-us" element={<ContactUsPage/>}/>
             <Route path="login" element={<LoginPage/>}/>
-            <Route path="forgotPwd" element={<ForgotPasswordPage/>}/>
+            <Route path="forgot-password" element={<ForgotPasswordPage/>}/>
             <Route path="booking" element={<BookingPage/>}/>
             <Route path="support" element={<SupportPage/>}/>
             <Route path="food" element={<SmashFoodPage/>}/>
             <Route path="ride-hailing" element={<RidePage/>}/>
             <Route path="delivery" element={<DeliveryPage/>}/>
             <Route path="location" element={<LocationPage/>}/>
+            <Route path="Ridesmash-africa" element={<RidesmashAfricaPage />} />
 
-            <Route path="rental" element={<RentalPage/>}/>
-            <Route path="airport" element={<AirportPage/>}/>
-            <Route path="business" element={<SmashBusinessPage/>}/>
+
+            <Route path="car-rentals" element={<RentalPage/>}/>
+            <Route path="airport-pickup" element={<AirportPage/>}/>
+            <Route path="ridesmash-business" element={<SmashBusinessPage/>}/>
             <Route path="safety" element={<SafetyPage/>}/>
-            <Route path="press" element={<PressReleasePage/>}/>
+            <Route path="press-release" element={<PressReleasePage/>}/>
             
             <Route path="faq" element={<FaqPage/>}/>
             <Route path="smashwise" element={<SmashwisePage/>}/>
-            <Route path="fleets" element={<FleetPage/>}/>
-            <Route path="franchise" element={<FranchisePage/>}/>
+            <Route path="fleet-management" element={<FleetPage/>}/>
+            <Route path="franchise-partner" element={<FranchisePage/>}/>
             <Route path="privacy" element={<PrivacyPage/>}/>
-            <Route path="termsAndConditionsPage" element={<TermsAndConditionsPage/>}/>
-            <Route path="hirepurchase" element={<HirePurchasePage/>}/>
+            <Route path="terms-and-conditions" element={<TermsAndConditionsPage/>}/>
+            <Route path="hire-purchase" element={<HirePurchasePage/>}/>
 
 
             <Route  path="blog" element={<BlogPage/>}/>
@@ -132,7 +135,7 @@ function App() {
             <Route element={
               <RequireAuth>
                   {/* <RiderPage user={currentUser}/> */}
-                  <Route path="riderProfile" element={<RiderPage user={currentUser}/>}/>
+                  <Route path="rider-profile" element={<RiderPage user={currentUser}/>}/>
               </RequireAuth>
             } />
 

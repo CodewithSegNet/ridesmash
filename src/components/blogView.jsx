@@ -39,13 +39,6 @@ const BlogView = () => {
                             <h5 className='text-lg text-gray-600 px-3 mt-3'>Unlock exclusive benefits as a regular rider! Enjoy a monthly 25% discount and other perks just for our valued customers.</h5>
                         </div>
                     </div>
-                    {/* <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl  items-center flex justify-center hover:-translate-y-4 transition-all duration-300 cursor-pointer md:mt-16'>
-                        <div className='flex w-[100%] h-[100%] flex-col'>
-                            <img src={rider2} alt="" className=" h-2/5 rounded-tl-3xl rounded-tr-3xl"/>
-                            <h5 className='text-2xl font-semibold text-primary px-3 mt-5'>Safety Guaranteed</h5>
-                            <h5 className='text-lg text-gray-600 px-3 mt-3'>Your safety is our priority. Our drivers are rigorously trained to follow all security measures, ensuring you arrive home safely.</h5>
-                        </div>
-                    </div> */}
                    
                 </div>
               

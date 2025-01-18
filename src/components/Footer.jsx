@@ -85,11 +85,11 @@ const Footer = () => {
                 <div className='space-y-4 mt-5'>
                     <h1 className=' text--300 md:text-xl'>Company</h1>
                     <ul className='space-y-3'>
-                        <Link to='/about' className='block hover:text-secondary text-gray-200'>About Us</Link>
+                        <Link to='/about-us' className='block hover:text-secondary text-gray-200'>About Us</Link>
                         <Link to='/services' className='block hover:text-secondary text-gray-200'>Services</Link>
-                        <Link to='/driveAndEarn' className='block hover:text-secondary  text-gray-200'>Earn</Link>
+                        <Link to='/drive-and-earn' className='block hover:text-secondary  text-gray-200'>Earn</Link>
                         <Link to='/safety' className='block hover:text-secondary text-gray-200'>Safety</Link>
-                        <Link to='/press' className='block hover:text-secondary text-gray-200'>Press Release</Link>
+                        <Link to='/press-release' className='block hover:text-secondary text-gray-200'>Press Release</Link>
                         <Link to='/blog' className='block hover:text-secondary text-gray-200'>Blog</Link>
                         <Link to='/faq' className='block hover:text-secondary text-gray-200'>FAQ</Link>
                     </ul>
@@ -97,21 +97,21 @@ const Footer = () => {
                 <div className='space-y-4 mt-5'>
                     <h1 className=' text--300 md:text-xl'>Services</h1>
                     <ul className='space-y-3'>
-                        <Link to='/ride-hailing' className='block hover:text-secondary text-gray-200'>Ride</Link>
+                        <Link to='/ride-hailing' className='block hover:text-secondary text-gray-200'>Ride Hailing</Link>
                         <Link to='/delivery' className='block hover:text-secondary text-gray-200'>Delivery</Link>
-                        <Link to='/rental' className='block hover:text-secondary text-gray-200'>Car Rental</Link>
-                        <Link to='/rental' className='block hover:text-secondary text-gray-200'>Hire Purchase</Link>
-                        <Link to='/airport' className='block hover:text-secondary text-gray-200'>Airport Pickup</Link>
-                        <Link to='/business' className='block hover:text-secondary text-gray-200'>Ridesmash Business</Link>
+                        <Link to='/car-rentals' className='block hover:text-secondary text-gray-200'>Car Rental</Link>
+                        <Link to='/hire-purchase' className='block hover:text-secondary text-gray-200'>Hire Purchase</Link>
+                        <Link to='/airport-pickup' className='block hover:text-secondary text-gray-200'>Airport Pickup</Link>
+                        <Link to='/ridesmash-business' className='block hover:text-secondary text-gray-200'>Ridesmash Business</Link>
                     </ul>
                 </div>
                 <div className='flex md:flex-col gap-2'>
                 <div className='space-y-4 mt-5'>
                     <h4 className='text--300 md:text-xl'>Partnership</h4>
                     <ul className='space-y-3'>
-                        <Link to='/driveAndEarn' className='block hover:text-secondary text-gray-200'>Drive and Earn</Link>
-                        <Link to='/fleets' className='block hover:text-secondary text-gray-200'>Fleets Management </Link>
-                        <Link to='/franchise' className='block hover:text-secondary text-gray-200'>Franchise Partner</Link>
+                        <Link to='/drive-and-earn' className='block hover:text-secondary text-gray-200'>Drive and Earn</Link>
+                        <Link to='/fleet-management' className='block hover:text-secondary text-gray-200'>Fleets Management </Link>
+                        <Link to='/franchise-partner' className='block hover:text-secondary text-gray-200'>Franchise Partner</Link>
                        
                     </ul>
                 </div>
@@ -137,9 +137,9 @@ const Footer = () => {
             <h3 className=' text-gray-300'>Email: info@ridesmash.com</h3>
          </div>
         <div className='flex md:flex-row gap-3'>
-            <Link to='/termsAndConditions'><h3 className=' text-gray-300'>Terms and Conditions</h3></Link>
+            <Link to='/terms-and-conditions'><h3 className=' text-gray-300'>Terms and Conditions</h3></Link>
             <h3>|</h3>
-            <Link to='/privacy'><h3 className=' text-gray-300'>Privacy Policy</h3></Link>
+            <Link to='/privacy-policy'><h3 className=' text-gray-300'>Privacy Policy</h3></Link>
          </div>
        
          <div className='flex flex-col gap-2 md:items-center md:justify-center'>

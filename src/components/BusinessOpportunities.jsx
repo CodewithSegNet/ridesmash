@@ -13,16 +13,16 @@ const BusinessOpportunities = () => {
             </div>
             <motion.div
             
-            variants={fadeIn("right", 0.7)}
+            variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:true}}
             
             
             className=' md:w-2/5'>
             <h1 className='md:text-4xl text-3xl font-bold text-gray-400 mb-5 leading-normal'>Business Opportunities</h1>
             <p className='text-gray-200 text-md mb-7'> Our platform give individuals, businesses across to earn money through vehicle partnership and fund management with amazing returns of investment.</p>
-            <Link to='/delivery' className='bg-primary text-white text-sm md:text-md text-white py-3 px-6 rounded hover:text-primary hover:bg-secondary'>Learn More</Link>
+            <Link to='/ridesmash-business' className='bg-primary text-white text-sm md:text-md text-white py-3 px-6 rounded hover:text-primary hover:bg-secondary'>Learn More</Link>
         </motion.div>
 
         </div>

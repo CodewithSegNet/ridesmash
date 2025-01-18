@@ -17,7 +17,6 @@ const Earn = ({currency, country}) => {
   const [options, setOptions] = useState([]);
   const [output, setOutput] = useState(0);
   
-  console.log('from:', from)
 
   useEffect(() => {
     axios.get(
@@ -85,7 +84,7 @@ function convert() {
   
         {/* Call to Action */}
         <Link
-          to="/driveAndEarn"
+          to="/drive-and-earn"
           className="bg-secondary text-sm md:text-md text-black py-3 px-6 rounded hover:text-white hover:bg-primary"
         >
           Learn More
