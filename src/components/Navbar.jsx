@@ -158,7 +158,7 @@ const Navbar = () => {
               </div>
               <div className='flex items-center gap-1 hover:text-secondary text-white hover:text-secondary transition-all duration-300'>
                  <BiSupport className='text-xl gap-1'/>
-                 <NavLink to='/contact' aria-label="Customer support for Ridesmash" className='text-md'>Support</NavLink>
+                 <NavLink to='/contact-us' aria-label="Customer support for Ridesmash" className='text-md'>Support</NavLink>
               </div>
               <NavLink to='/login' className='bg-secondary py-3 px-6 rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold'>Login</NavLink>
 

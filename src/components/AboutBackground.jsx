@@ -1,4 +1,4 @@
-import background from '../assets/african-woman.jpg'
+import background from '../assets/woman-rider.jpg'
 import { FaPaperPlane, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 

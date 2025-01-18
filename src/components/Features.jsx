@@ -1,6 +1,6 @@
-import rider1 from './../assets/successful.jpg'
-import rider2 from './../assets/dispatch-boy.jpg'
-import rider3 from './../assets/gmd.jpg'
+import rider1 from './../assets/payout.webp'
+import rider2 from './../assets/people.webp'
+import rider3 from './../assets/person.jpg'
 const Features = () => {
   return (
     <div className="flex md:px-12 px-4 py-6 md:h-screen md:bg-blue-100 md:justify-center md:items-center md:w-full ">

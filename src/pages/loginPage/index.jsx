@@ -88,7 +88,7 @@ const LoginPage = () => {
                 <div>
                   <button
                     type="submit"
-                    className="w-full py-2 text-white bg-sky-800 hover:bg-sky-900 rounded-md"
+                    className="w-full py-2 text-white bg-sky-800 hover:bg-secondary rounded-md"
                   >
                     Send OTP
                   </button>
