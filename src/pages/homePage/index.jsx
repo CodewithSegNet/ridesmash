@@ -10,6 +10,7 @@ import {useEffect, useState} from 'react'
 import axios from 'axios'
 import ServiceOption from "../../components/serviceOption"
 import AboutBackGround from "../../components/AboutBackground"
+import { Helmet } from "react-helmet";
 import GetApp from "../../components/GetApp"
 import GetDriverApp from "../../components/GetDriverApp"
 import Card from "../../components/Card"
@@ -37,7 +38,7 @@ const getGeoInfo = () => {
           countryCurrency: data.currency
       });
   }).catch((error) => {
-      console.log(error);
+      // console.log(error);
   });
 };
 
@@ -45,9 +46,9 @@ useEffect(() => {
   getGeoInfo()
 }, [])
 
-console.log(countryInfo.countryName)
-console.log(countryInfo.countryCode)
-console.log(countryInfo.countryCurrency)
+// console.log(countryInfo.countryName)
+// console.log(countryInfo.countryCode)
+// console.log(countryInfo.countryCurrency)
 // console.log(data)
 
 //   useEffect(() => {
@@ -66,21 +67,59 @@ const HeroImg = {
   backgroundSize: 'cover',
   backgroundPosition: 'center 30%', 
   backgroundRepeat: 'no-repeat',
-  height: '95vh', 
+  height: '500px', 
   width: '100%', 
 };
 
 
+const keywords = [
+  "ride-hailing services",
+  "delivery services",
+  "fleet management",
+  "car rental",
+  "airport pickup",
+].join(", ");
+
 
   return (
     <>
+        <Helmet>
+        <title>Ridesmash | Ride-Hailing, Car Rentals, Delivery Services</title>
+        <meta
+          name="description"
+          content="Discover top trending services including e-hailing, delivery, fleet management, car rental, and airport pickup. Book now and experience seamless transportation solutions."
+        />
+        <meta name="keywords" content={keywords} />
+        <meta name="author" content="Ridesmash Inc." />
+        <meta
+          property="og:title"
+          content="Ridesmash | Ride-Hailing, Car Rentals, Delivery Services"
+        />
+        <meta
+          property="og:description"
+          content="Discover top trending services including e-hailing, delivery, fleet management, car rental, and airport pickup. Book now and experience seamless transportation solutions."
+        />
+        <meta property="og:url" content="https://ridesmash.com" />
+        <meta property="og:image" content="https://ridesmash.com/logo.svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Ridesmash | Ride-Hailing, Car Rentals, Delivery Services"
+        />
+        <meta
+          name="twitter:description"
+          content="Discover top trending services including e-hailing, delivery, fleet management, car rental, and airport pickup. Book now and experience seamless transportation solutions."
+        />
+        <meta name="twitter:image" content="https://ridesmash.com/logo.svg" />
+        <link rel="canonical" href="https://ridesmash.com" />
+      </Helmet>
       
-      <div style={HeroImg} className="">
+      <div style={HeroImg} className="flex w-full min-h-[680px] relative flex-col">
         <Navbar/>
         {/*<AboutBackGround/>*/}
         <LazyLoadImage
         src={backgroundImage}
-        alt="Lazy Loaded Background"
+        alt="move wherever, whenever"
         style={{
           ...HeroImg, 
           position: 'absolute',

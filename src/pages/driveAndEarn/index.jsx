@@ -13,6 +13,8 @@ import BusinessOpportunities from '../../components/BusinessOpportunities'
 import BecomeDriver from '../../components/BecomeDriver'
 import BecomeDriverMore from '../../components/BecomeDriverMore'
 import AcceptedVehicle from '../../components/AcceptedVehicle'
+import { Helmet } from 'react-helmet';
+
 
 const DriveAndEarn = () => {
 
@@ -30,7 +32,7 @@ const getGeoInfo = () => {
           countryCurrency: data.currency
       });
   }).catch((error) => {
-      console.log(error);
+      // console.log(error);
   });
 };
 
@@ -38,12 +40,44 @@ useEffect(() => {
   getGeoInfo()
 }, [])
 
-console.log(countryInfo.countryName)
-console.log(countryInfo.countryCode)
-console.log(countryInfo.countryCurrency)
+// console.log(countryInfo.countryName)
+// console.log(countryInfo.countryCode)
+// console.log(countryInfo.countryCurrency)
 
   return (
     <>
+     <Helmet>
+        <title>Drive and Earn with Ridesmash</title>
+        <meta
+          name="description"
+          content="Drive and earn with Ridesmash! Discover driving opportunities, earn as you go, and explore business opportunities in your region."
+        />
+        <meta
+          name="keywords"
+          content="drive and earn, driving opportunities, business opportunities, Ridesmash drivers, accepted vehicles"
+        />
+        <meta property="og:title" content="Drive and Earn with Ridesmash" />
+        <meta
+          property="og:description"
+          content="Join Ridesmash to drive and earn in your region. Learn about accepted vehicles, business opportunities, and more!"
+        />
+        <meta
+          property="og:image"
+          content="https://ridesmash.com/assets/illus3.svg"
+        />
+        <meta property="og:url" content="https://ridesmash.com/drive-and-earn" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Drive and Earn with Ridesmash" />
+        <meta
+          name="twitter:description"
+          content="Drive and earn on your terms with Ridesmash! Discover flexible opportunities to grow your income."
+        />
+        <meta
+          name="twitter:image"
+          content="https://ridesmash.com/assets/illus3.svg"
+        />
+      </Helmet>
     <div className="">
 
     <div>

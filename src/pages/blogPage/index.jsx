@@ -13,10 +13,42 @@ import Blog1 from '../../components/Blog1'
 import Blog2 from '../../components/Blog2'
 import Blog3 from '../../components/Blog3'
 import BlogTitle from '../../components/blogTitle'
+import { Helmet } from 'react-helmet';
+
 
 const BlogPage = () => {
   return (
     <>
+    <Helmet>
+        <title>Our Blog | Ridesmash Insights</title>
+        <meta
+          name="description"
+          content="Discover insightful articles on fleet management, fund management, and ride-sharing trends on the Ridesmash blog."
+        />
+        <meta
+          name="keywords"
+          content="fleet management, fund management, ride-sharing, blog, Ridesmash, transportation insights, car rental tips"
+        />
+        <meta property="og:title" content="Our Blog | Ridesmash Insights" />
+        <meta
+          property="og:description"
+          content="Stay informed with the latest trends and insights in fleet management, fund management, and ride-sharing."
+        />
+        <meta property="og:url" content="https://ridesmash.com/blog" />
+        <meta
+          property="og:image"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Blog | Ridesmash Insights" />
+        <meta
+          name="twitter:description"
+          content="Explore the latest articles on ride-sharing and fleet management with Ridesmash."
+        />
+        <meta
+          name="twitter:image"
+        />
+      </Helmet>
       <div>
       <div style={{
     background: "linear-gradient(to top, rgba(0, 92, 186, 0.8), rgba(2, 0, 102, 1))",

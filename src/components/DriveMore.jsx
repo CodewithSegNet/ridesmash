@@ -14,10 +14,10 @@ const DriveMore = () => {
             </div>
             <motion.div
             
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.4}}
+            viewport={{once:true}}
             
             
             className=' md:w-2/5'>

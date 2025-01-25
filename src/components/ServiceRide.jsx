@@ -9,11 +9,11 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ServiceRide = ({currency, country}) => {
   return (
-    <div className='flex h-[710px] md:h-full md:py-[4rem] max-w-screen-2xl mx-auto items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 xl:max-h-[598px] 2xl:rounded-5xl;'>
-        <LazyLoadImage src={background} alt='image' className='md:w-full md:h-full h-screenresizeMode:"cover"' />
-        <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12 md:px-12 absolute md:flex-row-reverse bg-white opacity-90 h-screen md:h-full md:justify-between md:items-center px-3">
-           
-            <div className=" md:w-1/2">
+    <div className='flex h-[710px] md:h-full md:py-[4rem] items-center md:justify-center md:w-full relative overflow-hidden bg-green-90 bg-cover bg-center bg-no-repeat text-white sm:flex-row sm:gap-12 xl:max-h-[598px] 2xl:rounded-5xl;'>
+        <LazyLoadImage src={background} alt='image' className='md:w-full md:h-full h-screen resizeMode:"cover"' />
+        <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12 md:px-12 absolute md:flex-row-reverse bg-white opacity-90 h-screen">
+           <div className='max-w-screen-2xl mx-auto z-20 flex w-full flex-1 flex-col items-start justify-center gap-12 md:px-12 absolute md:flex-row-reverse bg-white opacity-90 h-screen md:h-full md:justify-between md:items-center px-6'>
+           <div className=" md:w-1/2">
                 {/* <div className='w-[100%] h-[100%] bg-primary'>
 
                 </div> */}
@@ -21,14 +21,14 @@ const ServiceRide = ({currency, country}) => {
             </div>
             <motion.div
             
-            variants={fadeIn("right", 0.7)}
+            variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:true}}
             
             
             className=' md:w-2/5 w-full '>
-                <h1 className='md:text3xl text-3xl font-bold text-primary  mb-5 leading-normal'>Ride </h1>
+                <h1 className='md:text3xl text-3xl font-bold text-primary mb-5 leading-normal'>Ride </h1>
                 <p className='text-gray-700 text-md lg:text-md mb-4'>Connect with a driver for immediate pick-up and drop-off service within the city.</p>
                 <p className='text-gray-700 text-md lg:text-md mb-4'>This service is perfect for everyday commutes, errands, or nights out.</p>
 
@@ -48,6 +48,8 @@ const ServiceRide = ({currency, country}) => {
                </div>
                 {/* <button className='bg-secondary text-primary py-2 px-6 rounded hover:text-white hover:bg-primary text-xl'>Learn More</button> */}
             </motion.div>
+           </div>
+          
 
         </div>
     </div>

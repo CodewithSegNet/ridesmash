@@ -8,7 +8,7 @@ const ServiceBusiness = () => {
 
 
   return (
-    <div className="flex h-full md:px-14 p-4 py-[4rem] mx-auto py-10 md:my-0 md:items-center md:justify-center bg-black">
+    <div className="flex h-full md:px-14 p-4 py-[4rem] mx-auto py-10 md:my-0 md:items-center md:justify-center bg-black px-6">
         <div className="flex max-w-screen-2xl mx-auto md:flex-row flex-col justify-between md:items-center gap-8">
            
             <div className=" md:w-1/2">
@@ -19,10 +19,10 @@ const ServiceBusiness = () => {
             </div>
             <motion.div
             
-            variants={fadeIn("right", 0.7)}
+            variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:true}}
             
             
             className=' md:w-2/5'>

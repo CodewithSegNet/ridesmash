@@ -5,8 +5,18 @@ import {FaXmark, FaBars} from 'react-icons/fa6'
 import { NavLink, Link } from 'react-router-dom';
 
 
+
 const Navbar = () => {
   
+  useEffect(() => {
+    // This ensures the script finds the new location for the widget.
+    const widget = document.querySelector(".gtranslate_wrapper");
+    const navbarContainer = document.getElementById("navbar-gtranslate");
+
+    if (widget && navbarContainer) {
+      navbarContainer.appendChild(widget);
+    }
+  }, []);
 
   const navItems = [
     {
@@ -15,21 +25,21 @@ const Navbar = () => {
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "View our services including ride hailing, delivery, car rental, and more",
       submenu: [
-        { link: "Ride Hailing", path: "/ride", ariaLabel: "Learn about our ride-hailing services" },
+        { link: "Ride Hailing", path: "/ride-hailing", ariaLabel: "Learn about our ride-hailing services" },
         { link: "Delivery", path: "/delivery", ariaLabel: "Explore our delivery services" },
-        { link: "Car Rental", path: "/rental", ariaLabel: "Rent cars with ease" },
-        { link: "Hire Purchase", path: "/hirepurchase", ariaLabel: "seamless hire purchase process" },
-        { link: "Airport Pickup", path: "/airport", ariaLabel: "Book an airport pickup service" },
-        { link: "Ridesmash Business", path: "/business", ariaLabel: "Discover our business solutions" },
+        { link: "Car Rental", path: "/car-rentals", ariaLabel: "Rent cars with ease" },
+        { link: "Hire Purchase", path: "/hire-purchase", ariaLabel: "seamless hire purchase process" },
+        { link: "Airport Pickup", path: "/airport-pickup", ariaLabel: "Book an airport pickup service" },
+        { link: "Ridesmash Business", path: "/ridesmash-business", ariaLabel: "Discover our business solutions" },
       ],
     },
     {
       link: "Company",
-      path: "/about",
+      path: "/about-us",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Learn about our company, blog, safety measures, and more",
       submenu: [
-        { link: "About Us", path: "/about", ariaLabel: "Learn more about us" },
+        { link: "About Us", path: "/about-us", ariaLabel: "Learn more about us" },
         { link: "Blog", path: "/blog", ariaLabel: "Read our latest blog posts" },
         { link: "Safety", path: "/safety", ariaLabel: "Learn about our safety measures" },
         { link: "FAQ", path: "/faq", ariaLabel: "Get answers to frequently asked questions" },
@@ -37,32 +47,32 @@ const Navbar = () => {
     },
     {
       link: "Driver",
-      path: "/driveAndEarn",
+      path: "/drive-and-earn",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Explore driver opportunities and help resources",
       submenu: [
-        { link: "Earn With Us", path: "/driveAndEarn", ariaLabel: "Learn how to earn by driving with us" },
-        { link: "Help Center", path: "/contact", ariaLabel: "Get support from our help center" },
+        { link: "Earn With Us", path: "/drive-and-earn", ariaLabel: "Learn how to earn by driving with us" },
+        { link: "Help Center", path: "/contact-us", ariaLabel: "Get support from our help center" },
       ],
     },
     {
       link: "Partnership",
-      path: "/driveAndEarn",
+      path: "/franchise-partner",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Discover partnership opportunities including fleet management and franchises",
       submenu: [
-        { link: "Fleets Management", path: "/fleets", ariaLabel: "Learn about fleet management" },
-        { link: "Franchise Partner", path: "/franchise", ariaLabel: "Become a franchise partner" },
+        { link: "Fleets Management", path: "/fleet-management", ariaLabel: "Learn about fleet management" },
+        { link: "Franchise Partner", path: "/franchise-partner", ariaLabel: "Become a franchise partner" },
       ],
     },
     {
       link: "Ridesmash Space",
-      path: "/driveAndEarn",
+      path: "/location",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Discover partnership opportunities including fleet management and franchises",
       submenu: [
-        { link: "Ridesmash Nigeria", path: "/fleets", ariaLabel: "Learn about fleet management" },
-        { link: "Ridesmash Africa", path: "/franchise", ariaLabel: "Become a franchise partner" },
+        { link: "Ridesmash Nigeria", path: "/location", ariaLabel: "Learn about fleet management" },
+        { link: "Ridesmash Africa", path: "/ridesmash-africa", ariaLabel: "Become a franchise partner" },
       ],
     },
   ];
@@ -75,18 +85,21 @@ const Navbar = () => {
   };
   
   useEffect(() => {
-    const isMobile = window.matchMedia("(max-width: 1020px)").matches;
-
-    if (isMobile && isMenuOpened) {
-      document.body.classList.add("body-fixed");
-    } else {
-      document.body.classList.remove("body-fixed");
-    }
-
+    const handleBodyClass = () => {
+      if (isMenuOpened) {
+        document.body.classList.add("body-fixed");
+      } else {
+        document.body.classList.remove("body-fixed");
+      }
+    };
+  
+    handleBodyClass();
+  
     return () => {
       document.body.classList.remove("body-fixed");
     };
   }, [isMenuOpened]);
+  
 
   
   const [openSubmenuIndex, setOpenSubmenuIndex] = useState(null);
@@ -119,7 +132,7 @@ const Navbar = () => {
   return (
     
     <>
-      <nav className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto z-70 text-white px-4 transition-all duration-500 ${
+      <nav className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto w-full z-70 text-white px-4 transition-all duration-500 ${
             isMenuOpened ? "bg-gradient-active" : "bg-transparent"
           }`}
           style={
@@ -145,7 +158,7 @@ const Navbar = () => {
               </div>
               <div className='flex items-center gap-1 hover:text-secondary text-white hover:text-secondary transition-all duration-300'>
                  <BiSupport className='text-xl gap-1'/>
-                 <NavLink to='/contact' aria-label="Customer support for Ridesmash" className='text-md'>Support</NavLink>
+                 <NavLink to='/contact-us' aria-label="Customer support for Ridesmash" className='text-md'>Support</NavLink>
               </div>
               <NavLink to='/login' className='bg-secondary py-3 px-6 rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold'>Login</NavLink>
 
@@ -196,18 +209,18 @@ const Navbar = () => {
 
           <div style={{background: "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 92, 186, 1))",
           margin: "0 auto"
-  }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl z-40  md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center md:flex-row md:text-left lg:flex-row h-[90vh] lg:h-[400px] overflow-hidden
+  }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl z-40 md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center md:flex-row md:text-left lg:flex-row h-[100vh] lg:h-[400px] overflow-hidden
     ${isMenuOpened ? "opacity-100 translate-y-0 visible pointer-events-auto z-40" : "opacity-0 -translate-y-5 invisible pointer-events-none z-40"} 
     transition-all duration-500 ease-in-out`}
 >
          {navItems.map(({ link, path, icon, submenu, ariaLabel }, index) => (
-     <div
+     <ul
      key={link}
      className={`px-0 lg:px-14 space-y-2 mx-auto text-center md:text-left w-[100%] px-4 z-40 ${
        index === 0 ? "justify-start mt-[1rem]" : ""
      }`}
    >
-      <div className="flex hover:text-gray-200 text-white items-center w-[100%]  mt-5 justify-between hover:text-secondary transition-all duration-300 justify-center md:justify-start">
+      <div className="flex hover:text-gray-200 text-white items-center w-[100%] mt-5 justify-between hover:text-secondary transition-all duration-300 justify-center md:justify-start">
         <NavLink to={path} className="block py-1 text-md font-bold" aria-label={ariaLabel}> 
 
           {link}
@@ -240,7 +253,7 @@ const Navbar = () => {
   }}
 >      
         {submenu && (
-          <div className="space-y-2 ml-5 md:ml-0 transition-all duration-500 ease-in">
+          <ul className="space-y-2 ml-5 md:ml-0 transition-all duration-500 ease-in">
             {submenu.map(({ link, path }) => (
               <NavLink
                 key={link}
@@ -251,13 +264,13 @@ const Navbar = () => {
                 {link}
               </NavLink>
             ))}
-          </div>
+          </ul>
         )}
       </div>
 
-    </div>
+    </ul>
   ))}
-  <NavLink to='/login' className='bg-secondary py-3 mx-[5rem] rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</NavLink>
+  <NavLink to='/login' style={{marginTop: "3rem"}} className='bg-secondary py-3 mx-[5rem] rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</NavLink>
 </div>
 
         </nav> 

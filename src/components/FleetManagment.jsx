@@ -24,7 +24,7 @@ const FleetManagement = ({currency, country}) => {
                 <p className='text-gray-500 text-md mb-4'>Ridesmash is committed to empowering not just drivers, but alsofleet
                 owners and businesses in Africa. Our comprehensive fleet management solutions are designed to streamline operations, maximize efficiency, and boost your bottom line.</p>
 
-                <p className='text-primary text-md mb-4 md:font-bold'>Why Choose Ridesmash Fleet Management?</p>
+                <p className='text-primary text-md mb-4 mt-[3rem] md:font-bold'>Why Choose Ridesmash Fleet Management?</p>
 
                 <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
@@ -56,7 +56,7 @@ const FleetManagement = ({currency, country}) => {
                   <p className='text-gray-500 text-md '><span className='font-[500] text-primary'>Dedicated Support: </span>Our team is here to assist you with any questions or
                   technical issues you may encounter.</p>
                </div> 
-               <p className='text-primary text-md mb-4 md:font-bold'>Benefits for Fleet Owners and Businesses:</p>
+               <p className='text-primary text-md mb-4 mt-[3rem] md:font-bold'>Benefits for Fleet Owners and Businesses:</p>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
                   <p className='text-gray-500 text-md '><span className='font-[500] text-primary'>Reduced Costs: </span>Increased Efficiency: Manage your fleet effortlessly with a centralizedplatform and real-time data at your fingertips.</p>
@@ -82,7 +82,7 @@ const FleetManagement = ({currency, country}) => {
                   <FaSquare size={8} color='gray' />
                   <p className='text-gray-500 text-md '><span className='font-[500] text-primary'>Scalability: </span>Our platform scales with your business, allowing you toeasilyadd or remove vehicles as needed.</p>
                </div> 
-               <p className='text-primary text-md mb-4 md:font-bold'>Ridesmash Fleet Management Features:</p>
+               <p className='text-primary text-md mb-4 mt-[3rem] md:font-bold'>Ridesmash Fleet Management Features:</p>
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <FaSquare size={8} color='gray' />
                   <p className='text-gray-500 text-md '><span className='font-[500] text-primary'>Driver Recruitment & Onboarding: </span>Simplify the process of recruiting, screening, and onboarding new drivers to your fleet.</p>
@@ -121,7 +121,7 @@ const FleetManagement = ({currency, country}) => {
                 through the Ridesmash app for clear and efficient task management.</p>
                </div> 
                <div className='flex  md:flex-row gap-2 mb-4 items-center '>
-                  <p className=' text-md md:text-xl text-primary md:font-bold'>Ready to Take Your Fleet to the Next Level?</p>
+                  <p className=' text-md md:text-xl mt-[3rem] text-primary md:font-bold'>Ready to Take Your Fleet to the Next Level?</p>
                </div> 
                <div className='flex  md:flex-row gap-2 md:items-center mb-4 items-center '>
                   <p className='text-gray-600 text-xl'>Contact Ridesmash today (info@ridesmash.com) to learn moreabout

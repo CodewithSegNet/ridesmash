@@ -14,16 +14,16 @@ import { Link } from 'react-router-dom';
 
 const OurServices = () => {
   const boxes = [
-    { id: 1, title: "Ride", parag: "Fast and reliable rides to get you where you need to be.", image: Image14, path: "ride" },
+    { id: 1, title: "Ride", parag: "Fast and reliable rides to get you where you need to be.", image: Image14, path: "ride-hailing" },
     { id: 2, title: "Delivery", parag: "Quick and secure delivery for all your packages.", image: Image2, path: "delivery"  },
-    { id: 3, title: "Car Rental", parag: "Affordable car rentals for any occasion.", image: Image1, path: "rental"  },
-    { id: 4, title: "Airport Pickup", parag: "Hassle-free pickups to and from the airport.", image: ImageTrav, path: "airport"  },
-    { id: 5, title: "Ridesmash Business", parag: "Smart transport solutions for your business.", image: Image0, path: "business"  },
-    { id: 6, title: "Fleets Management", parag: "Effortless control of your fleet in real-time.", image: Image15, path: "fleets"  },
+    { id: 3, title: "Car Rental", parag: "Affordable car rentals for any occasion.", image: Image1, path: "car-rentals"  },
+    { id: 4, title: "Airport Pickup", parag: "Hassle-free pickups to and from the airport.", image: ImageTrav, path: "airport-pickup"  },
+    { id: 5, title: "Ridesmash Business", parag: "Smart transport solutions for your business.", image: Image0, path: "ridesmash-business"  },
+    { id: 6, title: "Fleets Management", parag: "Effortless control of your fleet in real-time.", image: Image15, path: "fleet-management"  },
   ];
 
   return (
-    <div className="md:px-14 p-4 max-w-screen-2xl mx-auto md:py-16 py-8">
+    <div className="md:px-14 p-4 max-w-screen-2xl mx-auto mb-20 md:mb-30 mt-20 md:mt-30">
       <motion.div
         variants={fadeIn("down", 0.3)}
         initial="hidden"

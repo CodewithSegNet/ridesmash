@@ -50,7 +50,7 @@ const EarnDelivery = ({currency, country}) => {
         </ul>
   
         {/* Call to Action */}
-        <Link to="/driveAndEarn" className="bg-secondary text-primary py-3 px-6 rounded hover:text-white hover:bg-primary text-sm md:text-md">
+        <Link to="/drive-and-earn" className="bg-secondary text-primary py-3 px-6 rounded hover:text-white hover:bg-primary text-sm md:text-md">
           Learn More
         </Link>
       </motion.div>

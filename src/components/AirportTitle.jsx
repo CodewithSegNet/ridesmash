@@ -25,7 +25,6 @@ const AirportTitle = () => {
         width={600}
         height={600}
         className='z-30 relative'
-        // className="lg: w-[600px] lg: h-[600px] w-[300px] h-[300px]"
       />
     </div>
     </div>

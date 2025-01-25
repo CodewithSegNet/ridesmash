@@ -9,10 +9,6 @@ const Blog2 = () => {
   return (
     <div className="flex md:px-14 mx-auto my-6 md:my-0 md:items-center md:justify-center bg-">
         <div className="flex md:flex-row flex-col justify-between md:items-center gap-8">
-{/*            
-            <div className=" md:w-1/2">
-                <img src={delivery} alt='' className=' rounded-3xl'/>
-            </div> */}
 
             <div
             

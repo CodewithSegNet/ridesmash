@@ -6,6 +6,8 @@ import { FaTwitter } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import android from "./../assets/Google-play-store.png";
 import apple from "./../assets/Apple-Download.png";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -83,33 +85,33 @@ const Footer = () => {
                 <div className='space-y-4 mt-5'>
                     <h1 className=' text--300 md:text-xl'>Company</h1>
                     <ul className='space-y-3'>
-                        <a href='/about' className='block hover:text-secondary text-gray-200'>About Us</a>
-                        <a href='/services' className='block hover:text-secondary text-gray-200'>Services</a>
-                        <a href='/driveAndEarn' className='block hover:text-secondary  text-gray-200'>Earn</a>
-                        <a href='/safety' className='block hover:text-secondary text-gray-200'>Safety</a>
-                        <a href='/press' className='block hover:text-secondary text-gray-200'>Press Release</a>
-                        <a href='/blog' className='block hover:text-secondary text-gray-200'>Blog</a>
-                        <a href='/faq' className='block hover:text-secondary text-gray-200'>FAQ</a>
+                        <Link to='/about-us' className='block hover:text-secondary text-gray-200'>About Us</Link>
+                        <Link to='/services' className='block hover:text-secondary text-gray-200'>Services</Link>
+                        <Link to='/drive-and-earn' className='block hover:text-secondary  text-gray-200'>Earn</Link>
+                        <Link to='/safety' className='block hover:text-secondary text-gray-200'>Safety</Link>
+                        <Link to='/press-release' className='block hover:text-secondary text-gray-200'>Press Release</Link>
+                        <Link to='/blog' className='block hover:text-secondary text-gray-200'>Blog</Link>
+                        <Link to='/faq' className='block hover:text-secondary text-gray-200'>FAQ</Link>
                     </ul>
                 </div>
                 <div className='space-y-4 mt-5'>
                     <h1 className=' text--300 md:text-xl'>Services</h1>
                     <ul className='space-y-3'>
-                        <a href='/ride' className='block hover:text-secondary text-gray-200'>Ride</a>
-                        <a href='/delivery' className='block hover:text-secondary text-gray-200'>Delivery</a>
-                        <a href='/rental' className='block hover:text-secondary text-gray-200'>Car Rental</a>
-                        <a href='/rental' className='block hover:text-secondary text-gray-200'>Hire Purchase</a>
-                        <a href='/airport' className='block hover:text-secondary text-gray-200'>Airport Pickup</a>
-                        <a href='/business' className='block hover:text-secondary text-gray-200'>Ridesmash Business</a>
+                        <Link to='/ride-hailing' className='block hover:text-secondary text-gray-200'>Ride Hailing</Link>
+                        <Link to='/delivery' className='block hover:text-secondary text-gray-200'>Delivery</Link>
+                        <Link to='/car-rentals' className='block hover:text-secondary text-gray-200'>Car Rental</Link>
+                        <Link to='/hire-purchase' className='block hover:text-secondary text-gray-200'>Hire Purchase</Link>
+                        <Link to='/airport-pickup' className='block hover:text-secondary text-gray-200'>Airport Pickup</Link>
+                        <Link to='/ridesmash-business' className='block hover:text-secondary text-gray-200'>Ridesmash Business</Link>
                     </ul>
                 </div>
                 <div className='flex md:flex-col gap-2'>
                 <div className='space-y-4 mt-5'>
                     <h4 className='text--300 md:text-xl'>Partnership</h4>
                     <ul className='space-y-3'>
-                        <a href='/driveAndEarn' className='block hover:text-secondary text-gray-200'>Drive and Earn</a>
-                        <a href='/fleets' className='block hover:text-secondary text-gray-200'>Fleets Management </a>
-                        <a href='/franchise' className='block hover:text-secondary text-gray-200'>Franchise Partner</a>
+                        <Link to='/drive-and-earn' className='block hover:text-secondary text-gray-200'>Drive and Earn</Link>
+                        <Link to='/fleet-management' className='block hover:text-secondary text-gray-200'>Fleets Management </Link>
+                        <Link to='/franchise-partner' className='block hover:text-secondary text-gray-200'>Franchise Partner</Link>
                        
                     </ul>
                 </div>
@@ -135,18 +137,18 @@ const Footer = () => {
             <h3 className=' text-gray-300'>Email: info@ridesmash.com</h3>
          </div>
         <div className='flex md:flex-row gap-3'>
-            <a href='/termsAndConditions'><h3 className=' text-gray-300'>Terms and Conditions</h3></a>
+            <Link to='/terms-and-conditions'><h3 className=' text-gray-300'>Terms and Conditions</h3></Link>
             <h3>|</h3>
-            <a href='/privacy'><h3 className=' text-gray-300'>Privacy Policy</h3></a>
+            <Link to='/privacy-policy'><h3 className=' text-gray-300'>Privacy Policy</h3></Link>
          </div>
        
          <div className='flex flex-col gap-2 md:items-center md:justify-center'>
             <h3 className=' text-gray-300'>Connect with us </h3>
             <div className='flex flex-row items-center gap-3 '>
-                <a href='https://web.facebook.com/ridesmashNigeria'><FaFacebookF className='hover:text-secondary text-2xl transition-all duration-300 cursor-pointer' /></a>
-                <a href='https://www.instagram.com/ridesmashnigeria/'><FaInstagram className='hover:text-secondary text-2xl' /></a>
-                <a href='https://x.com/ridesmashng?s=21/'><FaTwitter className='hover:text-secondary text-2xl' /></a>
-                <a href='https://www.tiktok.com/@ridesmash?_t=ZM-8spvH4JpCrd&_r=1'><FaTiktok className='hover:text-secondary text-2xl' /></a>
+                <Link to='https://web.facebook.com/ridesmashNigeria'><FaFacebookF className='hover:text-secondary text-2xl transition-all duration-300 cursor-pointer' /></Link>
+                <Link to='https://www.instagram.com/ridesmashnigeria/'><FaInstagram className='hover:text-secondary text-2xl' /></Link>
+                <Link to='https://x.com/ridesmashng?s=21/'><FaTwitter className='hover:text-secondary text-2xl' /></Link>
+                <Link to='https://www.tiktok.com/@ridesmash?_t=ZM-8spvH4JpCrd&_r=1'><FaTiktok className='hover:text-secondary text-2xl' /></Link>
             </div>
 
          </div>
@@ -162,8 +164,8 @@ const Footer = () => {
             <h3 className=' text-gray-300'></h3>
          </div>
          <div className='flex flex-row items-center gap-3'>
-            <a href='/'><img src={android} alt='google' className='w-[200px] '/></a>
-            <a href='/'><img src={apple} alt='apple' className='w-[200px] '/></a>
+            <Link to='/'><img src={android} alt='google' className='w-[200px] '/></Link>
+            <Link to='/'><img src={apple} alt='apple' className='w-[200px] '/></Link>
            
          </div>
          {/* <div>
