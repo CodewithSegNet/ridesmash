@@ -2,11 +2,13 @@ import RidesmashAfrica from "../../components/RidesmashAfrica"
 import Navbar from '../../components/Navbar'
 import AfricaTitle from '../../components/AfricaTitle';
 import Footer from "../../components/Footer"
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 const RidesmashAfricaPage = () => {
   return (
     <>
+    <HelmetProvider>
+
       <Helmet>
         <title>Ridesmash Africa Locations | Ridesmash</title>
         <meta
@@ -48,6 +50,8 @@ const RidesmashAfricaPage = () => {
         <RidesmashAfrica />
         <Footer />
       </div>
+      </HelmetProvider>
+
     </>
   );
 }

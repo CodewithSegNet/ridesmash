@@ -2,7 +2,7 @@ import Footer from "../../components/Footer"
 import Title from "../../components/HirePurchaseTitle"
 import HirePurchase from "../../components/HirePurchase"
 import Navbar from "../../components/Navbar"
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 
@@ -12,6 +12,8 @@ const HirePurchasePage = () => {
 
   return (
     <>
+    <HelmetProvider>
+
      <Helmet>
         <title>Hire Purchase Options | Ridesmash</title>
         <meta
@@ -49,6 +51,8 @@ const HirePurchasePage = () => {
     </div>
     <HirePurchase/>
         <Footer/>
+        </HelmetProvider>
+
     </>
   )
 }

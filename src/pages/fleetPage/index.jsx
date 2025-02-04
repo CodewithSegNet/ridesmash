@@ -9,12 +9,15 @@ import { FaCheckCircle } from 'react-icons/fa'
 import FleetManagementSection from '../../components/FleetManagementSection'
 import FundManagement from '../../components/FundManagement'
 import PayToGo from '../../components/PayToGo'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 // import Hero from '../../components/Hero'
+
+
 
 const FleetPage = () => {
   return (
     <>
+    <HelmetProvider>
      <Helmet>
         <title>Fleet Management | Ridesmash</title>
         <meta
@@ -86,7 +89,7 @@ const FleetPage = () => {
         <Footer/>
       
       
-
+        </HelmetProvider>
     </>
   )
 }

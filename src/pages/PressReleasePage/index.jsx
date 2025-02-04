@@ -9,12 +9,13 @@ import PressContentMiddle from '../../components/PressContentMiddle'
 import PressContentBottom from '../../components/PressContentBottom'
 import GetDriverApp from '../../components/GetDriverApp'
 // import Hero from '../../components/Hero'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const PressReleasePage = () => {
   return (
     <>
+        <HelmetProvider>
      <Helmet>
         <title>Press Release | Ridesmash</title>
         <meta
@@ -53,6 +54,7 @@ const PressReleasePage = () => {
         <Footer/>
       </div>
       
+      </HelmetProvider>
 
     </>
   )

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import logo from "./../../assets/logos.png";
 import delivery from "./../../assets/login.webp";
-import { Helmet } from "react-helmet";
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
@@ -18,6 +18,8 @@ const LoginPage = () => {
 
   return (
     <>
+        <HelmetProvider>
+    
       <Helmet>
         <title>Login | Ridesmash</title>
         <meta
@@ -105,6 +107,8 @@ const LoginPage = () => {
           </div>
         </div>
       </div>
+      </HelmetProvider>
+      
     </>
   );
 };

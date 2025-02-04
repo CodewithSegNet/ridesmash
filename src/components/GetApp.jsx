@@ -1,5 +1,5 @@
 import background from '../assets/background1.jpg'
-import rider from '../assets/first.png'
+import rider from '../assets/first.webp'
 import android from '../assets/android.svg'
 import apple from '../assets/apple.svg'
 import Button from './Button'

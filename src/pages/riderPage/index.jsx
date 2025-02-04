@@ -2,7 +2,7 @@ import React from 'react'
 import RiderProfileContent from '../../components/RiderProfileContent'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 
@@ -12,6 +12,7 @@ export default function RiderPage() {
   return (
     
     <>
+        <HelmetProvider>
      <Helmet>
         <title>Download RideSmash | Ridesmash</title>
         <meta
@@ -37,6 +38,7 @@ export default function RiderPage() {
       <Navbar/>
       <RiderProfileContent/>
       <Footer/>
+      </HelmetProvider>
 
     </>
    

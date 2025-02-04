@@ -4,12 +4,14 @@ import Footer from "../../components/Footer"
 import FranchisePartner from '../../components/FranchisePartner'
 import TermsAndConditionsTitle from '../../components/TermsAndConditionsTitle'
 import TermsAndConditions from '../../components/TermsAndConditions'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 // import Hero from '../../components/Hero'
 
 const TermsAndConditionsPage = () => {
   return (
     <>
+            <HelmetProvider>
+    
       <Helmet>
         <title>Terms and Conditions | Helmet</title>
         <meta
@@ -40,6 +42,7 @@ const TermsAndConditionsPage = () => {
         <Footer/>
       </div>
       
+      </HelmetProvider>
 
     </>
   )

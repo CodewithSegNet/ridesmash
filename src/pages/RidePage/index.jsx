@@ -4,12 +4,13 @@ import Footer from "../../components/Footer"
 import ServiceRide from '../../components/ServiceRide'
 import RideTitle from '../../components/RideTitle'
 // import Hero from '../../components/Hero'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const RidePage = () => {
   return (
     <>
+        <HelmetProvider>
     <Helmet>
         <title>Ride Services | Ridesmash</title>
         <meta
@@ -44,6 +45,7 @@ const RidePage = () => {
         <Footer/>
       </div>
       
+</HelmetProvider>
 
     </>
   )

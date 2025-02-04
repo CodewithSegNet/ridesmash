@@ -11,13 +11,14 @@ import ServiceFood from '../../components/ServiceFood'
 import ServiceWise from '../../components/ServiceWise'
 import ServiceBusiness from '../../components/ServiceBusiness'
 import ServiceAirport from '../../components/serviceAirport'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 // import Hero from '../../components/Hero'
 
 
 const ServicesPage = () => {
   return (
     <>
+        <HelmetProvider>
      <Helmet>
         <title>Our Services | Ridesmash</title>
         <meta
@@ -59,6 +60,8 @@ const ServicesPage = () => {
         <Footer/>
 
       </div>
+      </HelmetProvider>
+
     </>
   )
 }

@@ -4,12 +4,13 @@ import Footer from "../../components/Footer"
 import FranchiseTitle from '../../components/FranchiseTitle'
 import FranchisePartner from '../../components/FranchisePartner'
 // import Hero from '../../components/Hero'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const FranchisePage = () => {
   return (
     <>
+    <HelmetProvider>
      <Helmet>
         <title>Franchise Opportunities | Ridesmash</title>
         <meta
@@ -43,7 +44,8 @@ const FranchisePage = () => {
         <FranchisePartner/>  
         <Footer/>
       </div>
-      
+      </HelmetProvider>
+
 
     </>
   )

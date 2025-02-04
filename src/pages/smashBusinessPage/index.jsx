@@ -7,12 +7,14 @@ import SmashBusinessTitle from '../../components/SmashBusinessTitle'
 import ServiceBusiness from '../../components/ServiceBusiness'
 import ServiceBusiness2 from '../../components/ServiceBusiness2'
 // import Hero from '../../components/Hero'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const SmashBusinessPage = () => {
   return (
     <>
+            <HelmetProvider>
+
      <Helmet>
         <title>Business Solutions | Smash Business</title>
         <meta
@@ -46,6 +48,7 @@ const SmashBusinessPage = () => {
         <Footer/>
       </div>
       
+      </HelmetProvider>
 
     </>
   )

@@ -1,4 +1,4 @@
-import rider1 from './../assets/person.jpg';
+import rider1 from './../assets/person.webp';
 import rider2 from './../assets/woman-rider.webp';
 import rider3 from './../assets/cars.png';
 import { Link } from 'react-router-dom';

@@ -13,7 +13,7 @@ import BusinessOpportunities from '../../components/BusinessOpportunities'
 import BecomeDriver from '../../components/BecomeDriver'
 import BecomeDriverMore from '../../components/BecomeDriverMore'
 import AcceptedVehicle from '../../components/AcceptedVehicle'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const DriveAndEarn = () => {
@@ -46,6 +46,8 @@ useEffect(() => {
 
   return (
     <>
+    <HelmetProvider>
+
      <Helmet>
         <title>Drive and Earn with Ridesmash</title>
         <meta
@@ -101,6 +103,8 @@ useEffect(() => {
     </div>
 
     </div>
+    </HelmetProvider>
+
   </>
   )
 }

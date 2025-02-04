@@ -6,12 +6,13 @@ import RideTitle from '../../components/RideTitle'
 import RentalTitle from '../../components/RentalTitle'
 import ServiceCarRental from '../../components/ServiceCarRental'
 // import Hero from '../../components/Hero'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const RentalPage = () => {
   return (
     <>
+        <HelmetProvider>
     <Helmet>
         <title>Car Rentals | Ridesmash</title>
         <meta
@@ -43,7 +44,8 @@ const RentalPage = () => {
          <ServiceCarRental/>
          <Footer/>
       </div>
-      
+      </HelmetProvider>
+
 
     </>
   )

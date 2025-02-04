@@ -4,13 +4,16 @@ import GetApp from "../../components/GetApp"
 import BookingDrive from '../../components/BookingDrive'
 import BookingTitle from '../../components/BookingTitle'
 import Footer from "../../components/Footer"
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const BookingPage = () => {
 
   return (
     <>
+    <HelmetProvider>
+
+
     <Helmet>
         <title>Book Your Ride | Ridesmash</title>
         <meta
@@ -55,6 +58,8 @@ const BookingPage = () => {
     <Footer/>
 
     </div>
+    </HelmetProvider>
+
   </>
   )
 }

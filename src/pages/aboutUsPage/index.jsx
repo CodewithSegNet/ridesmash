@@ -5,13 +5,15 @@ import AboutSubHeader from '../../components/AboutSubHeader'
 import AboutTitle from '../../components/AboutTitle'
 import AboutVision from '../../components/AboutVision'
 import Footer from "../../components/Footer"
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import FeaturesAndBenefits from '../../components/FeaturesAndBenefits'
 // import Hero from '../../components/Hero'
 
 const AboutUsPage = () => {
   return (
     <>
+    <HelmetProvider>
+
      <Helmet>
         <title>About Us | Ridesmash</title>
         <meta
@@ -61,6 +63,7 @@ const AboutUsPage = () => {
         <Footer/>
       </div>
       
+      </HelmetProvider>
 
     </>
   )

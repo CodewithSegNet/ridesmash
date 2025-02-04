@@ -2,7 +2,7 @@ import Location from "../../components/Location"
 import Navbar from '../../components/Navbar'
 import LocationTitle from '../../components/LocationTitle'
 import Footer from "../../components/Footer"
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 
@@ -11,6 +11,7 @@ import { Helmet } from 'react-helmet';
 const LocationPage = () => {
   return (
     <>
+        <HelmetProvider>
      <Helmet>
         <title>Our Locations | Ridesmash</title>
         <meta
@@ -51,6 +52,8 @@ const LocationPage = () => {
     <Footer/>
 
     </div>
+    </HelmetProvider>
+
     </>
   )
 }

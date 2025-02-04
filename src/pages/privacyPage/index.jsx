@@ -4,12 +4,14 @@ import Footer from "../../components/Footer"
 import TermsAndConditions from '../../components/TermsAndConditions'
 import PrivacyTitle from '../../components/PrivacyTitle'
 import PrivacyContent from '../../components/PrivacyContent'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const PrivacyPage = () => {
   return (
     <>
+        <HelmetProvider>
+    
     <Helmet>
         <title>Privacy Policy | Ridesmash</title>
         <meta
@@ -39,6 +41,7 @@ const PrivacyPage = () => {
         <PrivacyContent/>  
         <Footer/>
       </div>
+      </HelmetProvider>
       
 
     </>

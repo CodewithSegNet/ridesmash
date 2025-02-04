@@ -5,13 +5,16 @@ import ServiceRide from '../../components/ServiceRide'
 import RideTitle from '../../components/RideTitle'
 import RentalTitle from '../../components/RentalTitle'
 import AirportTitle from '../../components/AirportTitle'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import ServiceAirport from '../../components/serviceAirport'
 // import Hero from '../../components/Hero'
 
 const AirportPage = () => {
   return (
     <>
+    <HelmetProvider> 
+
+
     <Helmet>
         <title>Airport Pickup Services | Ridesmash</title>
         <meta
@@ -55,6 +58,7 @@ const AirportPage = () => {
           <Footer/>
       </div>
       
+      </HelmetProvider>
 
     </>
   )

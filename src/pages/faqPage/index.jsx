@@ -6,12 +6,14 @@ import ServiceFood from '../../components/ServiceFood'
 import FaqTitle from '../../components/FaqTitle'
 import FaqContent from '../../components/FaqContent'
 // import Hero from '../../components/Hero'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const FaqPage = () => {
   return (
     <>
+    <HelmetProvider>
+
     <Helmet>
         <title>FAQ - Frequently Asked Questions | Ridesmash</title>
         <meta
@@ -52,6 +54,7 @@ const FaqPage = () => {
         <Footer/>
       </div>
       
+      </HelmetProvider>
 
     </>
   )

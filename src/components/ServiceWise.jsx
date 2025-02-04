@@ -1,4 +1,4 @@
-import delivery from './../assets/shopping.jpg'
+import delivery from './../assets/shopping.webp'
 import background from '../assets/background2.jpg'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'

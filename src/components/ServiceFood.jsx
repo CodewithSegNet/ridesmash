@@ -1,4 +1,4 @@
-import food from './../assets/food.png'
+import food from './../assets/food.webp'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 import {useState, useEffect} from 'react'

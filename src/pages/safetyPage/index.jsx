@@ -5,12 +5,13 @@ import SafetyTitle from '../../components/SafetyTitle'
 import SafetyContentTop from '../../components/SafetyContentTop'
 import SafetyContentMiddle from '../../components/SafetyContentMiddle'
 // import Hero from '../../components/Hero'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const SafetyPage = () => {
   return (
     <>
+        <HelmetProvider>
     <Helmet>
         <title>Safety | Ridesmash</title>
         <meta
@@ -44,6 +45,7 @@ const SafetyPage = () => {
        
         <Footer/>
       </div>
+      </HelmetProvider>
       
 
     </>

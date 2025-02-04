@@ -13,12 +13,14 @@ import Blog1 from '../../components/Blog1'
 import Blog2 from '../../components/Blog2'
 import Blog3 from '../../components/Blog3'
 import BlogTitle from '../../components/blogTitle'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const BlogPage = () => {
   return (
     <>
+    <HelmetProvider>
+
     <Helmet>
         <title>Our Blog | Ridesmash Insights</title>
         <meta
@@ -86,6 +88,7 @@ const BlogPage = () => {
         <Footer/>
       
       
+        </HelmetProvider>
 
     </>
   )

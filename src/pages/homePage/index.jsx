@@ -10,7 +10,7 @@ import {useEffect, useState} from 'react'
 import axios from 'axios'
 import ServiceOption from "../../components/serviceOption"
 import AboutBackGround from "../../components/AboutBackground"
-import { Helmet } from "react-helmet";
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import GetApp from "../../components/GetApp"
 import GetDriverApp from "../../components/GetDriverApp"
 import Card from "../../components/Card"
@@ -83,6 +83,7 @@ const keywords = [
 
   return (
     <>
+        <HelmetProvider>
         <Helmet>
         <title>Ridesmash | Ride-Hailing, Car Rentals, Delivery Services</title>
         <meta
@@ -147,7 +148,8 @@ const keywords = [
         {/* <FaqView/> */}
        
         <Footer/>
-      
+        </HelmetProvider>
+
        
     </>
   )

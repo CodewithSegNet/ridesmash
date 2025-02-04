@@ -5,13 +5,15 @@ import ServiceRide from '../../components/ServiceRide'
 import RideTitle from '../../components/RideTitle'
 import DeliveryTitle from '../../components/DeliveryTitle'
 import ServiceDelivery from '../../components/ServiceDelivery'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 // import Hero from '../../components/Hero'
 
 const DeliveryPage = () => {
   return (
     <>
+    <HelmetProvider>
+
        <Helmet>
         <title>Delivery Services | Ridesmash</title>
         <meta
@@ -56,7 +58,8 @@ const DeliveryPage = () => {
        
         <Footer/>
       </div>
-      
+      </HelmetProvider>
+
 
     </>
   )

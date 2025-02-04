@@ -3,13 +3,15 @@ import Navbar from '../../components/Navbar'
 import Footer from "../../components/Footer"
 import SupportContent from "../../components/SupportContent"
 import SupportTitle from '../../components/supportTitle'
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const SupportPage = () => {
 
   return (
     <>
+            <HelmetProvider>
+
      <Helmet>
         <title>Support | Helmet</title>
         <meta
@@ -41,6 +43,8 @@ const SupportPage = () => {
       
       <Footer/>
     </div>
+    </HelmetProvider>
+
   </>
   )
 }

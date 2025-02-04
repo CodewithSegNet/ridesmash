@@ -1,5 +1,5 @@
 import React from 'react'
-import back from "./../assets/business.jpg"
+import back from "./../assets/business.webp"
 
 export default function PressContentTop() {
   return (

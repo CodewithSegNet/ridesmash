@@ -2,13 +2,16 @@ import Socials from '../../components/Socials'
 import Navbar from '../../components/Navbar'
 import ContactUsTitle from '../../components/ContactUsTitle'
 import ContactContent from '../../components/ContactContent'
-import { Helmet } from 'react-helmet';
 // import Hero from '../../components/Hero'
 import Footer from '../../components/Footer'
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+
 
 const ContactUsPage = () => {
   return (
     <>
+    <HelmetProvider>
+
      <Helmet>
         <title>Contact Us | Ridesmash</title>
         <meta
@@ -51,6 +54,8 @@ const ContactUsPage = () => {
         <ContactContent/>
         <Footer/>
     </div>
+    </HelmetProvider>
+
     </>
   )
 }
